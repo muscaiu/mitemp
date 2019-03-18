@@ -22,12 +22,19 @@ def poll(args):
     """Poll data from the sensor."""
     backend = _get_backend(args)
     poller = MiTempBtPoller(args.mac, backend)
+    line1 = "Temperature: {}".format(poller.parameter_value(MI_TEMPERATURE))
+    line2 = "Humidity: {}".format(poller.parameter_value(MI_HUMIDITY))
     print("Getting data from Mi Temperature and Humidity Sensor")
     print("FW: {}".format(poller.firmware_version()))
     print("Name: {}".format(poller.name()))
     print("Battery: {}".format(poller.parameter_value(MI_BATTERY)))
-    print("Temperature: {}".format(poller.parameter_value(MI_TEMPERATURE)))
-    print("Humidity: {}".format(poller.parameter_value(MI_HUMIDITY)))
+    print(line1)
+    print(line2)
+    # f = open('/home/pi/soft/sonoff-pump/xi.txt', 'w')
+    f = open('file.txt', 'w')
+    f.write("%s \n %s \n" % (line1, line2))
+    # f.write("Humidity: {}".format(poller.parameter_value(MI_HUMIDITY)))
+    f.close()  # you can omit in most cases as the destructor will call it
 
 
 # def scan(args):
