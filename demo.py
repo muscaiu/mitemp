@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
-"""Demo file showing how to use the mitemp library."""
-
 import argparse
 import re
 import logging
 import sys
+from time import sleep
 
 from btlewrap import available_backends, BluepyBackend, GatttoolBackend, PygattBackend
 from mitemp_bt.mitemp_bt_poller import MiTempBtPoller, \
     MI_TEMPERATURE, MI_HUMIDITY, MI_BATTERY
-
 
 def valid_mitemp_mac(mac, pat=re.compile(r"4C:65:A8:[0-9A-F]{2}:[0-9A-F]{2}:[0-9A-F]{2}")):
     """Check for valid mac adresses."""
@@ -17,36 +15,23 @@ def valid_mitemp_mac(mac, pat=re.compile(r"4C:65:A8:[0-9A-F]{2}:[0-9A-F]{2}:[0-9
         raise argparse.ArgumentTypeError('The MAC address "{}" seems to be in the wrong format'.format(mac))
     return mac
 
-
 def poll(args):
     """Poll data from the sensor."""
-    backend = _get_backend(args)
-    poller = MiTempBtPoller(args.mac, backend)
-    line1 = "Temperature: {}".format(poller.parameter_value(MI_TEMPERATURE))
-    line2 = "Humidity: {}".format(poller.parameter_value(MI_HUMIDITY))
-    print("Getting data from Mi Temperature and Humidity Sensor")
-    print("FW: {}".format(poller.firmware_version()))
-    print("Name: {}".format(poller.name()))
-    print("Battery: {}".format(poller.parameter_value(MI_BATTERY)))
-    print(line1)
-    print(line2)
-    # f = open('/home/pi/soft/sonoff-pump/xi.txt', 'w')
-    f = open('file.txt', 'w')
-    f.write("%s \n %s \n" % (line1, line2))
-    # f.write("Humidity: {}".format(poller.parameter_value(MI_HUMIDITY)))
-    f.close()  # you can omit in most cases as the destructor will call it
-
-
-# def scan(args):
-#     """Scan for sensors."""
-#     backend = _get_backend(args)
-#     print('Scanning for 10 seconds...')
-#     devices = mitemp_scanner.scan(backend, 10)
-#     devices = []
-#     print('Found {} devices:'.format(len(devices)))
-#     for device in devices:
-#         print('  {}'.format(device))
-
+    while True:
+        backend = _get_backend(args)
+        poller = MiTempBtPoller(args.mac, backend)
+        line1 = "Temperature: {}".format(poller.parameter_value(MI_TEMPERATURE))
+        line2 = "Humidity: {}".format(poller.parameter_value(MI_HUMIDITY))
+        # print("Getting data from Mi Temperature and Humidity Sensor")
+        # print("FW: {}".format(poller.firmware_version()))
+        # print("Name: {}".format(poller.name()))
+        # print("Battery: {}".format(poller.parameter_value(MI_BATTERY)))
+        # print(line1)
+        # print(line2)
+        f = open('file.txt', 'w')
+        f.write("%s\n%s" % (line1, line2))
+        f.close()
+        sleep(10)
 
 def _get_backend(args):
     """Extract the backend class from the command line arguments."""
@@ -66,12 +51,17 @@ def list_backends(_):
     backends = [b.__name__ for b in available_backends()]
     print('\n'.join(backends))
 
+# def scan(args):
+#     """Scan for sensors."""
+#     backend = _get_backend(args)
+#     print('Scanning for 10 seconds...')
+#     devices = mitemp_scanner.scan(backend, 10)
+#     devices = []
+#     print('Found {} devices:'.format(len(devices)))
+#     for device in devices:
+#         print('  {}'.format(device))
 
 def main():
-    """Main function.
-
-    Mostly parsing the command line arguments.
-    """
     parser = argparse.ArgumentParser()
     parser.add_argument('--backend', choices=['gatttool', 'bluepy', 'pygatt'], default='gatttool')
     parser.add_argument('-v', '--verbose', action='store_const', const=True)
@@ -88,7 +78,6 @@ def main():
     parser_scan.set_defaults(func=list_backends)
 
     args = parser.parse_args()
-
     if args.verbose:
         logging.basicConfig(level=logging.DEBUG)
 
