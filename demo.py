@@ -4,6 +4,7 @@ import re
 import logging
 import sys
 from time import sleep
+from datetime import datetime
 
 from btlewrap import available_backends, BluepyBackend, GatttoolBackend, PygattBackend
 from mitemp_bt.mitemp_bt_poller import MiTempBtPoller, \
@@ -18,20 +19,22 @@ def valid_mitemp_mac(mac, pat=re.compile(r"4C:65:A8:[0-9A-F]{2}:[0-9A-F]{2}:[0-9
 def poll(args):
     """Poll data from the sensor."""
     while True:
+      try:
         backend = _get_backend(args)
         poller = MiTempBtPoller(args.mac, backend)
+        currTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         line1 = "Temperature: {}".format(poller.parameter_value(MI_TEMPERATURE))
         line2 = "Humidity: {}".format(poller.parameter_value(MI_HUMIDITY))
-        # print("Getting data from Mi Temperature and Humidity Sensor")
+        line3 = "Battery: {}".format(poller.parameter_value(MI_BATTERY))
         # print("FW: {}".format(poller.firmware_version()))
         # print("Name: {}".format(poller.name()))
-        # print("Battery: {}".format(poller.parameter_value(MI_BATTERY)))
-        # print(line1)
-        # print(line2)
-        f = open('file.txt', 'w')
-        f.write("%s\n%s" % (line1, line2))
+        print(currTime, line1, line2, line3)
+        f = open('/home/pi/soft/Home-Automation/src/api/sensor.log', 'w')
+        f.write("%s\n%s\n%s\n%s" % (currTime, line1, line2, line3))
         f.close()
         sleep(10)
+      except:
+        print("An exception occurred") 
 
 def _get_backend(args):
     """Extract the backend class from the command line arguments."""

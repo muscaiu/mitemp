@@ -1,2 +1,2 @@
-Temperature: 20.4
-Humidity: 48.4
+Temperature: 22.3
+Humidity: 45.6
