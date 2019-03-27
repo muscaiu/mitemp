@@ -29,13 +29,14 @@ def poll(args):
         # print("FW: {}".format(poller.firmware_version()))
         # print("Name: {}".format(poller.name()))
         print(currTime, line1, line2, line3)
-        file = open('/home/pi/soft/Home-Automation/src/api/sensor.log', 'w')
-        file.write("%s\n%s\n%s\n%s" % (currTime, line1, line2, line3))
+        f = open('/home/pi/soft/Home-Automation/src/api/sensor.log', 'w')
+        f.write("%s\n%s\n%s\n%s" % (currTime, line1, line2, line3))
+        f.close()
         sleep(10)
       except:
         print("An exception occurred") 
-      finally:
-        file.close() 
+    finally:
+  f.close() 
 
 def _get_backend(args):
     """Extract the backend class from the command line arguments."""

@@ -1,1143 +1,1499 @@
-Getting data from Mi Temperature and Humidity Sensor
-FW: 00.00.66
-Name: MJ_HT_V1
-Battery: 68
-Temperature: 20.4
-Humidity: 48.8
-Getting data from Mi Temperature and Humidity Sensor
-FW: 00.00.66
-Name: MJ_HT_V1
-Battery: 68
-Temperature: 20.4
-Humidity: 48.7
-Getting data from Mi Temperature and Humidity Sensor
-FW: 00.00.66
-Name: MJ_HT_V1
-Battery: 68
-Temperature: 20.4
-Humidity: 48.8
-Traceback (most recent call last):
-  File "./demo.py", line 112, in <module>
-    main()
-  File "./demo.py", line 108, in main
-    args.func(args)
-  File "./demo.py", line 25, in poll
-    line1 = "Temperature: {}".format(poller.parameter_value(MI_TEMPERATURE))
-  File "/home/pi/soft/mitemp/mitemp_bt/mitemp_bt_poller.py", line 125, in parameter_value
-    self.fill_cache()
-  File "/home/pi/soft/mitemp/mitemp_bt/mitemp_bt_poller.py", line 59, in fill_cache
-    self.firmware_version()
-  File "/home/pi/soft/mitemp/mitemp_bt/mitemp_bt_poller.py", line 89, in firmware_version
-    with self._bt_interface.connect(self._mac) as connection:
-  File "/home/pi/soft/mitemp/btlewrap/base.py", line 45, in __enter__
-    self._backend.connect(self._mac)
-  File "/home/pi/soft/mitemp/btlewrap/bluepy.py", line 27, in _func_wrapper
-    return func(*args, **kwargs)
-  File "/home/pi/soft/mitemp/btlewrap/bluepy.py", line 57, in connect
-    self._peripheral = Peripheral(mac, iface=iface, addrType=self.address_type)
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 391, in __init__
-    self._connect(deviceAddr, addrType, iface)
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 436, in _connect
-    rsp = self._getResp('stat')
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 407, in _getResp
-    resp = self._waitResp(wantType + ['ntfy', 'ind'], timeout)
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 347, in _waitResp
-    rv = self._helper.stdout.readline()
-KeyboardInterrupt
-Getting data from Mi Temperature and Humidity Sensor
-FW: 00.00.66
-Name: MJ_HT_V1
-Battery: 66
-Temperature: 22.3
-Humidity: 45.8
-Getting data from Mi Temperature and Humidity Sensor
-FW: 00.00.66
-Name: MJ_HT_V1
-Battery: 66
-Temperature: 22.3
-Humidity: 45.8
-Traceback (most recent call last):
-  File "./demo.py", line 92, in <module>
-    main()
-  File "./demo.py", line 88, in main
-    args.func(args)
-  File "./demo.py", line 23, in poll
-    line1 = "Temperature: {}".format(poller.parameter_value(MI_TEMPERATURE))
-  File "/home/pi/soft/mitemp/mitemp_bt/mitemp_bt_poller.py", line 125, in parameter_value
-    self.fill_cache()
-  File "/home/pi/soft/mitemp/mitemp_bt/mitemp_bt_poller.py", line 59, in fill_cache
-    self.firmware_version()
-  File "/home/pi/soft/mitemp/mitemp_bt/mitemp_bt_poller.py", line 89, in firmware_version
-    with self._bt_interface.connect(self._mac) as connection:
-  File "/home/pi/soft/mitemp/btlewrap/base.py", line 45, in __enter__
-    self._backend.connect(self._mac)
-  File "/home/pi/soft/mitemp/btlewrap/bluepy.py", line 27, in _func_wrapper
-    return func(*args, **kwargs)
-  File "/home/pi/soft/mitemp/btlewrap/bluepy.py", line 57, in connect
-    self._peripheral = Peripheral(mac, iface=iface, addrType=self.address_type)
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 391, in __init__
-    self._connect(deviceAddr, addrType, iface)
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 436, in _connect
-    rsp = self._getResp('stat')
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 407, in _getResp
-    resp = self._waitResp(wantType + ['ntfy', 'ind'], timeout)
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 347, in _waitResp
-    rv = self._helper.stdout.readline()
-KeyboardInterrupt
-Getting data from Mi Temperature and Humidity Sensor
-FW: 00.00.66
-Name: MJ_HT_V1
-Battery: 66
-Temperature: 22.3
-Humidity: 45.8
-Getting data from Mi Temperature and Humidity Sensor
-FW: 00.00.66
-Name: MJ_HT_V1
-Battery: 66
-Temperature: 22.3
-Humidity: 45.6
-Traceback (most recent call last):
-  File "demo.py", line 92, in <module>
-    main()
-  File "demo.py", line 88, in main
-    args.func(args)
-  File "demo.py", line 34, in poll
-    sleep(10)
-KeyboardInterrupt
-Getting data from Mi Temperature and Humidity Sensor
-FW: 00.00.66
-Name: MJ_HT_V1
-Battery: 66
-Temperature: 22.3
-Humidity: 45.8
-Getting data from Mi Temperature and Humidity Sensor
-FW: 00.00.66
-Name: MJ_HT_V1
-Battery: 66
-Temperature: 22.3
-Humidity: 45.8
-Traceback (most recent call last):
-  File "demo.py", line 92, in <module>
-    main()
-  File "demo.py", line 88, in main
-    args.func(args)
-  File "demo.py", line 23, in poll
-    line1 = "Temperature: {}".format(poller.parameter_value(MI_TEMPERATURE))
-  File "/home/pi/soft/mitemp/mitemp_bt/mitemp_bt_poller.py", line 125, in parameter_value
-    self.fill_cache()
-  File "/home/pi/soft/mitemp/mitemp_bt/mitemp_bt_poller.py", line 59, in fill_cache
-    self.firmware_version()
-  File "/home/pi/soft/mitemp/mitemp_bt/mitemp_bt_poller.py", line 89, in firmware_version
-    with self._bt_interface.connect(self._mac) as connection:
-  File "/home/pi/soft/mitemp/btlewrap/base.py", line 45, in __enter__
-    self._backend.connect(self._mac)
-  File "/home/pi/soft/mitemp/btlewrap/bluepy.py", line 27, in _func_wrapper
-    return func(*args, **kwargs)
-  File "/home/pi/soft/mitemp/btlewrap/bluepy.py", line 57, in connect
-    self._peripheral = Peripheral(mac, iface=iface, addrType=self.address_type)
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 391, in __init__
-    self._connect(deviceAddr, addrType, iface)
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 436, in _connect
-    rsp = self._getResp('stat')
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 407, in _getResp
-    resp = self._waitResp(wantType + ['ntfy', 'ind'], timeout)
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 347, in _waitResp
-    rv = self._helper.stdout.readline()
-KeyboardInterrupt
-python3: can't open file 'dedw': [Errno 2] No such file or directory
-*** with nohup ***
-FW: 00.00.66
-Name: MJ_HT_V1
-Battery: 66
-Temperature: 22.3
-Humidity: 45.6
-*** with nohup ***
-FW: 00.00.66
-Name: MJ_HT_V1
-Battery: 66
-Temperature: 22.2
-Humidity: 45.7
-*** with nohup ***
-FW: 00.00.66
-Name: MJ_HT_V1
-Battery: 66
-Temperature: 22.3
-Humidity: 46.0
-*** with nohup ***
-FW: 00.00.66
-Name: MJ_HT_V1
-Battery: 66
-Temperature: 22.3
-Humidity: 45.5
-*** with nohup ***
-FW: 00.00.66
-Name: MJ_HT_V1
-Battery: 66
-Temperature: 22.3
-Humidity: 45.9
-*** with nohup ***
-FW: 00.00.66
-Name: MJ_HT_V1
-Battery: 66
-Temperature: 22.3
-Humidity: 45.8
-Traceback (most recent call last):
-  File "demo.py", line 92, in <module>
-    main()
-  File "demo.py", line 88, in main
-    args.func(args)
-  File "demo.py", line 34, in poll
-    sleep(10)
-KeyboardInterrupt
-2019-03-21 08:59:41 Temperature: 22.7 Humidity: 45.4 Battery: 66
-2019-03-21 09:01:08 Temperature: 22.7 Humidity: 45.5 Battery: 66
-2019-03-21 09:03:36 Temperature: 22.7 Humidity: 45.3 Battery: 66
-2019-03-21 09:06:58 Temperature: 22.7 Humidity: 45.5 Battery: 66
-2019-03-21 09:08:21 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:08:34 Temperature: 22.8 Humidity: 45.0 Battery: 66
-2019-03-21 09:08:47 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:09:00 Temperature: 22.7 Humidity: 45.4 Battery: 66
-2019-03-21 09:09:25 Temperature: 22.7 Humidity: 45.4 Battery: 66
-2019-03-21 09:09:38 Temperature: 22.7 Humidity: 45.3 Battery: 66
-2019-03-21 09:09:53 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:10:06 Temperature: 22.8 Humidity: 45.4 Battery: 66
-2019-03-21 09:10:23 Temperature: 22.8 Humidity: 45.4 Battery: 66
-2019-03-21 09:10:42 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:10:55 Temperature: 22.7 Humidity: 45.5 Battery: 66
-2019-03-21 09:11:10 Temperature: 22.7 Humidity: 45.3 Battery: 66
-2019-03-21 09:11:28 Temperature: 22.8 Humidity: 45.4 Battery: 66
-2019-03-21 09:11:43 Temperature: 22.7 Humidity: 45.1 Battery: 66
-2019-03-21 09:11:58 Temperature: 22.7 Humidity: 45.4 Battery: 66
-2019-03-21 09:12:11 Temperature: 22.8 Humidity: 45.2 Battery: 66
-2019-03-21 09:12:26 Temperature: 22.8 Humidity: 45.2 Battery: 66
-2019-03-21 09:12:39 Temperature: 22.8 Humidity: 45.4 Battery: 66
-2019-03-21 09:12:52 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:13:05 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:13:24 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:13:37 Temperature: 22.8 Humidity: 45.2 Battery: 66
-2019-03-21 09:13:50 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:14:03 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:14:16 Temperature: 22.8 Humidity: 45.4 Battery: 66
-2019-03-21 09:14:31 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:14:50 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:15:08 Temperature: 22.7 Humidity: 45.3 Battery: 66
-2019-03-21 09:15:21 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:15:36 Temperature: 22.8 Humidity: 45.0 Battery: 66
-2019-03-21 09:15:53 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:16:14 Temperature: 22.9 Humidity: 45.0 Battery: 66
-2019-03-21 09:16:31 Temperature: 22.8 Humidity: 45.0 Battery: 66
-2019-03-21 09:16:44 Temperature: 22.8 Humidity: 45.4 Battery: 66
-2019-03-21 09:16:57 Temperature: 22.8 Humidity: 45.2 Battery: 66
-2019-03-21 09:17:12 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:17:25 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:17:38 Temperature: 22.9 Humidity: 45.1 Battery: 66
-2019-03-21 09:17:51 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:18:10 Temperature: 22.8 Humidity: 45.0 Battery: 66
-2019-03-21 09:18:25 Temperature: 22.8 Humidity: 44.9 Battery: 66
-2019-03-21 09:18:38 Temperature: 22.8 Humidity: 45.0 Battery: 66
-2019-03-21 09:18:53 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:19:06 Temperature: 22.8 Humidity: 45.4 Battery: 66
-2019-03-21 09:19:19 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:19:35 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:19:48 Temperature: 22.8 Humidity: 45.2 Battery: 66
-2019-03-21 09:20:03 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:20:18 Temperature: 22.9 Humidity: 45.1 Battery: 66
-2019-03-21 09:20:33 Temperature: 22.9 Humidity: 45.0 Battery: 66
-2019-03-21 09:20:46 Temperature: 22.9 Humidity: 44.8 Battery: 66
-2019-03-21 09:20:59 Temperature: 23.0 Humidity: 45.0 Battery: 66
-2019-03-21 09:21:14 Temperature: 22.9 Humidity: 44.8 Battery: 66
-2019-03-21 09:21:29 Temperature: 22.9 Humidity: 45.1 Battery: 66
-2019-03-21 09:21:54 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:22:09 Temperature: 22.9 Humidity: 45.2 Battery: 66
-2019-03-21 09:22:22 Temperature: 22.9 Humidity: 44.9 Battery: 66
-2019-03-21 09:22:39 Temperature: 22.9 Humidity: 44.9 Battery: 66
-2019-03-21 09:22:52 Temperature: 22.8 Humidity: 45.0 Battery: 66
-2019-03-21 09:23:10 Temperature: 22.9 Humidity: 45.1 Battery: 66
-2019-03-21 09:23:23 Temperature: 22.9 Humidity: 45.2 Battery: 66
-2019-03-21 09:23:36 Temperature: 22.9 Humidity: 45.1 Battery: 66
-2019-03-21 09:23:53 Temperature: 22.9 Humidity: 45.0 Battery: 66
-2019-03-21 09:24:08 Temperature: 22.8 Humidity: 45.0 Battery: 66
-2019-03-21 09:24:24 Temperature: 22.9 Humidity: 44.9 Battery: 66
-2019-03-21 09:24:39 Temperature: 22.8 Humidity: 45.0 Battery: 66
-2019-03-21 09:24:54 Temperature: 22.9 Humidity: 45.1 Battery: 66
-2019-03-21 09:25:07 Temperature: 22.9 Humidity: 44.8 Battery: 66
-2019-03-21 09:25:20 Temperature: 22.9 Humidity: 45.0 Battery: 66
-2019-03-21 09:25:35 Temperature: 22.9 Humidity: 45.3 Battery: 66
-2019-03-21 09:25:48 Temperature: 22.9 Humidity: 44.9 Battery: 66
-2019-03-21 09:26:03 Temperature: 22.9 Humidity: 44.9 Battery: 66
-2019-03-21 09:26:16 Temperature: 22.9 Humidity: 44.8 Battery: 66
-2019-03-21 09:26:29 Temperature: 22.8 Humidity: 45.0 Battery: 66
-2019-03-21 09:26:42 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:27:01 Temperature: 22.9 Humidity: 45.0 Battery: 66
-2019-03-21 09:27:20 Temperature: 22.9 Humidity: 45.0 Battery: 66
-2019-03-21 09:27:33 Temperature: 22.9 Humidity: 45.0 Battery: 66
-2019-03-21 09:27:48 Temperature: 22.8 Humidity: 44.9 Battery: 66
-2019-03-21 09:28:03 Temperature: 22.9 Humidity: 45.0 Battery: 66
-2019-03-21 09:28:18 Temperature: 22.8 Humidity: 45.0 Battery: 66
-2019-03-21 09:28:31 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:28:46 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:28:59 Temperature: 22.8 Humidity: 45.0 Battery: 66
-2019-03-21 09:29:12 Temperature: 22.8 Humidity: 45.2 Battery: 66
-2019-03-21 09:29:29 Temperature: 22.8 Humidity: 45.2 Battery: 66
-2019-03-21 09:29:44 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:29:59 Temperature: 22.8 Humidity: 45.5 Battery: 66
-2019-03-21 09:30:12 Temperature: 22.8 Humidity: 45.8 Battery: 66
-2019-03-21 09:30:28 Temperature: 22.9 Humidity: 46.0 Battery: 66
-2019-03-21 09:30:41 Temperature: 22.8 Humidity: 45.8 Battery: 66
-2019-03-21 09:30:58 Temperature: 22.7 Humidity: 45.9 Battery: 66
-2019-03-21 09:31:11 Temperature: 22.8 Humidity: 45.8 Battery: 66
-2019-03-21 09:31:24 Temperature: 22.9 Humidity: 45.4 Battery: 66
-2019-03-21 09:31:39 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:31:56 Temperature: 22.8 Humidity: 45.5 Battery: 66
-2019-03-21 09:32:11 Temperature: 22.8 Humidity: 45.5 Battery: 66
-2019-03-21 09:32:24 Temperature: 22.9 Humidity: 45.4 Battery: 66
-2019-03-21 09:32:41 Temperature: 22.9 Humidity: 45.5 Battery: 66
-2019-03-21 09:32:54 Temperature: 22.9 Humidity: 45.2 Battery: 66
-2019-03-21 09:33:09 Temperature: 22.8 Humidity: 45.4 Battery: 66
-2019-03-21 09:33:24 Temperature: 22.7 Humidity: 45.5 Battery: 66
-2019-03-21 09:33:43 Temperature: 22.8 Humidity: 45.4 Battery: 66
-2019-03-21 09:34:00 Temperature: 22.8 Humidity: 45.2 Battery: 66
-2019-03-21 09:34:15 Temperature: 22.8 Humidity: 45.5 Battery: 66
-2019-03-21 09:34:30 Temperature: 22.7 Humidity: 45.5 Battery: 66
-2019-03-21 09:34:45 Temperature: 22.8 Humidity: 45.4 Battery: 66
-2019-03-21 09:35:02 Temperature: 22.8 Humidity: 45.2 Battery: 66
-2019-03-21 09:35:17 Temperature: 22.8 Humidity: 45.2 Battery: 66
-2019-03-21 09:35:34 Temperature: 22.8 Humidity: 45.2 Battery: 66
-2019-03-21 09:35:47 Temperature: 22.9 Humidity: 45.2 Battery: 66
-2019-03-21 09:36:01 Temperature: 22.8 Humidity: 44.9 Battery: 66
-2019-03-21 09:36:14 Temperature: 22.8 Humidity: 45.2 Battery: 66
-2019-03-21 09:36:29 Temperature: 22.7 Humidity: 45.2 Battery: 66
-2019-03-21 09:36:42 Temperature: 22.8 Humidity: 45.5 Battery: 66
-2019-03-21 09:36:55 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:37:10 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:37:24 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:37:39 Temperature: 22.7 Humidity: 45.3 Battery: 66
-2019-03-21 09:37:54 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:38:09 Temperature: 22.8 Humidity: 45.2 Battery: 66
-2019-03-21 09:38:22 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:38:35 Temperature: 22.8 Humidity: 45.2 Battery: 66
-2019-03-21 09:38:50 Temperature: 22.7 Humidity: 45.3 Battery: 66
-2019-03-21 09:39:03 Temperature: 22.8 Humidity: 45.6 Battery: 66
-2019-03-21 09:39:16 Temperature: 22.8 Humidity: 45.7 Battery: 66
-2019-03-21 09:39:29 Temperature: 22.8 Humidity: 45.6 Battery: 66
-2019-03-21 09:39:42 Temperature: 22.7 Humidity: 45.4 Battery: 66
-2019-03-21 09:39:55 Temperature: 22.8 Humidity: 45.4 Battery: 66
-2019-03-21 09:40:12 Temperature: 22.8 Humidity: 45.2 Battery: 66
-2019-03-21 09:40:28 Temperature: 22.8 Humidity: 45.0 Battery: 66
-2019-03-21 09:40:43 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:40:56 Temperature: 22.8 Humidity: 45.0 Battery: 66
-2019-03-21 09:41:11 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:41:24 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:41:43 Temperature: 22.7 Humidity: 45.3 Battery: 66
-2019-03-21 09:41:56 Temperature: 22.7 Humidity: 45.4 Battery: 66
-2019-03-21 09:42:13 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:42:30 Temperature: 22.7 Humidity: 45.1 Battery: 66
-2019-03-21 09:42:43 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:43:00 Temperature: 22.8 Humidity: 45.0 Battery: 66
-2019-03-21 09:43:15 Temperature: 22.8 Humidity: 45.5 Battery: 66
-2019-03-21 09:43:29 Temperature: 22.7 Humidity: 45.1 Battery: 66
-2019-03-21 09:43:42 Temperature: 22.7 Humidity: 45.3 Battery: 66
-2019-03-21 09:44:03 Temperature: 22.7 Humidity: 45.2 Battery: 66
-2019-03-21 09:44:18 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:44:35 Temperature: 22.7 Humidity: 45.3 Battery: 66
-2019-03-21 09:44:50 Temperature: 22.7 Humidity: 45.0 Battery: 66
-2019-03-21 09:45:03 Temperature: 22.7 Humidity: 45.2 Battery: 66
-2019-03-21 09:45:18 Temperature: 22.8 Humidity: 45.1 Battery: 66
-2019-03-21 09:45:35 Temperature: 22.7 Humidity: 45.2 Battery: 66
-2019-03-21 09:45:52 Temperature: 22.7 Humidity: 45.3 Battery: 66
-2019-03-21 09:46:05 Temperature: 22.7 Humidity: 45.3 Battery: 66
-2019-03-21 09:46:20 Temperature: 22.8 Humidity: 45.3 Battery: 66
-2019-03-21 09:46:43 Temperature: 22.7 Humidity: 45.4 Battery: 66
-2019-03-21 09:46:58 Temperature: 22.7 Humidity: 45.2 Battery: 66
-2019-03-21 09:47:11 Temperature: 22.7 Humidity: 45.0 Battery: 66
-2019-03-21 09:47:26 Temperature: 22.7 Humidity: 45.2 Battery: 66
-2019-03-21 09:47:47 Temperature: 22.7 Humidity: 45.1 Battery: 66
-2019-03-21 09:48:00 Temperature: 22.8 Humidity: 45.2 Battery: 66
-2019-03-21 09:48:13 Temperature: 22.7 Humidity: 45.0 Battery: 66
-2019-03-21 09:48:28 Temperature: 22.6 Humidity: 45.4 Battery: 66
-2019-03-21 09:48:41 Temperature: 22.7 Humidity: 45.1 Battery: 66
-2019-03-21 09:48:58 Temperature: 22.7 Humidity: 45.1 Battery: 66
-2019-03-21 09:49:13 Temperature: 22.7 Humidity: 45.0 Battery: 66
-2019-03-21 09:49:28 Temperature: 22.7 Humidity: 45.2 Battery: 66
-2019-03-21 09:49:43 Temperature: 22.7 Humidity: 45.3 Battery: 66
-2019-03-21 09:49:56 Temperature: 22.6 Humidity: 45.2 Battery: 66
-2019-03-21 09:50:09 Temperature: 22.7 Humidity: 45.2 Battery: 66
-2019-03-21 09:50:22 Temperature: 22.6 Humidity: 45.1 Battery: 66
-2019-03-21 09:50:35 Temperature: 22.7 Humidity: 45.1 Battery: 66
-2019-03-21 09:50:48 Temperature: 22.7 Humidity: 45.1 Battery: 66
-2019-03-21 09:51:02 Temperature: 22.7 Humidity: 45.0 Battery: 66
-2019-03-21 09:51:17 Temperature: 22.7 Humidity: 45.2 Battery: 66
-2019-03-21 09:51:30 Temperature: 22.7 Humidity: 45.2 Battery: 66
-2019-03-21 09:51:46 Temperature: 22.7 Humidity: 45.2 Battery: 66
-2019-03-21 09:51:59 Temperature: 22.7 Humidity: 45.2 Battery: 66
-2019-03-21 09:52:12 Temperature: 22.6 Humidity: 45.0 Battery: 66
-2019-03-21 09:52:25 Temperature: 22.7 Humidity: 45.3 Battery: 66
-2019-03-21 09:52:38 Temperature: 22.6 Humidity: 45.1 Battery: 66
-2019-03-21 09:52:53 Temperature: 22.7 Humidity: 45.2 Battery: 66
-2019-03-21 09:53:06 Temperature: 22.7 Humidity: 44.9 Battery: 66
-2019-03-21 09:53:19 Temperature: 22.7 Humidity: 45.1 Battery: 66
-2019-03-21 09:53:32 Temperature: 22.7 Humidity: 45.1 Battery: 66
-2019-03-21 09:53:57 Temperature: 22.7 Humidity: 45.1 Battery: 66
-2019-03-21 09:54:11 Temperature: 22.7 Humidity: 44.9 Battery: 66
-2019-03-21 09:54:32 Temperature: 22.6 Humidity: 45.0 Battery: 66
-2019-03-21 09:54:47 Temperature: 22.6 Humidity: 45.2 Battery: 66
-2019-03-21 09:55:00 Temperature: 22.7 Humidity: 45.0 Battery: 66
-2019-03-21 09:55:13 Temperature: 22.7 Humidity: 45.2 Battery: 66
-2019-03-21 09:55:28 Temperature: 22.7 Humidity: 45.2 Battery: 66
-2019-03-21 09:55:43 Temperature: 22.6 Humidity: 45.1 Battery: 66
-2019-03-21 09:55:58 Temperature: 22.6 Humidity: 45.2 Battery: 66
-2019-03-21 09:56:11 Temperature: 22.7 Humidity: 45.2 Battery: 66
-2019-03-21 09:56:24 Temperature: 22.6 Humidity: 44.9 Battery: 66
-2019-03-21 09:56:37 Temperature: 22.6 Humidity: 45.1 Battery: 66
-2019-03-21 09:56:50 Temperature: 22.7 Humidity: 45.0 Battery: 66
-2019-03-21 09:57:03 Temperature: 22.7 Humidity: 45.0 Battery: 66
-2019-03-21 09:57:16 Temperature: 22.6 Humidity: 45.0 Battery: 66
-2019-03-21 09:57:29 Temperature: 22.7 Humidity: 45.0 Battery: 66
-2019-03-21 09:57:44 Temperature: 22.6 Humidity: 45.1 Battery: 66
-2019-03-21 09:57:57 Temperature: 22.6 Humidity: 45.2 Battery: 66
-2019-03-21 09:58:10 Temperature: 22.6 Humidity: 45.1 Battery: 66
-2019-03-21 09:58:23 Temperature: 22.6 Humidity: 45.2 Battery: 66
-2019-03-21 09:58:42 Temperature: 22.6 Humidity: 44.9 Battery: 66
-2019-03-21 09:58:55 Temperature: 22.6 Humidity: 44.9 Battery: 66
-2019-03-21 09:59:10 Temperature: 22.6 Humidity: 44.9 Battery: 66
-2019-03-21 09:59:23 Temperature: 22.6 Humidity: 44.9 Battery: 66
-2019-03-21 09:59:36 Temperature: 22.7 Humidity: 45.1 Battery: 66
-2019-03-21 09:59:51 Temperature: 22.6 Humidity: 44.9 Battery: 66
-2019-03-21 10:00:04 Temperature: 22.6 Humidity: 45.1 Battery: 66
-2019-03-21 10:00:22 Temperature: 22.6 Humidity: 44.9 Battery: 66
-2019-03-21 10:00:39 Temperature: 22.6 Humidity: 45.0 Battery: 66
-2019-03-21 10:00:52 Temperature: 22.6 Humidity: 45.0 Battery: 66
-2019-03-21 10:01:09 Temperature: 22.6 Humidity: 44.8 Battery: 66
-2019-03-21 10:01:26 Temperature: 22.6 Humidity: 45.0 Battery: 66
-2019-03-21 10:01:39 Temperature: 22.6 Humidity: 45.1 Battery: 66
-2019-03-21 10:01:52 Temperature: 22.6 Humidity: 45.1 Battery: 66
-2019-03-21 10:02:07 Temperature: 22.6 Humidity: 44.9 Battery: 66
-2019-03-21 10:02:20 Temperature: 22.6 Humidity: 45.0 Battery: 66
-2019-03-21 10:02:33 Temperature: 22.6 Humidity: 45.2 Battery: 66
-2019-03-21 10:02:46 Temperature: 22.6 Humidity: 45.1 Battery: 66
-2019-03-21 10:02:59 Temperature: 22.6 Humidity: 45.1 Battery: 66
-2019-03-21 10:03:14 Temperature: 22.6 Humidity: 45.1 Battery: 66
-2019-03-21 10:03:27 Temperature: 22.6 Humidity: 45.0 Battery: 66
-2019-03-21 10:03:40 Temperature: 22.6 Humidity: 45.2 Battery: 66
-2019-03-21 10:03:55 Temperature: 22.6 Humidity: 44.9 Battery: 66
-2019-03-21 10:04:08 Temperature: 22.5 Humidity: 45.2 Battery: 66
-2019-03-21 10:04:21 Temperature: 22.6 Humidity: 45.1 Battery: 66
-2019-03-21 10:04:36 Temperature: 22.6 Humidity: 45.2 Battery: 66
-2019-03-21 10:04:50 Temperature: 22.5 Humidity: 45.0 Battery: 66
-2019-03-21 10:05:05 Temperature: 22.6 Humidity: 45.3 Battery: 66
-2019-03-21 10:05:20 Temperature: 22.6 Humidity: 45.1 Battery: 66
-2019-03-21 10:05:35 Temperature: 22.6 Humidity: 45.0 Battery: 66
-2019-03-21 10:05:50 Temperature: 22.6 Humidity: 44.9 Battery: 66
-2019-03-21 10:06:03 Temperature: 22.6 Humidity: 45.2 Battery: 66
-2019-03-21 10:06:18 Temperature: 22.6 Humidity: 45.2 Battery: 66
-2019-03-21 10:06:31 Temperature: 22.7 Humidity: 45.1 Battery: 66
-2019-03-21 10:06:52 Temperature: 22.6 Humidity: 44.7 Battery: 66
-2019-03-21 10:07:05 Temperature: 22.6 Humidity: 44.9 Battery: 66
-2019-03-21 10:07:18 Temperature: 22.6 Humidity: 45.0 Battery: 66
-2019-03-21 10:07:33 Temperature: 22.6 Humidity: 45.0 Battery: 66
-2019-03-21 10:07:46 Temperature: 22.6 Humidity: 44.9 Battery: 66
-2019-03-21 10:08:01 Temperature: 22.6 Humidity: 44.8 Battery: 66
-2019-03-21 10:08:16 Temperature: 22.6 Humidity: 45.0 Battery: 66
-2019-03-21 10:08:33 Temperature: 22.6 Humidity: 44.9 Battery: 66
-2019-03-21 10:08:48 Temperature: 22.6 Humidity: 45.1 Battery: 66
-2019-03-21 10:09:01 Temperature: 22.6 Humidity: 45.0 Battery: 66
-2019-03-21 10:09:14 Temperature: 22.6 Humidity: 45.0 Battery: 66
-2019-03-21 10:09:30 Temperature: 22.6 Humidity: 45.2 Battery: 66
-2019-03-21 10:09:43 Temperature: 22.6 Humidity: 45.0 Battery: 66
-2019-03-21 10:09:58 Temperature: 22.6 Humidity: 45.1 Battery: 66
-2019-03-21 10:10:11 Temperature: 22.6 Humidity: 45.3 Battery: 66
-2019-03-21 10:10:28 Temperature: 22.6 Humidity: 45.0 Battery: 66
-2019-03-21 10:10:41 Temperature: 22.6 Humidity: 45.2 Battery: 66
-2019-03-21 10:10:58 Temperature: 22.6 Humidity: 45.2 Battery: 66
-2019-03-21 10:11:13 Temperature: 22.6 Humidity: 45.2 Battery: 66
-2019-03-21 10:11:28 Temperature: 22.6 Humidity: 45.3 Battery: 66
-2019-03-21 10:11:41 Temperature: 22.6 Humidity: 45.4 Battery: 66
-2019-03-21 10:11:54 Temperature: 22.6 Humidity: 45.5 Battery: 66
-2019-03-21 10:12:11 Temperature: 22.6 Humidity: 45.5 Battery: 66
-2019-03-21 10:12:25 Temperature: 22.5 Humidity: 45.3 Battery: 66
-2019-03-21 10:12:44 Temperature: 22.5 Humidity: 45.7 Battery: 66
-2019-03-21 10:12:57 Temperature: 22.6 Humidity: 45.6 Battery: 66
-2019-03-21 10:13:12 Temperature: 22.5 Humidity: 45.5 Battery: 66
-2019-03-21 10:13:33 Temperature: 22.5 Humidity: 45.6 Battery: 66
-2019-03-21 10:13:46 Temperature: 22.6 Humidity: 45.7 Battery: 66
-2019-03-21 10:14:05 Temperature: 22.6 Humidity: 45.8 Battery: 66
-2019-03-21 10:14:18 Temperature: 22.6 Humidity: 45.6 Battery: 66
-2019-03-21 10:14:31 Temperature: 22.6 Humidity: 45.8 Battery: 66
-2019-03-21 10:14:46 Temperature: 22.5 Humidity: 46.1 Battery: 66
-2019-03-21 10:15:01 Temperature: 22.6 Humidity: 46.0 Battery: 66
-2019-03-21 10:15:18 Temperature: 22.6 Humidity: 45.8 Battery: 66
-2019-03-21 10:15:31 Temperature: 22.5 Humidity: 46.1 Battery: 66
-2019-03-21 10:15:44 Temperature: 22.6 Humidity: 46.7 Battery: 66
-2019-03-21 10:15:57 Temperature: 22.5 Humidity: 46.6 Battery: 66
-2019-03-21 10:16:12 Temperature: 22.6 Humidity: 46.6 Battery: 66
-2019-03-21 10:16:27 Temperature: 22.5 Humidity: 46.5 Battery: 66
-2019-03-21 10:16:44 Temperature: 22.6 Humidity: 46.6 Battery: 66
-2019-03-21 10:16:59 Temperature: 22.6 Humidity: 46.8 Battery: 66
-2019-03-21 10:17:14 Temperature: 22.5 Humidity: 47.1 Battery: 66
-2019-03-21 10:17:27 Temperature: 22.6 Humidity: 46.9 Battery: 66
-2019-03-21 10:17:42 Temperature: 22.6 Humidity: 46.6 Battery: 66
-2019-03-21 10:17:55 Temperature: 22.6 Humidity: 46.2 Battery: 66
-2019-03-21 10:18:10 Temperature: 22.6 Humidity: 47.1 Battery: 66
-2019-03-21 10:18:25 Temperature: 22.5 Humidity: 47.3 Battery: 66
-2019-03-21 10:18:40 Temperature: 22.6 Humidity: 47.2 Battery: 66
-2019-03-21 10:18:55 Temperature: 22.6 Humidity: 46.8 Battery: 66
-2019-03-21 10:19:12 Temperature: 22.5 Humidity: 46.8 Battery: 66
-2019-03-21 10:19:25 Temperature: 22.5 Humidity: 46.8 Battery: 66
-2019-03-21 10:19:38 Temperature: 22.6 Humidity: 47.2 Battery: 66
-2019-03-21 10:19:53 Temperature: 22.6 Humidity: 47.5 Battery: 66
-2019-03-21 10:20:06 Temperature: 22.6 Humidity: 48.4 Battery: 66
-2019-03-21 10:20:19 Temperature: 22.6 Humidity: 48.0 Battery: 66
-2019-03-21 10:20:32 Temperature: 22.6 Humidity: 47.8 Battery: 66
-2019-03-21 10:20:45 Temperature: 22.5 Humidity: 47.7 Battery: 66
-2019-03-21 10:20:58 Temperature: 22.6 Humidity: 48.9 Battery: 66
-2019-03-21 10:21:13 Temperature: 22.6 Humidity: 49.6 Battery: 66
-2019-03-21 10:21:28 Temperature: 22.6 Humidity: 49.8 Battery: 66
-2019-03-21 10:21:41 Temperature: 22.6 Humidity: 49.0 Battery: 66
-2019-03-21 10:21:54 Temperature: 22.6 Humidity: 48.7 Battery: 66
-2019-03-21 10:22:07 Temperature: 22.6 Humidity: 49.1 Battery: 66
-2019-03-21 10:22:21 Temperature: 22.6 Humidity: 49.6 Battery: 66
-2019-03-21 10:22:36 Temperature: 22.5 Humidity: 49.4 Battery: 66
-2019-03-21 10:22:53 Temperature: 22.5 Humidity: 49.5 Battery: 66
-2019-03-21 10:23:08 Temperature: 22.5 Humidity: 49.7 Battery: 66
-2019-03-21 10:23:23 Temperature: 22.5 Humidity: 49.8 Battery: 66
-2019-03-21 10:23:40 Temperature: 22.5 Humidity: 49.9 Battery: 66
-2019-03-21 10:23:55 Temperature: 22.6 Humidity: 50.2 Battery: 66
-2019-03-21 10:24:08 Temperature: 22.5 Humidity: 50.2 Battery: 66
-2019-03-21 10:24:23 Temperature: 22.6 Humidity: 50.1 Battery: 66
-2019-03-21 10:24:38 Temperature: 22.6 Humidity: 49.7 Battery: 66
-2019-03-21 10:24:55 Temperature: 22.6 Humidity: 49.2 Battery: 66
-2019-03-21 10:25:18 Temperature: 22.6 Humidity: 50.1 Battery: 66
-2019-03-21 10:25:31 Temperature: 22.5 Humidity: 49.6 Battery: 66
-2019-03-21 10:25:46 Temperature: 22.5 Humidity: 49.4 Battery: 66
-2019-03-21 10:26:05 Temperature: 22.5 Humidity: 49.8 Battery: 66
-2019-03-21 10:26:22 Temperature: 22.5 Humidity: 49.5 Battery: 66
-2019-03-21 10:26:39 Temperature: 22.5 Humidity: 49.6 Battery: 66
-2019-03-21 10:26:54 Temperature: 22.5 Humidity: 49.6 Battery: 66
-2019-03-21 10:27:07 Temperature: 22.5 Humidity: 49.1 Battery: 66
-2019-03-21 10:27:24 Temperature: 22.5 Humidity: 49.2 Battery: 66
-2019-03-21 10:27:41 Temperature: 22.5 Humidity: 49.1 Battery: 66
-2019-03-21 10:27:54 Temperature: 22.5 Humidity: 49.2 Battery: 66
-2019-03-21 10:28:07 Temperature: 22.5 Humidity: 49.0 Battery: 66
-2019-03-21 10:28:22 Temperature: 22.6 Humidity: 48.8 Battery: 66
-2019-03-21 10:28:37 Temperature: 22.6 Humidity: 48.8 Battery: 66
-2019-03-21 10:28:50 Temperature: 22.6 Humidity: 48.9 Battery: 66
-2019-03-21 10:29:03 Temperature: 22.5 Humidity: 48.6 Battery: 66
-2019-03-21 10:29:16 Temperature: 22.5 Humidity: 49.0 Battery: 66
-2019-03-21 10:29:29 Temperature: 22.6 Humidity: 48.6 Battery: 66
-2019-03-21 10:29:44 Temperature: 22.5 Humidity: 48.8 Battery: 66
-2019-03-21 10:29:57 Temperature: 22.5 Humidity: 49.0 Battery: 66
-2019-03-21 10:30:12 Temperature: 22.5 Humidity: 48.7 Battery: 66
-2019-03-21 10:30:31 Temperature: 22.5 Humidity: 48.6 Battery: 66
-2019-03-21 10:30:46 Temperature: 22.5 Humidity: 48.9 Battery: 66
-2019-03-21 10:30:59 Temperature: 22.4 Humidity: 48.8 Battery: 66
-2019-03-21 10:31:12 Temperature: 22.5 Humidity: 48.8 Battery: 66
-2019-03-21 10:31:25 Temperature: 22.5 Humidity: 48.9 Battery: 66
-2019-03-21 10:31:38 Temperature: 22.5 Humidity: 48.5 Battery: 66
-2019-03-21 10:31:53 Temperature: 22.5 Humidity: 48.6 Battery: 66
-2019-03-21 10:32:12 Temperature: 22.5 Humidity: 48.7 Battery: 66
-2019-03-21 10:32:25 Temperature: 22.5 Humidity: 48.8 Battery: 66
-2019-03-21 10:32:38 Temperature: 22.5 Humidity: 48.5 Battery: 66
-2019-03-21 10:32:55 Temperature: 22.6 Humidity: 48.4 Battery: 66
-2019-03-21 10:33:10 Temperature: 22.6 Humidity: 48.6 Battery: 66
-2019-03-21 10:33:23 Temperature: 22.5 Humidity: 48.3 Battery: 66
-2019-03-21 10:33:36 Temperature: 22.6 Humidity: 48.4 Battery: 66
-2019-03-21 10:33:49 Temperature: 22.5 Humidity: 48.4 Battery: 66
-2019-03-21 10:34:04 Temperature: 22.5 Humidity: 48.5 Battery: 66
-2019-03-21 10:34:17 Temperature: 22.4 Humidity: 48.3 Battery: 66
-2019-03-21 10:34:30 Temperature: 22.5 Humidity: 48.4 Battery: 66
-2019-03-21 10:34:49 Temperature: 22.5 Humidity: 48.3 Battery: 66
-2019-03-21 10:35:03 Temperature: 22.5 Humidity: 48.2 Battery: 66
-2019-03-21 10:35:18 Temperature: 22.5 Humidity: 48.3 Battery: 66
-2019-03-21 10:35:31 Temperature: 22.5 Humidity: 48.4 Battery: 66
-2019-03-21 10:35:44 Temperature: 22.5 Humidity: 48.1 Battery: 66
-2019-03-21 10:35:59 Temperature: 22.5 Humidity: 48.2 Battery: 66
-2019-03-21 10:36:12 Temperature: 22.6 Humidity: 48.0 Battery: 66
-2019-03-21 10:36:27 Temperature: 22.5 Humidity: 48.0 Battery: 66
-2019-03-21 10:36:44 Temperature: 22.5 Humidity: 48.2 Battery: 66
-2019-03-21 10:36:57 Temperature: 22.5 Humidity: 47.9 Battery: 66
-2019-03-21 10:37:10 Temperature: 22.4 Humidity: 48.1 Battery: 66
-2019-03-21 10:37:33 Temperature: 22.5 Humidity: 48.0 Battery: 66
-2019-03-21 10:37:46 Temperature: 22.4 Humidity: 48.1 Battery: 66
-2019-03-21 10:38:01 Temperature: 22.5 Humidity: 48.1 Battery: 66
-2019-03-21 10:38:14 Temperature: 22.5 Humidity: 48.0 Battery: 66
-2019-03-21 10:38:27 Temperature: 22.5 Humidity: 48.0 Battery: 66
-2019-03-21 10:38:42 Temperature: 22.5 Humidity: 47.9 Battery: 66
-2019-03-21 10:38:55 Temperature: 22.5 Humidity: 47.9 Battery: 66
-2019-03-21 10:39:11 Temperature: 22.4 Humidity: 47.8 Battery: 66
-2019-03-21 10:39:26 Temperature: 22.4 Humidity: 47.8 Battery: 66
-2019-03-21 10:39:39 Temperature: 22.4 Humidity: 47.8 Battery: 66
-2019-03-21 10:39:56 Temperature: 22.5 Humidity: 47.8 Battery: 66
-2019-03-21 10:40:11 Temperature: 22.5 Humidity: 48.1 Battery: 66
-2019-03-21 10:40:28 Temperature: 22.4 Humidity: 47.8 Battery: 66
-2019-03-21 10:40:43 Temperature: 22.4 Humidity: 47.9 Battery: 66
-2019-03-21 10:40:56 Temperature: 22.4 Humidity: 47.8 Battery: 66
-2019-03-21 10:41:11 Temperature: 22.4 Humidity: 48.0 Battery: 66
-2019-03-21 10:41:26 Temperature: 22.4 Humidity: 47.8 Battery: 66
-2019-03-21 10:41:41 Temperature: 22.4 Humidity: 47.9 Battery: 66
-2019-03-21 10:41:58 Temperature: 22.4 Humidity: 47.9 Battery: 66
-2019-03-21 10:42:13 Temperature: 22.4 Humidity: 47.7 Battery: 66
-2019-03-21 10:42:26 Temperature: 22.4 Humidity: 47.8 Battery: 66
-2019-03-21 10:42:41 Temperature: 22.4 Humidity: 47.7 Battery: 66
-2019-03-21 10:42:54 Temperature: 22.5 Humidity: 47.7 Battery: 66
-2019-03-21 10:43:15 Temperature: 22.4 Humidity: 47.8 Battery: 66
-2019-03-21 10:43:28 Temperature: 22.4 Humidity: 47.7 Battery: 66
-2019-03-21 10:43:45 Temperature: 22.4 Humidity: 47.5 Battery: 66
-2019-03-21 10:43:58 Temperature: 22.5 Humidity: 47.5 Battery: 66
-2019-03-21 10:44:13 Temperature: 22.4 Humidity: 47.5 Battery: 66
-2019-03-21 10:44:28 Temperature: 22.4 Humidity: 47.3 Battery: 66
-2019-03-21 10:44:43 Temperature: 22.4 Humidity: 47.6 Battery: 66
-2019-03-21 10:45:02 Temperature: 22.4 Humidity: 47.6 Battery: 66
-2019-03-21 10:45:17 Temperature: 22.4 Humidity: 47.4 Battery: 66
-2019-03-21 10:45:34 Temperature: 22.4 Humidity: 47.2 Battery: 66
-2019-03-21 10:45:51 Temperature: 22.4 Humidity: 47.3 Battery: 66
-2019-03-21 10:46:06 Temperature: 22.4 Humidity: 47.6 Battery: 66
-2019-03-21 10:46:23 Temperature: 22.5 Humidity: 47.4 Battery: 66
-2019-03-21 10:46:36 Temperature: 22.5 Humidity: 47.5 Battery: 66
-2019-03-21 10:46:50 Temperature: 22.4 Humidity: 47.2 Battery: 66
-2019-03-21 10:47:03 Temperature: 22.4 Humidity: 47.6 Battery: 66
-2019-03-21 10:47:16 Temperature: 22.4 Humidity: 47.3 Battery: 66
-2019-03-21 10:47:29 Temperature: 22.4 Humidity: 47.3 Battery: 66
-2019-03-21 10:47:44 Temperature: 22.4 Humidity: 47.2 Battery: 66
-2019-03-21 10:47:59 Temperature: 22.4 Humidity: 47.1 Battery: 66
-2019-03-21 10:48:24 Temperature: 22.4 Humidity: 47.4 Battery: 66
-2019-03-21 10:48:37 Temperature: 22.5 Humidity: 47.4 Battery: 66
-2019-03-21 10:48:50 Temperature: 22.4 Humidity: 47.1 Battery: 66
-Traceback (most recent call last):
-  File "/home/pi/soft/mitemp/btlewrap/bluepy.py", line 27, in _func_wrapper
-    return func(*args, **kwargs)
-  File "/home/pi/soft/mitemp/btlewrap/bluepy.py", line 57, in connect
-    self._peripheral = Peripheral(mac, iface=iface, addrType=self.address_type)
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 391, in __init__
-    self._connect(deviceAddr, addrType, iface)
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 439, in _connect
-    raise BTLEDisconnectError("Failed to connect to peripheral %s, addr type: %s" % (addr, addrType), rsp)
-bluepy.btle.BTLEDisconnectError: Failed to connect to peripheral 4c:65:a8:da:a7:26, addr type: public
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "demo.py", line 92, in <module>
-    main()
-  File "demo.py", line 88, in main
-    args.func(args)
-  File "demo.py", line 25, in poll
-    line1 = "Temperature: {}".format(poller.parameter_value(MI_TEMPERATURE))
-  File "/home/pi/soft/mitemp/mitemp_bt/mitemp_bt_poller.py", line 125, in parameter_value
-    self.fill_cache()
-  File "/home/pi/soft/mitemp/mitemp_bt/mitemp_bt_poller.py", line 66, in fill_cache
-    with self._bt_interface.connect(self._mac) as connection:
-  File "/home/pi/soft/mitemp/btlewrap/base.py", line 45, in __enter__
-    self._backend.connect(self._mac)
-  File "/home/pi/soft/mitemp/btlewrap/bluepy.py", line 33, in _func_wrapper
-    raise BluetoothBackendException() from last_error
-btlewrap.base.BluetoothBackendException
-2019-03-22 23:23:10 Temperature: 22.7 Humidity: 46.3 Battery: 66
-2019-03-22 23:23:28 Temperature: 22.7 Humidity: 46.4 Battery: 65
-2019-03-22 23:23:41 Temperature: 22.7 Humidity: 46.1 Battery: 66
-2019-03-22 23:23:54 Temperature: 22.7 Humidity: 46.2 Battery: 66
-2019-03-22 23:24:08 Temperature: 22.7 Humidity: 46.1 Battery: 65
-2019-03-22 23:24:23 Temperature: 22.7 Humidity: 46.5 Battery: 66
-2019-03-22 23:24:36 Temperature: 22.7 Humidity: 46.3 Battery: 65
-2019-03-22 23:24:49 Temperature: 22.7 Humidity: 46.6 Battery: 66
-2019-03-22 23:25:04 Temperature: 22.7 Humidity: 46.5 Battery: 66
-2019-03-22 23:25:21 Temperature: 22.7 Humidity: 46.5 Battery: 66
-2019-03-22 23:25:34 Temperature: 22.8 Humidity: 46.3 Battery: 65
-2019-03-22 23:25:49 Temperature: 22.8 Humidity: 46.3 Battery: 66
-2019-03-22 23:26:08 Temperature: 22.7 Humidity: 46.5 Battery: 66
-2019-03-22 23:26:23 Temperature: 22.7 Humidity: 46.5 Battery: 66
-2019-03-22 23:26:40 Temperature: 22.8 Humidity: 46.5 Battery: 66
-2019-03-22 23:26:55 Temperature: 22.7 Humidity: 46.7 Battery: 65
-2019-03-22 23:27:12 Temperature: 22.8 Humidity: 46.7 Battery: 66
-2019-03-22 23:27:27 Temperature: 22.8 Humidity: 46.3 Battery: 65
-2019-03-22 23:27:42 Temperature: 22.8 Humidity: 46.4 Battery: 65
-2019-03-22 23:28:03 Temperature: 22.8 Humidity: 46.8 Battery: 66
-2019-03-22 23:28:18 Temperature: 22.8 Humidity: 46.6 Battery: 66
-2019-03-22 23:28:31 Temperature: 22.8 Humidity: 46.7 Battery: 66
-2019-03-22 23:28:44 Temperature: 22.8 Humidity: 46.4 Battery: 66
-2019-03-22 23:28:57 Temperature: 22.8 Humidity: 46.7 Battery: 65
-2019-03-22 23:29:16 Temperature: 22.8 Humidity: 47.0 Battery: 65
-2019-03-22 23:29:31 Temperature: 22.8 Humidity: 46.7 Battery: 66
-2019-03-22 23:29:46 Temperature: 22.8 Humidity: 46.8 Battery: 65
-2019-03-22 23:29:59 Temperature: 22.7 Humidity: 46.9 Battery: 66
-2019-03-22 23:30:12 Temperature: 22.8 Humidity: 46.7 Battery: 65
-2019-03-22 23:30:30 Temperature: 22.7 Humidity: 46.5 Battery: 66
-2019-03-22 23:30:45 Temperature: 22.7 Humidity: 46.5 Battery: 65
-2019-03-22 23:31:00 Temperature: 22.8 Humidity: 46.8 Battery: 65
-2019-03-22 23:31:19 Temperature: 22.7 Humidity: 46.9 Battery: 66
-2019-03-22 23:31:34 Temperature: 22.7 Humidity: 46.9 Battery: 66
-2019-03-22 23:31:47 Temperature: 22.7 Humidity: 46.8 Battery: 65
-2019-03-22 23:32:00 Temperature: 22.7 Humidity: 46.9 Battery: 66
-2019-03-22 23:32:13 Temperature: 22.7 Humidity: 46.8 Battery: 66
-2019-03-22 23:32:28 Temperature: 22.8 Humidity: 46.6 Battery: 65
-2019-03-22 23:32:57 Temperature: 22.7 Humidity: 46.3 Battery: 65
-2019-03-22 23:33:12 Temperature: 22.7 Humidity: 46.7 Battery: 65
-2019-03-22 23:33:33 Temperature: 22.7 Humidity: 46.7 Battery: 65
-2019-03-22 23:33:48 Temperature: 22.7 Humidity: 46.7 Battery: 66
-2019-03-22 23:34:04 Temperature: 22.7 Humidity: 46.9 Battery: 66
-2019-03-22 23:34:17 Temperature: 22.7 Humidity: 46.7 Battery: 65
-2019-03-22 23:34:30 Temperature: 22.7 Humidity: 46.8 Battery: 66
-2019-03-22 23:34:43 Temperature: 22.7 Humidity: 46.9 Battery: 65
-2019-03-22 23:35:00 Temperature: 22.7 Humidity: 46.9 Battery: 66
-2019-03-22 23:35:15 Temperature: 22.7 Humidity: 46.9 Battery: 65
-2019-03-22 23:35:29 Temperature: 22.7 Humidity: 46.8 Battery: 66
-2019-03-22 23:35:42 Temperature: 22.7 Humidity: 46.8 Battery: 66
-2019-03-22 23:35:57 Temperature: 22.7 Humidity: 46.5 Battery: 65
-2019-03-22 23:36:12 Temperature: 22.8 Humidity: 46.8 Battery: 66
-2019-03-22 23:36:25 Temperature: 22.8 Humidity: 46.8 Battery: 65
-2019-03-22 23:36:46 Temperature: 22.7 Humidity: 46.8 Battery: 65
-2019-03-22 23:36:59 Temperature: 22.7 Humidity: 46.8 Battery: 65
-2019-03-22 23:37:12 Temperature: 22.7 Humidity: 46.9 Battery: 66
-2019-03-22 23:37:27 Temperature: 22.6 Humidity: 46.8 Battery: 65
-2019-03-22 23:37:47 Temperature: 22.7 Humidity: 46.9 Battery: 65
-2019-03-22 23:38:00 Temperature: 22.7 Humidity: 46.6 Battery: 65
-2019-03-22 23:38:19 Temperature: 22.6 Humidity: 46.7 Battery: 65
-2019-03-22 23:38:32 Temperature: 22.6 Humidity: 47.0 Battery: 66
-2019-03-22 23:38:47 Temperature: 22.7 Humidity: 46.5 Battery: 65
-2019-03-22 23:39:08 Temperature: 22.7 Humidity: 46.8 Battery: 66
-2019-03-22 23:39:23 Temperature: 22.7 Humidity: 46.5 Battery: 66
-2019-03-22 23:39:36 Temperature: 22.7 Humidity: 46.6 Battery: 65
-2019-03-22 23:39:49 Temperature: 22.7 Humidity: 46.5 Battery: 65
-2019-03-22 23:40:04 Temperature: 22.7 Humidity: 46.6 Battery: 65
-2019-03-22 23:40:17 Temperature: 22.7 Humidity: 46.7 Battery: 65
-2019-03-22 23:40:30 Temperature: 22.7 Humidity: 46.7 Battery: 66
-2019-03-22 23:40:46 Temperature: 22.7 Humidity: 46.2 Battery: 65
-2019-03-22 23:41:01 Temperature: 22.7 Humidity: 46.4 Battery: 65
-2019-03-22 23:41:14 Temperature: 22.7 Humidity: 46.4 Battery: 65
-2019-03-22 23:41:28 Temperature: 22.7 Humidity: 46.5 Battery: 65
-2019-03-22 23:41:45 Temperature: 22.7 Humidity: 46.5 Battery: 65
-2019-03-22 23:41:58 Temperature: 22.7 Humidity: 46.4 Battery: 65
-2019-03-22 23:42:11 Temperature: 22.6 Humidity: 46.5 Battery: 65
-2019-03-22 23:42:24 Temperature: 22.6 Humidity: 46.6 Battery: 66
-2019-03-22 23:42:37 Temperature: 22.7 Humidity: 46.4 Battery: 65
-2019-03-22 23:42:54 Temperature: 22.7 Humidity: 46.5 Battery: 65
-2019-03-22 23:43:07 Temperature: 22.7 Humidity: 46.6 Battery: 65
-2019-03-22 23:43:26 Temperature: 22.7 Humidity: 46.7 Battery: 65
-2019-03-22 23:43:42 Temperature: 22.7 Humidity: 46.3 Battery: 66
-2019-03-22 23:43:55 Temperature: 22.7 Humidity: 46.8 Battery: 65
-2019-03-22 23:44:10 Temperature: 22.7 Humidity: 47.0 Battery: 65
-2019-03-22 23:44:25 Temperature: 22.7 Humidity: 46.9 Battery: 65
-2019-03-22 23:44:42 Temperature: 22.7 Humidity: 46.7 Battery: 65
-2019-03-22 23:44:58 Temperature: 22.7 Humidity: 47.0 Battery: 65
-2019-03-22 23:45:11 Temperature: 22.7 Humidity: 46.6 Battery: 65
-2019-03-22 23:45:28 Temperature: 22.6 Humidity: 46.4 Battery: 65
-2019-03-22 23:45:42 Temperature: 22.6 Humidity: 46.4 Battery: 65
-2019-03-22 23:45:56 Temperature: 22.6 Humidity: 46.4 Battery: 65
-2019-03-22 23:46:11 Temperature: 22.6 Humidity: 46.4 Battery: 65
-2019-03-22 23:46:24 Temperature: 22.6 Humidity: 46.2 Battery: 65
-2019-03-22 23:46:39 Temperature: 22.6 Humidity: 46.3 Battery: 65
-2019-03-22 23:46:52 Temperature: 22.5 Humidity: 46.5 Battery: 65
-2019-03-22 23:47:07 Temperature: 22.6 Humidity: 46.8 Battery: 65
-2019-03-22 23:47:26 Temperature: 22.5 Humidity: 46.6 Battery: 65
-2019-03-22 23:47:47 Temperature: 22.6 Humidity: 46.8 Battery: 65
-2019-03-22 23:48:00 Temperature: 22.7 Humidity: 46.4 Battery: 65
-2019-03-22 23:48:13 Temperature: 22.6 Humidity: 46.5 Battery: 65
-2019-03-22 23:48:28 Temperature: 22.7 Humidity: 46.5 Battery: 65
-2019-03-22 23:48:50 Temperature: 22.6 Humidity: 46.5 Battery: 65
-2019-03-22 23:49:03 Temperature: 22.6 Humidity: 46.3 Battery: 65
-2019-03-22 23:49:16 Temperature: 22.7 Humidity: 46.6 Battery: 65
-2019-03-22 23:49:31 Temperature: 22.6 Humidity: 46.4 Battery: 65
-2019-03-22 23:49:44 Temperature: 22.6 Humidity: 46.5 Battery: 65
-2019-03-22 23:49:57 Temperature: 22.6 Humidity: 46.8 Battery: 65
-2019-03-22 23:50:10 Temperature: 22.6 Humidity: 46.6 Battery: 65
-2019-03-22 23:50:25 Temperature: 22.6 Humidity: 46.7 Battery: 65
-2019-03-22 23:50:38 Temperature: 22.6 Humidity: 46.8 Battery: 65
-2019-03-22 23:50:53 Temperature: 22.5 Humidity: 46.7 Battery: 65
-2019-03-22 23:51:06 Temperature: 22.6 Humidity: 46.8 Battery: 65
-2019-03-22 23:51:21 Temperature: 22.6 Humidity: 46.6 Battery: 65
-2019-03-22 23:51:34 Temperature: 22.6 Humidity: 46.6 Battery: 65
-2019-03-22 23:51:51 Temperature: 22.6 Humidity: 46.7 Battery: 65
-2019-03-22 23:52:14 Temperature: 22.6 Humidity: 46.5 Battery: 65
-2019-03-22 23:52:29 Temperature: 22.6 Humidity: 46.4 Battery: 65
-2019-03-22 23:52:44 Temperature: 22.7 Humidity: 46.4 Battery: 65
-2019-03-22 23:52:57 Temperature: 22.6 Humidity: 46.3 Battery: 65
-2019-03-22 23:53:12 Temperature: 22.6 Humidity: 46.4 Battery: 65
-2019-03-22 23:53:28 Temperature: 22.6 Humidity: 46.3 Battery: 65
-2019-03-22 23:53:44 Temperature: 22.6 Humidity: 46.6 Battery: 65
-2019-03-22 23:54:00 Temperature: 22.6 Humidity: 46.4 Battery: 66
-2019-03-22 23:54:16 Temperature: 22.6 Humidity: 46.6 Battery: 65
-2019-03-22 23:54:29 Temperature: 22.6 Humidity: 46.6 Battery: 65
-2019-03-22 23:54:42 Temperature: 22.6 Humidity: 46.5 Battery: 65
-2019-03-22 23:55:01 Temperature: 22.6 Humidity: 46.4 Battery: 65
-2019-03-22 23:55:18 Temperature: 22.6 Humidity: 46.7 Battery: 65
-2019-03-22 23:55:38 Temperature: 22.5 Humidity: 46.6 Battery: 65
-2019-03-22 23:55:59 Temperature: 22.5 Humidity: 46.6 Battery: 65
-2019-03-22 23:56:14 Temperature: 22.5 Humidity: 46.8 Battery: 65
-2019-03-22 23:56:31 Temperature: 22.4 Humidity: 46.4 Battery: 65
-2019-03-22 23:56:46 Temperature: 22.6 Humidity: 46.6 Battery: 65
-2019-03-22 23:57:03 Temperature: 22.6 Humidity: 46.3 Battery: 65
-2019-03-22 23:57:16 Temperature: 22.6 Humidity: 46.6 Battery: 65
-2019-03-22 23:57:30 Temperature: 22.6 Humidity: 46.5 Battery: 65
-2019-03-22 23:57:45 Temperature: 22.5 Humidity: 46.5 Battery: 65
-2019-03-22 23:58:00 Temperature: 22.5 Humidity: 46.6 Battery: 65
-2019-03-22 23:58:14 Temperature: 22.6 Humidity: 46.5 Battery: 65
-2019-03-22 23:58:28 Temperature: 22.5 Humidity: 46.6 Battery: 65
-2019-03-22 23:58:43 Temperature: 22.6 Humidity: 46.5 Battery: 65
-2019-03-22 23:58:55 Temperature: 22.6 Humidity: 46.4 Battery: 65
-2019-03-22 23:59:11 Temperature: 22.6 Humidity: 46.5 Battery: 65
-2019-03-22 23:59:26 Temperature: 22.5 Humidity: 46.5 Battery: 65
-2019-03-22 23:59:39 Temperature: 22.6 Humidity: 46.4 Battery: 65
-2019-03-22 23:59:52 Temperature: 22.6 Humidity: 46.4 Battery: 65
-2019-03-23 00:00:11 Temperature: 22.5 Humidity: 46.5 Battery: 65
-2019-03-23 00:00:24 Temperature: 22.6 Humidity: 46.6 Battery: 65
-2019-03-23 00:00:40 Temperature: 22.5 Humidity: 46.9 Battery: 65
-2019-03-23 00:00:54 Temperature: 22.5 Humidity: 47.4 Battery: 65
-2019-03-23 00:01:12 Temperature: 22.5 Humidity: 47.6 Battery: 65
-2019-03-23 00:01:27 Temperature: 22.6 Humidity: 47.5 Battery: 65
-2019-03-23 00:01:40 Temperature: 22.5 Humidity: 47.7 Battery: 65
-2019-03-23 00:01:55 Temperature: 22.5 Humidity: 47.9 Battery: 65
-2019-03-23 00:02:07 Temperature: 22.6 Humidity: 48.6 Battery: 65
-2019-03-23 00:02:22 Temperature: 22.5 Humidity: 48.9 Battery: 65
-2019-03-23 00:02:36 Temperature: 22.6 Humidity: 48.9 Battery: 65
-2019-03-23 00:02:49 Temperature: 22.6 Humidity: 48.7 Battery: 65
-2019-03-23 00:03:05 Temperature: 22.5 Humidity: 48.7 Battery: 65
-2019-03-23 00:03:22 Temperature: 22.6 Humidity: 48.4 Battery: 65
-2019-03-23 00:03:41 Temperature: 22.6 Humidity: 48.2 Battery: 65
-2019-03-23 00:03:54 Temperature: 22.6 Humidity: 48.1 Battery: 65
-2019-03-23 00:04:07 Temperature: 22.6 Humidity: 48.2 Battery: 65
-2019-03-23 00:04:22 Temperature: 22.6 Humidity: 48.5 Battery: 65
-2019-03-23 00:04:37 Temperature: 22.5 Humidity: 48.4 Battery: 65
-2019-03-23 00:04:49 Temperature: 22.5 Humidity: 48.2 Battery: 65
-2019-03-23 00:05:05 Temperature: 22.5 Humidity: 48.3 Battery: 65
-2019-03-23 00:05:20 Temperature: 22.5 Humidity: 48.3 Battery: 65
-2019-03-23 00:05:32 Temperature: 22.5 Humidity: 48.2 Battery: 65
-2019-03-23 00:05:48 Temperature: 22.5 Humidity: 47.7 Battery: 65
-2019-03-23 00:06:01 Temperature: 22.5 Humidity: 47.9 Battery: 65
-2019-03-23 00:06:14 Temperature: 22.5 Humidity: 48.2 Battery: 65
-2019-03-23 00:06:27 Temperature: 22.5 Humidity: 47.8 Battery: 65
-2019-03-23 00:06:44 Temperature: 22.5 Humidity: 47.8 Battery: 65
-2019-03-23 00:07:00 Temperature: 22.5 Humidity: 47.8 Battery: 65
-2019-03-23 00:07:15 Temperature: 22.5 Humidity: 47.8 Battery: 65
-2019-03-23 00:07:32 Temperature: 22.6 Humidity: 47.8 Battery: 65
-2019-03-23 00:07:45 Temperature: 22.5 Humidity: 47.8 Battery: 65
-2019-03-23 00:07:59 Temperature: 22.5 Humidity: 48.0 Battery: 65
-2019-03-23 00:08:16 Temperature: 22.5 Humidity: 47.5 Battery: 65
-2019-03-23 00:08:30 Temperature: 22.5 Humidity: 47.6 Battery: 65
-2019-03-23 00:08:48 Temperature: 22.5 Humidity: 47.7 Battery: 65
-2019-03-23 00:09:07 Temperature: 22.5 Humidity: 47.5 Battery: 65
-2019-03-23 00:09:23 Temperature: 22.5 Humidity: 47.5 Battery: 65
-2019-03-23 00:09:37 Temperature: 22.4 Humidity: 47.5 Battery: 65
-2019-03-23 00:09:52 Temperature: 22.5 Humidity: 47.5 Battery: 65
-2019-03-23 00:10:06 Temperature: 22.5 Humidity: 47.5 Battery: 65
-2019-03-23 00:10:20 Temperature: 22.5 Humidity: 47.6 Battery: 65
-2019-03-23 00:10:34 Temperature: 22.4 Humidity: 47.2 Battery: 65
-2019-03-23 00:10:48 Temperature: 22.5 Humidity: 47.5 Battery: 65
-2019-03-23 00:11:01 Temperature: 22.5 Humidity: 47.2 Battery: 65
-2019-03-23 00:11:13 Temperature: 22.5 Humidity: 47.3 Battery: 65
-2019-03-23 00:11:27 Temperature: 22.5 Humidity: 47.1 Battery: 65
-2019-03-23 00:11:45 Temperature: 22.4 Humidity: 47.4 Battery: 65
-2019-03-23 00:12:00 Temperature: 22.5 Humidity: 47.5 Battery: 65
-2019-03-23 00:12:13 Temperature: 22.5 Humidity: 47.4 Battery: 65
-2019-03-23 00:12:27 Temperature: 22.4 Humidity: 47.3 Battery: 65
-2019-03-23 00:12:43 Temperature: 22.4 Humidity: 47.4 Battery: 65
-2019-03-23 00:12:57 Temperature: 22.4 Humidity: 47.4 Battery: 65
-2019-03-23 00:13:09 Temperature: 22.5 Humidity: 47.5 Battery: 65
-2019-03-23 00:13:22 Temperature: 22.4 Humidity: 47.1 Battery: 65
-2019-03-23 00:13:36 Temperature: 22.4 Humidity: 47.2 Battery: 65
-2019-03-23 00:13:49 Temperature: 22.5 Humidity: 47.4 Battery: 65
-2019-03-23 00:14:03 Temperature: 22.4 Humidity: 47.6 Battery: 65
-2019-03-23 00:14:15 Temperature: 22.4 Humidity: 47.4 Battery: 65
-2019-03-23 00:14:32 Temperature: 22.4 Humidity: 47.3 Battery: 65
-2019-03-23 00:14:48 Temperature: 22.4 Humidity: 47.5 Battery: 65
-2019-03-23 00:15:00 Temperature: 22.4 Humidity: 47.3 Battery: 65
-2019-03-23 00:15:14 Temperature: 22.4 Humidity: 47.1 Battery: 65
-2019-03-23 00:15:31 Temperature: 22.4 Humidity: 47.2 Battery: 65
-2019-03-23 00:15:44 Temperature: 22.4 Humidity: 47.3 Battery: 65
-2019-03-23 00:15:59 Temperature: 22.4 Humidity: 47.1 Battery: 65
-2019-03-23 00:16:13 Temperature: 22.4 Humidity: 47.1 Battery: 65
-2019-03-23 00:16:27 Temperature: 22.4 Humidity: 47.4 Battery: 65
-2019-03-23 00:16:40 Temperature: 22.4 Humidity: 47.3 Battery: 65
-2019-03-23 00:16:55 Temperature: 22.3 Humidity: 47.3 Battery: 65
-2019-03-23 00:17:16 Temperature: 22.4 Humidity: 47.3 Battery: 65
-2019-03-23 00:17:35 Temperature: 22.4 Humidity: 47.3 Battery: 65
-2019-03-23 00:17:56 Temperature: 22.4 Humidity: 47.4 Battery: 65
-2019-03-23 00:18:12 Temperature: 22.4 Humidity: 47.3 Battery: 65
-2019-03-23 00:18:27 Temperature: 22.4 Humidity: 47.1 Battery: 65
-2019-03-23 00:18:42 Temperature: 22.4 Humidity: 47.1 Battery: 65
-2019-03-23 00:18:56 Temperature: 22.4 Humidity: 47.0 Battery: 65
-2019-03-23 00:19:09 Temperature: 22.4 Humidity: 47.3 Battery: 65
-2019-03-23 00:19:25 Temperature: 22.4 Humidity: 47.0 Battery: 65
-2019-03-23 00:19:39 Temperature: 22.4 Humidity: 47.4 Battery: 65
-2019-03-23 00:19:52 Temperature: 22.4 Humidity: 47.2 Battery: 65
-2019-03-23 00:20:05 Temperature: 22.3 Humidity: 47.3 Battery: 65
-2019-03-23 00:20:20 Temperature: 22.3 Humidity: 47.4 Battery: 65
-2019-03-23 00:20:33 Temperature: 22.3 Humidity: 47.4 Battery: 65
-2019-03-23 00:20:46 Temperature: 22.3 Humidity: 47.3 Battery: 65
-2019-03-23 00:21:01 Temperature: 22.4 Humidity: 47.3 Battery: 65
-2019-03-23 00:21:18 Temperature: 22.4 Humidity: 47.0 Battery: 65
-2019-03-23 00:21:31 Temperature: 22.4 Humidity: 47.2 Battery: 65
-2019-03-23 00:21:46 Temperature: 22.4 Humidity: 47.1 Battery: 65
-2019-03-23 00:22:01 Temperature: 22.3 Humidity: 47.2 Battery: 65
-2019-03-23 00:22:14 Temperature: 22.3 Humidity: 47.1 Battery: 65
-2019-03-23 00:22:29 Temperature: 22.4 Humidity: 46.9 Battery: 65
-2019-03-23 00:22:46 Temperature: 22.4 Humidity: 47.1 Battery: 65
-2019-03-23 00:23:01 Temperature: 22.3 Humidity: 47.2 Battery: 65
-2019-03-23 00:23:16 Temperature: 22.3 Humidity: 47.2 Battery: 65
-2019-03-23 00:23:29 Temperature: 22.3 Humidity: 47.3 Battery: 65
-2019-03-23 00:23:42 Temperature: 22.3 Humidity: 47.3 Battery: 65
-2019-03-23 00:23:55 Temperature: 22.3 Humidity: 47.3 Battery: 65
-2019-03-23 00:24:12 Temperature: 22.3 Humidity: 47.4 Battery: 65
-2019-03-23 00:24:25 Temperature: 22.3 Humidity: 47.5 Battery: 65
-2019-03-23 00:24:40 Temperature: 22.4 Humidity: 47.2 Battery: 65
-2019-03-23 00:24:53 Temperature: 22.3 Humidity: 47.4 Battery: 65
-2019-03-23 00:25:10 Temperature: 22.3 Humidity: 47.6 Battery: 65
-2019-03-23 00:25:31 Temperature: 22.3 Humidity: 47.6 Battery: 65
-2019-03-23 00:25:48 Temperature: 22.3 Humidity: 47.6 Battery: 65
-2019-03-23 00:26:07 Temperature: 22.3 Humidity: 47.2 Battery: 65
-2019-03-23 00:26:22 Temperature: 22.32019-03-24 11:48:13 Temperature: 25.6 Humidity: 31.4 Battery: 65
-2019-03-24 11:48:29 Temperature: 25.5 Humidity: 31.8 Battery: 65
-2019-03-24 11:48:42 Temperature: 25.6 Humidity: 31.7 Battery: 65
-2019-03-24 11:48:55 Temperature: 25.5 Humidity: 31.7 Battery: 65
-2019-03-24 11:49:10 Temperature: 25.6 Humidity: 31.9 Battery: 65
-2019-03-24 11:49:23 Temperature: 25.6 Humidity: 31.9 Battery: 65
-2019-03-24 11:49:36 Temperature: 25.5 Humidity: 31.6 Battery: 65
-2019-03-24 11:49:49 Temperature: 25.5 Humidity: 31.7 Battery: 65
-2019-03-24 11:50:08 Temperature: 25.6 Humidity: 31.8 Battery: 65
-2019-03-24 11:50:29 Temperature: 25.5 Humidity: 31.7 Battery: 65
-2019-03-24 11:50:42 Temperature: 25.5 Humidity: 31.9 Battery: 65
-2019-03-24 11:50:56 Temperature: 25.5 Humidity: 31.7 Battery: 65
-2019-03-24 11:51:11 Temperature: 25.5 Humidity: 31.9 Battery: 65
-2019-03-24 11:51:28 Temperature: 25.5 Humidity: 31.7 Battery: 65
-2019-03-24 11:51:41 Temperature: 25.5 Humidity: 31.5 Battery: 65
-2019-03-24 11:51:54 Temperature: 25.4 Humidity: 31.6 Battery: 65
-2019-03-24 11:52:09 Temperature: 25.4 Humidity: 31.7 Battery: 65
-2019-03-24 11:52:28 Temperature: 25.5 Humidity: 31.9 Battery: 65
-2019-03-24 11:52:41 Temperature: 25.5 Humidity: 31.6 Battery: 65
-2019-03-24 11:52:54 Temperature: 25.5 Humidity: 31.6 Battery: 65
-2019-03-24 11:53:09 Temperature: 25.6 Humidity: 31.6 Battery: 65
-2019-03-24 11:53:24 Temperature: 25.5 Humidity: 31.6 Battery: 65
-2019-03-24 11:53:39 Temperature: 25.6 Humidity: 31.4 Battery: 65
-2019-03-24 11:53:54 Temperature: 25.5 Humidity: 31.4 Battery: 65
-2019-03-24 11:54:09 Temperature: 25.6 Humidity: 31.3 Battery: 65
-2019-03-24 11:54:27 Temperature: 25.7 Humidity: 31.2 Battery: 65
-2019-03-24 11:54:46 Temperature: 25.7 Humidity: 31.4 Battery: 65
-2019-03-24 11:54:59 Temperature: 25.7 Humidity: 31.3 Battery: 65
-2019-03-24 11:55:16 Temperature: 25.6 Humidity: 31.4 Battery: 65
-2019-03-24 11:55:29 Temperature: 25.7 Humidity: 31.6 Battery: 65
-2019-03-24 11:55:42 Temperature: 25.7 Humidity: 31.5 Battery: 65
-2019-03-24 11:55:57 Temperature: 25.7 Humidity: 31.2 Battery: 65
-2019-03-24 11:56:12 Temperature: 25.7 Humidity: 31.5 Battery: 65
-2019-03-24 11:56:33 Temperature: 25.7 Humidity: 31.6 Battery: 65
-2019-03-24 11:56:48 Temperature: 25.7 Humidity: 31.6 Battery: 65
-2019-03-24 11:57:07 Temperature: 25.7 Humidity: 31.6 Battery: 65
-2019-03-24 11:57:20 Temperature: 25.7 Humidity: 31.7 Battery: 65
-2019-03-24 11:57:39 Temperature: 25.7 Humidity: 31.7 Battery: 65
-2019-03-24 11:58:00 Temperature: 25.7 Humidity: 31.7 Battery: 65
-2019-03-24 11:58:13 Temperature: 25.7 Humidity: 31.9 Battery: 65
-2019-03-24 11:58:28 Temperature: 25.7 Humidity: 31.7 Battery: 65
-2019-03-24 11:58:43 Temperature: 25.8 Humidity: 31.7 Battery: 65
-2019-03-24 11:59:05 Temperature: 26.0 Humidity: 59.7 Battery: 65
-2019-03-24 11:59:22 Temperature: 27.4 Humidity: 31.5 Battery: 65
-2019-03-24 11:59:37 Temperature: 27.8 Humidity: 28.2 Battery: 65
-2019-03-24 11:59:52 Temperature: 27.5 Humidity: 28.4 Battery: 65
-2019-03-24 12:00:07 Temperature: 27.0 Humidity: 29.1 Battery: 65
-2019-03-24 12:00:20 Temperature: 26.5 Humidity: 30.3 Battery: 65
-2019-03-24 12:00:37 Temperature: 25.8 Humidity: 31.4 Battery: 65
-2019-03-24 12:00:59 Temperature: 25.6 Humidity: 32.0 Battery: 65
-2019-03-24 12:01:12 Temperature: 25.3 Humidity: 32.5 Battery: 65
-2019-03-24 12:01:30 Temperature: 25.1 Humidity: 32.7 Battery: 65
-2019-03-24 12:01:43 Temperature: 25.0 Humidity: 32.9 Battery: 65
-2019-03-24 12:01:58 Temperature: 24.9 Humidity: 32.9 Battery: 65
-2019-03-24 12:02:14 Temperature: 24.9 Humidity: 32.8 Battery: 65
-2019-03-24 12:02:28 Temperature: 24.8 Humidity: 33.1 Battery: 65
-2019-03-24 12:02:42 Temperature: 24.8 Humidity: 33.3 Battery: 65
-2019-03-24 12:02:57 Temperature: 24.7 Humidity: 34.4 Battery: 65
-2019-03-24 12:03:10 Temperature: 24.7 Humidity: 33.3 Battery: 65
-2019-03-24 12:03:23 Temperature: 24.7 Humidity: 33.1 Battery: 65
-2019-03-24 12:03:42 Temperature: 24.7 Humidity: 33.4 Battery: 65
-2019-03-24 12:03:55 Temperature: 24.6 Humidity: 33.2 Battery: 65
-2019-03-24 12:04:10 Temperature: 24.7 Humidity: 33.1 Battery: 65
-2019-03-24 12:04:23 Temperature: 24.7 Humidity: 33.3 Battery: 65
-2019-03-24 12:04:36 Temperature: 24.6 Humidity: 33.6 Battery: 65
-2019-03-24 12:05:01 Temperature: 24.6 Humidity: 33.7 Battery: 65
-2019-03-24 12:05:14 Temperature: 24.5 Humidity: 33.7 Battery: 65
-2019-03-24 12:05:27 Temperature: 24.5 Humidity: 33.4 Battery: 65
-2019-03-24 12:05:40 Temperature: 24.5 Humidity: 33.5 Battery: 65
-2019-03-24 12:05:55 Temperature: 24.5 Humidity: 33.4 Battery: 65
-2019-03-24 12:06:10 Temperature: 24.5 Humidity: 33.6 Battery: 65
-2019-03-24 12:06:23 Temperature: 24.4 Humidity: 33.6 Battery: 65
-2019-03-24 12:06:36 Temperature: 24.4 Humidity: 33.9 Battery: 65
-2019-03-24 12:06:49 Temperature: 24.3 Humidity: 34.2 Battery: 65
-2019-03-24 12:07:02 Temperature: 24.3 Humidity: 34.2 Battery: 65
-2019-03-24 12:07:17 Temperature: 24.3 Humidity: 34.2 Battery: 65
-2019-03-24 12:07:30 Temperature: 24.3 Humidity: 34.0 Battery: 65
-2019-03-24 12:07:43 Temperature: 24.2 Humidity: 34.1 Battery: 65
-2019-03-24 12:07:56 Temperature: 24.2 Humidity: 34.0 Battery: 65
-2019-03-24 12:08:11 Temperature: 24.2 Humidity: 34.1 Battery: 65
-2019-03-24 12:08:24 Temperature: 24.2 Humidity: 34.2 Battery: 65
-2019-03-24 12:08:43 Temperature: 24.2 Humidity: 34.2 Battery: 65
-2019-03-24 12:08:58 Temperature: 24.2 Humidity: 34.0 Battery: 65
-2019-03-24 12:09:13 Temperature: 24.2 Humidity: 34.2 Battery: 65
-2019-03-24 12:09:26 Temperature: 24.2 Humidity: 34.6 Battery: 65
-2019-03-24 12:09:43 Temperature: 24.1 Humidity: 34.4 Battery: 65
-2019-03-24 12:09:58 Temperature: 24.1 Humidity: 34.4 Battery: 65
-2019-03-24 12:10:11 Temperature: 24.1 Humidity: 34.7 Battery: 65
-2019-03-24 12:10:28 Temperature: 24.1 Humidity: 34.8 Battery: 65
-2019-03-24 12:10:43 Temperature: 24.0 Humidity: 34.6 Battery: 65
-2019-03-24 12:10:58 Temperature: 24.0 Humidity: 34.5 Battery: 65
-2019-03-24 12:11:13 Temperature: 23.9 Humidity: 34.7 Battery: 65
-2019-03-24 12:11:32 Temperature: 23.9 Humidity: 34.9 Battery: 65
-2019-03-24 12:11:45 Temperature: 23.9 Humidity: 34.8 Battery: 65
-2019-03-24 12:12:00 Temperature: 23.9 Humidity: 35.1 Battery: 65
-2019-03-24 12:12:13 Temperature: 23.9 Humidity: 35.2 Battery: 65
-2019-03-24 12:12:28 Temperature: 23.9 Humidity: 35.1 Battery: 65
-2019-03-24 12:12:43 Temperature: 23.8 Humidity: 35.1 Battery: 65
-2019-03-24 12:13:04 Temperature: 23.9 Humidity: 35.1 Battery: 65
-2019-03-24 12:13:27 Temperature: 23.8 Humidity: 35.2 Battery: 65
-2019-03-24 12:13:40 Temperature: 23.9 Humidity: 34.8 Battery: 65
-2019-03-24 12:13:53 Temperature: 23.8 Humidity: 35.0 Battery: 65
-2019-03-24 12:14:08 Temperature: 23.8 Humidity: 34.9 Battery: 65
-2019-03-24 12:14:21 Temperature: 23.8 Humidity: 35.0 Battery: 65
-2019-03-24 12:14:36 Temperature: 23.8 Humidity: 35.2 Battery: 65
-2019-03-24 12:14:51 Temperature: 23.7 Humidity: 35.1 Battery: 65
-2019-03-24 12:15:06 Temperature: 23.7 Humidity: 35.4 Battery: 65
-2019-03-24 12:15:23 Temperature: 23.6 Humidity: 35.3 Battery: 65
-2019-03-24 12:15:38 Temperature: 23.6 Humidity: 35.7 Battery: 65
-2019-03-24 12:15:53 Temperature: 23.6 Humidity: 35.5 Battery: 65
-2019-03-24 12:16:06 Temperature: 23.6 Humidity: 35.7 Battery: 65
-2019-03-24 12:16:21 Temperature: 23.6 Humidity: 35.4 Battery: 65
-2019-03-24 12:16:34 Temperature: 23.6 Humidity: 35.2 Battery: 65
-2019-03-24 12:16:47 Temperature: 23.6 Humidity: 35.2 Battery: 65
-2019-03-24 12:17:08 Temperature: 23.6 Humidity: 35.6 Battery: 65
-2019-03-24 12:17:21 Temperature: 23.6 Humidity: 35.7 Battery: 65
-2019-03-24 12:17:36 Temperature: 23.6 Humidity: 35.6 Battery: 65
-2019-03-24 12:17:51 Temperature: 23.5 Humidity: 35.8 Battery: 65
-2019-03-24 12:18:06 Temperature: 23.5 Humidity: 35.8 Battery: 65
-2019-03-24 12:18:21 Temperature: 23.5 Humidity: 36.0 Battery: 65
-2019-03-24 12:18:34 Temperature: 23.5 Humidity: 36.1 Battery: 65
-2019-03-24 12:18:49 Temperature: 23.5 Humidity: 36.2 Battery: 65
-2019-03-24 12:19:04 Temperature: 23.4 Humidity: 35.8 Battery: 65
-2019-03-24 12:19:17 Temperature: 23.4 Humidity: 35.6 Battery: 65
-2019-03-24 12:19:32 Temperature: 23.4 Humidity: 35.9 Battery: 65
-2019-03-24 12:19:47 Temperature: 23.4 Humidity: 35.7 Battery: 65
-2019-03-24 12:20:00 Temperature: 23.4 Humidity: 36.0 Battery: 65
-2019-03-24 12:20:13 Temperature: 23.4 Humidity: 35.9 Battery: 65
-2019-03-24 12:20:28 Temperature: 23.4 Humidity: 35.8 Battery: 65
-2019-03-24 12:20:45 Temperature: 23.4 Humidity: 36.2 Battery: 65
-2019-03-24 12:21:04 Temperature: 23.4 Humidity: 36.5 Battery: 65
-2019-03-24 12:21:23 Temperature: 23.3 Humidity: 36.0 Battery: 65
-2019-03-24 12:21:38 Temperature: 23.3 Humidity: 36.3 Battery: 65
-2019-03-24 12:21:51 Temperature: 23.3 Humidity: 36.3 Battery: 65
-2019-03-24 12:22:04 Temperature: 23.3 Humidity: 36.0 Battery: 65
-2019-03-24 12:22:19 Temperature: 23.3 Humidity: 36.1 Battery: 65
-2019-03-24 12:22:32 Temperature: 23.3 Humidity: 36.1 Battery: 65
-2019-03-24 12:22:47 Temperature: 23.3 Humidity: 35.9 Battery: 65
-2019-03-24 12:23:00 Temperature: 23.3 Humidity: 36.2 Battery: 65
-2019-03-24 12:23:31 Temperature: 23.3 Humidity: 36.3 Battery: 65
-2019-03-24 12:23:44 Temperature: 23.2 Humidity: 36.3 Battery: 65
-2019-03-24 12:23:59 Temperature: 23.2 Humidity: 36.4 Battery: 65
-2019-03-24 12:24:12 Temperature: 23.2 Humidity: 36.4 Battery: 65
-2019-03-24 12:24:29 Temperature: 23.3 Humidity: 36.1 Battery: 65
-2019-03-24 12:24:46 Temperature: 23.3 Humidity: 36.4 Battery: 65
-2019-03-24 12:24:59 Temperature: 23.3 Humidity: 36.4 Battery: 65
-2019-03-24 12:25:12 Temperature: 23.2 Humidity: 36.4 Battery: 65
-2019-03-24 12:25:25 Temperature: 23.3 Humidity: 36.6 Battery: 65
-2019-03-24 12:25:46 Temperature: 23.3 Humidity: 36.4 Battery: 65
-2019-03-24 12:26:01 Temperature: 23.2 Humidity: 36.3 Battery: 65
-2019-03-24 12:26:14 Temperature: 23.1 Humidity: 36.5 Battery: 65
-2019-03-24 12:26:29 Temperature: 23.1 Humidity: 36.8 Battery: 65
-2019-03-24 12:26:48 Temperature: 23.2 Humidity: 36.7 Battery: 65
-2019-03-24 12:27:01 Temperature: 23.1 Humidity: 36.8 Battery: 65
-2019-03-24 12:27:26 Temperature: 23.1 Humidity: 36.5 Battery: 65
-2019-03-24 12:27:41 Temperature: 23.0 Humidity: 36.8 Battery: 65
-2019-03-24 12:27:54 Temperature: 23.0 Humidity: 37.2 Battery: 65
-2019-03-24 12:28:08 Temperature: 23.1 Humidity: 37.1 Battery: 65
-2019-03-24 12:28:21 Temperature: 23.0 Humidity: 37.4 Battery: 65
-2019-03-24 12:28:36 Temperature: 23.0 Humidity: 37.5 Battery: 65
-2019-03-24 12:28:49 Temperature: 23.1 Humidity: 37.1 Battery: 65
-2019-03-24 12:29:14 Temperature: 23.0 Humidity: 37.0 Battery: 65
-2019-03-24 12:29:29 Temperature: 23.1 Humidity: 37.3 Battery: 65
-2019-03-24 12:29:42 Temperature: 23.0 Humidity: 37.5 Battery: 65
-2019-03-24 12:30:00 Temperature: 23.0 Humidity: 37.2 Battery: 65
-2019-03-24 12:30:15 Temperature: 23.0 Humidity: 37.2 Battery: 65
-2019-03-24 12:30:36 Temperature: 23.0 Humidity: 37.1 Battery: 65
-2019-03-24 12:30:49 Temperature: 23.0 Humidity: 37.0 Battery: 65
-2019-03-24 12:31:07 Temperature: 23.0 Humidity: 37.4 Battery: 65
-2019-03-24 12:31:22 Temperature: 23.0 Humidity: 37.3 Battery: 65
-2019-03-24 12:31:37 Temperature: 23.0 Humidity: 37.1 Battery: 65
-2019-03-24 12:31:56 Temperature: 23.0 Humidity: 37.4 Battery: 65
-2019-03-24 12:32:09 Temperature: 22.9 Humidity: 37.6 Battery: 65
-2019-03-24 12:32:22 Temperature: 22.9 Humidity: 37.3 Battery: 65
-Traceback (most recent call last):
-  File "/home/pi/soft/mitemp/btlewrap/bluepy.py", line 27, in _func_wrapper
-    return func(*args, **kwargs)
-  File "/home/pi/soft/mitemp/btlewrap/bluepy.py", line 57, in connect
-    self._peripheral = Peripheral(mac, iface=iface, addrType=self.address_type)
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 391, in __init__
-    self._connect(deviceAddr, addrType, iface)
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 439, in _connect
-    raise BTLEDisconnectError("Failed to connect to peripheral %s, addr type: %s" % (addr, addrType), rsp)
-bluepy.btle.BTLEDisconnectError: Failed to connect to peripheral 4c:65:a8:da:a7:26, addr type: public
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "demo.py", line 92, in <module>
-    main()
-  File "demo.py", line 88, in main
-    args.func(args)
-  File "demo.py", line 25, in poll
-    line1 = "Temperature: {}".format(poller.parameter_value(MI_TEMPERATURE))
-  File "/home/pi/soft/mitemp/mitemp_bt/mitemp_bt_poller.py", line 125, in parameter_value
-    self.fill_cache()
-  File "/home/pi/soft/mitemp/mitemp_bt/mitemp_bt_poller.py", line 66, in fill_cache
-    with self._bt_interface.connect(self._mac) as connection:
-  File "/home/pi/soft/mitemp/btlewrap/base.py", line 45, in __enter__
-    self._backend.connect(self._mac)
-  File "/home/pi/soft/mitemp/btlewrap/bluepy.py", line 33, in _func_wrapper
-    raise BluetoothBackendException() from last_error
-btlewrap.base.BluetoothBackendException
-2019-03-24 12:51:05 Temperature: 23.4 Humidity: 36.4 Battery: 65
-2019-03-24 12:51:20 Temperature: 23.4 Humidity: 35.8 Battery: 65
-2019-03-24 12:51:35 Temperature: 23.3 Humidity: 36.2 Battery: 65
-2019-03-24 12:51:48 Temperature: 23.2 Humidity: 36.9 Battery: 65
-2019-03-24 12:52:05 Temperature: 23.1 Humidity: 37.2 Battery: 65
-2019-03-24 12:52:22 Temperature: 23.1 Humidity: 37.2 Battery: 65
-2019-03-24 12:52:35 Temperature: 23.0 Humidity: 37.4 Battery: 65
-2019-03-24 12:52:52 Temperature: 23.0 Humidity: 37.1 Battery: 65
-2019-03-24 12:53:05 Temperature: 23.0 Humidity: 37.0 Battery: 65
-2019-03-24 12:53:19 Temperature: 23.0 Humidity: 48.6 Battery: 65
-2019-03-24 12:53:33 Temperature: 23.9 Humidity: 45.3 Battery: 65
-2019-03-24 12:53:49 Temperature: 25.4 Humidity: 43.9 Battery: 65
-2019-03-24 12:54:17 Temperature: 26.3 Humidity: 42.3 Battery: 65
-Traceback (most recent call last):
-  File "/home/pi/soft/mitemp/btlewrap/bluepy.py", line 27, in _func_wrapper
-    return func(*args, **kwargs)
-  File "/home/pi/soft/mitemp/btlewrap/bluepy.py", line 57, in connect
-    self._peripheral = Peripheral(mac, iface=iface, addrType=self.address_type)
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 391, in __init__
-    self._connect(deviceAddr, addrType, iface)
-  File "/usr/local/lib/python3.5/dist-packages/bluepy/btle.py", line 439, in _connect
-    raise BTLEDisconnectError("Failed to connect to peripheral %s, addr type: %s" % (addr, addrType), rsp)
-bluepy.btle.BTLEDisconnectError: Failed to connect to peripheral 4c:65:a8:da:a7:26, addr type: public
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "demo.py", line 92, in <module>
-    main()
-  File "demo.py", line 88, in main
-    args.func(args)
-  File "demo.py", line 25, in poll
-    line1 = "Temperature: {}".format(poller.parameter_value(MI_TEMPERATURE))
-  File "/home/pi/soft/mitemp/mitemp_bt/mitemp_bt_poller.py", line 125, in parameter_value
-    self.fill_cache()
-  File "/home/pi/soft/mitemp/mitemp_bt/mitemp_bt_poller.py", line 59, in fill_cache
-    self.firmware_version()
-  File "/home/pi/soft/mitemp/mitemp_bt/mitemp_bt_poller.py", line 89, in firmware_version
-    with self._bt_interface.connect(self._mac) as connection:
-  File "/home/pi/soft/mitemp/btlewrap/base.py", line 45, in __enter__
-    self._backend.connect(self._mac)
-  File "/home/pi/soft/mitemp/btlewrap/bluepy.py", line 33, in _func_wrapper
-    raise BluetoothBackendException() from last_error
-btlewrap.base.BluetoothBackendException
-2019-03-24 12:58:31 Temperature: 23.9 Humidity: 37.8 Battery: 65
-Traceback (most recent call last):
-  File "demo.py", line 92, in <module>
-    main()
-  File "demo.py", line 88, in main
-    args.func(args)
-  File "demo.py", line 25, in poll
-    line1 = "Temperature: {}".format(poller.parameter_value(MI_TEMPERATURE))
-  File "/home/pi/soft/mitemp/mitemp_bt/mitemp_bt_poller.py", line 134, in parameter_value
-    raise BluetoothBackendException("Could not read data from Mi Temp sensor %s" % self._mac)
-btlewrap.base.BluetoothBackendException: Could not read data from Mi Temp sensor 4c:65:a8:da:a7:26
+2019-03-24 17:00:29 Temperature: 23.5 Humidity: 33.8 Battery: 65
+2019-03-24 17:00:46 Temperature: 23.6 Humidity: 33.7 Battery: 65
+2019-03-24 17:01:05 Temperature: 23.7 Humidity: 33.1 Battery: 65
+2019-03-24 17:01:20 Temperature: 23.6 Humidity: 33.5 Battery: 65
+2019-03-24 17:01:36 Temperature: 23.6 Humidity: 33.5 Battery: 65
+2019-03-24 17:01:53 Temperature: 23.5 Humidity: 33.2 Battery: 65
+2019-03-24 17:02:07 Temperature: 23.6 Humidity: 32.8 Battery: 65
+2019-03-24 17:02:22 Temperature: 23.6 Humidity: 33.4 Battery: 65
+2019-03-24 17:02:38 Temperature: 23.5 Humidity: 32.4 Battery: 65
+2019-03-24 17:02:54 Temperature: 23.6 Humidity: 32.4 Battery: 65
+2019-03-24 17:03:08 Temperature: 23.5 Humidity: 32.5 Battery: 65
+2019-03-24 17:03:24 Temperature: 23.5 Humidity: 32.8 Battery: 65
+2019-03-24 17:03:38 Temperature: 23.5 Humidity: 33.1 Battery: 65
+An exception occurred
+2019-03-24 17:04:02 Temperature: 23.6 Humidity: 32.1 Battery: 65
+2019-03-24 17:04:17 Temperature: 23.6 Humidity: 32.7 Battery: 65
+2019-03-24 17:04:34 Temperature: 23.6 Humidity: 32.5 Battery: 65
+2019-03-24 17:04:51 Temperature: 23.5 Humidity: 32.8 Battery: 65
+2019-03-24 17:05:12 Temperature: 23.5 Humidity: 32.5 Battery: 65
+2019-03-24 17:05:29 Temperature: 23.5 Humidity: 31.7 Battery: 65
+2019-03-24 17:05:45 Temperature: 23.5 Humidity: 31.6 Battery: 65
+2019-03-24 17:06:01 Temperature: 23.5 Humidity: 30.9 Battery: 65
+2019-03-24 17:06:17 Temperature: 23.5 Humidity: 31.5 Battery: 65
+2019-03-24 17:06:32 Temperature: 23.5 Humidity: 31.2 Battery: 65
+2019-03-24 17:06:46 Temperature: 23.5 Humidity: 31.1 Battery: 65
+2019-03-24 17:07:02 Temperature: 23.5 Humidity: 31.3 Battery: 65
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-24 17:07:43 Temperature: 23.6 Humidity: 31.2 Battery: 65
+2019-03-24 17:08:08 Temperature: 23.5 Humidity: 31.0 Battery: 65
+2019-03-24 17:08:30 Temperature: 23.5 Humidity: 30.6 Battery: 65
+2019-03-24 17:08:44 Temperature: 23.6 Humidity: 30.5 Battery: 65
+2019-03-24 17:09:00 Temperature: 23.6 Humidity: 31.4 Battery: 65
+2019-03-24 17:09:13 Temperature: 23.5 Humidity: 31.0 Battery: 65
+2019-03-24 17:09:27 Temperature: 23.5 Humidity: 31.0 Battery: 65
+2019-03-24 17:09:40 Temperature: 23.5 Humidity: 30.7 Battery: 65
+2019-03-24 17:10:00 Temperature: 23.5 Humidity: 30.3 Battery: 65
+2019-03-24 17:10:15 Temperature: 23.6 Humidity: 30.6 Battery: 65
+2019-03-24 17:10:32 Temperature: 23.6 Humidity: 31.1 Battery: 65
+2019-03-24 17:10:49 Temperature: 23.6 Humidity: 30.5 Battery: 65
+2019-03-24 17:11:12 Temperature: 23.6 Humidity: 30.7 Battery: 65
+2019-03-24 17:11:25 Temperature: 23.5 Humidity: 30.5 Battery: 65
+2019-03-24 17:11:41 Temperature: 23.5 Humidity: 30.1 Battery: 65
+2019-03-24 17:11:55 Temperature: 23.4 Humidity: 30.9 Battery: 65
+2019-03-24 17:12:11 Temperature: 23.6 Humidity: 30.0 Battery: 65
+2019-03-24 17:12:29 Temperature: 23.5 Humidity: 30.8 Battery: 65
+2019-03-24 17:12:43 Temperature: 23.5 Humidity: 31.2 Battery: 65
+2019-03-24 17:12:59 Temperature: 23.6 Humidity: 30.6 Battery: 65
+An exception occurred
+2019-03-24 17:13:16 Temperature: 23.5 Humidity: 29.8 Battery: 65
+2019-03-24 17:13:34 Temperature: 23.5 Humidity: 30.5 Battery: 65
+2019-03-24 17:13:49 Temperature: 23.5 Humidity: 30.5 Battery: 65
+2019-03-24 17:14:05 Temperature: 23.5 Humidity: 30.1 Battery: 65
+2019-03-24 17:14:23 Temperature: 23.5 Humidity: 29.8 Battery: 65
+2019-03-24 17:14:38 Temperature: 23.5 Humidity: 30.1 Battery: 65
+2019-03-24 17:14:58 Temperature: 23.5 Humidity: 30.6 Battery: 65
+2019-03-24 17:15:11 Temperature: 23.5 Humidity: 30.6 Battery: 65
+2019-03-24 17:15:26 Temperature: 23.6 Humidity: 29.8 Battery: 65
+2019-03-24 17:15:40 Temperature: 23.6 Humidity: 30.3 Battery: 65
+2019-03-24 17:15:53 Temperature: 23.6 Humidity: 30.7 Battery: 65
+2019-03-24 17:16:08 Temperature: 23.5 Humidity: 30.5 Battery: 65
+2019-03-24 17:16:26 Temperature: 23.5 Humidity: 30.3 Battery: 65
+2019-03-24 17:16:42 Temperature: 23.5 Humidity: 30.5 Battery: 65
+2019-03-24 17:16:56 Temperature: 23.5 Humidity: 30.0 Battery: 65
+2019-03-24 17:17:10 Temperature: 23.5 Humidity: 30.0 Battery: 65
+2019-03-24 17:17:29 Temperature: 23.5 Humidity: 29.6 Battery: 65
+2019-03-24 17:17:46 Temperature: 23.5 Humidity: 29.0 Battery: 65
+2019-03-24 17:18:01 Temperature: 23.5 Humidity: 29.0 Battery: 65
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-24 17:18:38 Temperature: 23.5 Humidity: 29.1 Battery: 65
+2019-03-24 17:18:58 Temperature: 23.5 Humidity: 29.8 Battery: 65
+2019-03-24 17:19:19 Temperature: 23.5 Humidity: 29.3 Battery: 65
+2019-03-24 17:19:37 Temperature: 23.4 Humidity: 29.1 Battery: 65
+2019-03-24 17:19:51 Temperature: 23.4 Humidity: 28.3 Battery: 65
+2019-03-24 17:20:11 Temperature: 23.5 Humidity: 29.0 Battery: 65
+2019-03-24 17:20:25 Temperature: 23.5 Humidity: 29.6 Battery: 65
+2019-03-24 17:20:46 Temperature: 23.5 Humidity: 29.1 Battery: 65
+2019-03-24 17:21:01 Temperature: 23.4 Humidity: 29.1 Battery: 65
+2019-03-24 17:21:15 Temperature: 23.4 Humidity: 29.2 Battery: 65
+2019-03-24 17:21:35 Temperature: 23.4 Humidity: 28.5 Battery: 65
+An exception occurred
+2019-03-24 17:21:56 Temperature: 23.5 Humidity: 29.1 Battery: 65
+2019-03-24 17:22:14 Temperature: 23.5 Humidity: 28.9 Battery: 65
+2019-03-24 17:22:27 Temperature: 23.5 Humidity: 28.6 Battery: 65
+2019-03-24 17:22:41 Temperature: 23.5 Humidity: 29.4 Battery: 65
+2019-03-24 17:22:57 Temperature: 23.5 Humidity: 29.1 Battery: 65
+2019-03-24 17:23:15 Temperature: 23.5 Humidity: 29.2 Battery: 65
+2019-03-24 17:23:30 Temperature: 23.5 Humidity: 29.4 Battery: 65
+2019-03-24 17:23:45 Temperature: 23.5 Humidity: 29.3 Battery: 65
+2019-03-24 17:24:00 Temperature: 23.5 Humidity: 29.4 Battery: 65
+2019-03-24 17:24:21 Temperature: 23.4 Humidity: 28.7 Battery: 65
+2019-03-24 17:24:34 Temperature: 23.4 Humidity: 29.0 Battery: 65
+2019-03-24 17:24:52 Temperature: 23.5 Humidity: 28.6 Battery: 65
+2019-03-24 17:25:17 Temperature: 23.4 Humidity: 28.7 Battery: 65
+2019-03-24 17:25:31 Temperature: 23.4 Humidity: 29.1 Battery: 65
+2019-03-24 17:25:46 Temperature: 23.5 Humidity: 29.2 Battery: 65
+2019-03-24 17:25:59 Temperature: 23.5 Humidity: 28.0 Battery: 65
+2019-03-24 17:26:12 Temperature: 23.4 Humidity: 28.0 Battery: 65
+2019-03-24 17:26:26 Temperature: 23.4 Humidity: 28.6 Battery: 65
+2019-03-24 17:26:52 Temperature: 23.4 Humidity: 28.2 Battery: 65
+2019-03-24 17:27:07 Temperature: 23.4 Humidity: 28.5 Battery: 65
+2019-03-24 17:27:35 Temperature: 23.5 Humidity: 27.7 Battery: 65
+2019-03-24 17:27:48 Temperature: 23.5 Humidity: 27.9 Battery: 65
+2019-03-24 17:28:06 Temperature: 23.4 Humidity: 28.3 Battery: 65
+2019-03-24 17:28:32 Temperature: 23.3 Humidity: 28.1 Battery: 65
+2019-03-24 17:28:52 Temperature: 23.4 Humidity: 27.7 Battery: 65
+2019-03-24 17:29:08 Temperature: 23.4 Humidity: 27.7 Battery: 65
+2019-03-24 17:29:24 Temperature: 23.4 Humidity: 27.6 Battery: 65
+2019-03-24 17:29:37 Temperature: 23.4 Humidity: 28.3 Battery: 65
+2019-03-24 17:29:54 Temperature: 23.4 Humidity: 28.9 Battery: 65
+2019-03-24 17:30:07 Temperature: 23.4 Humidity: 27.7 Battery: 65
+2019-03-24 17:30:32 Temperature: 23.5 Humidity: 28.3 Battery: 65
+2019-03-24 17:30:52 Temperature: 23.4 Humidity: 28.5 Battery: 65
+2019-03-24 17:31:06 Temperature: 23.5 Humidity: 28.6 Battery: 65
+2019-03-24 17:31:21 Temperature: 23.4 Humidity: 28.9 Battery: 65
+2019-03-24 17:31:36 Temperature: 23.4 Humidity: 29.3 Battery: 65
+2019-03-24 17:31:52 Temperature: 23.3 Humidity: 29.2 Battery: 65
+2019-03-24 17:32:05 Temperature: 23.4 Humidity: 29.3 Battery: 65
+An exception occurred
+2019-03-24 17:32:37 Temperature: 23.4 Humidity: 29.5 Battery: 65
+2019-03-24 17:32:53 Temperature: 23.3 Humidity: 29.7 Battery: 65
+2019-03-24 17:33:08 Temperature: 23.3 Humidity: 30.0 Battery: 65
+2019-03-24 17:33:40 Temperature: 23.4 Humidity: 29.7 Battery: 65
+2019-03-24 17:33:54 Temperature: 23.4 Humidity: 29.7 Battery: 65
+2019-03-24 17:34:10 Temperature: 23.4 Humidity: 29.4 Battery: 65
+An exception occurred
+2019-03-24 17:34:29 Temperature: 23.4 Humidity: 30.1 Battery: 65
+2019-03-24 17:34:49 Temperature: 23.4 Humidity: 29.9 Battery: 65
+2019-03-24 17:35:05 Temperature: 23.4 Humidity: 29.9 Battery: 65
+2019-03-24 17:35:22 Temperature: 23.4 Humidity: 29.8 Battery: 65
+2019-03-24 17:35:38 Temperature: 23.4 Humidity: 29.8 Battery: 65
+2019-03-24 17:35:56 Temperature: 23.5 Humidity: 30.0 Battery: 65
+2019-03-24 17:36:16 Temperature: 23.5 Humidity: 30.0 Battery: 65
+2019-03-24 17:36:35 Temperature: 23.4 Humidity: 30.4 Battery: 65
+2019-03-24 17:36:48 Temperature: 23.4 Humidity: 30.2 Battery: 65
+2019-03-24 17:37:07 Temperature: 23.4 Humidity: 30.1 Battery: 65
+2019-03-24 17:37:25 Temperature: 23.4 Humidity: 30.4 Battery: 65
+2019-03-24 17:37:42 Temperature: 23.4 Humidity: 30.5 Battery: 65
+2019-03-24 17:37:57 Temperature: 23.4 Humidity: 30.5 Battery: 65
+2019-03-24 17:38:12 Temperature: 23.4 Humidity: 30.4 Battery: 65
+2019-03-24 17:38:35 Temperature: 23.4 Humidity: 30.5 Battery: 65
+2019-03-24 17:38:50 Temperature: 23.5 Humidity: 30.7 Battery: 65
+2019-03-24 17:39:05 Temperature: 23.3 Humidity: 30.7 Battery: 65
+2019-03-24 17:39:21 Temperature: 23.4 Humidity: 30.7 Battery: 65
+2019-03-24 17:39:35 Temperature: 23.4 Humidity: 30.7 Battery: 65
+2019-03-24 17:39:50 Temperature: 23.4 Humidity: 30.7 Battery: 65
+2019-03-24 17:40:06 Temperature: 23.4 Humidity: 31.1 Battery: 65
+2019-03-24 17:40:25 Temperature: 23.4 Humidity: 30.8 Battery: 65
+2019-03-24 17:40:42 Temperature: 23.3 Humidity: 30.9 Battery: 65
+2019-03-24 17:41:02 Temperature: 23.3 Humidity: 30.8 Battery: 65
+2019-03-24 17:41:17 Temperature: 23.3 Humidity: 31.0 Battery: 65
+2019-03-24 17:41:32 Temperature: 23.3 Humidity: 30.9 Battery: 65
+2019-03-24 17:41:48 Temperature: 23.3 Humidity: 31.2 Battery: 65
+2019-03-24 17:42:02 Temperature: 23.3 Humidity: 31.4 Battery: 65
+2019-03-24 17:42:18 Temperature: 23.4 Humidity: 31.2 Battery: 65
+2019-03-24 17:42:35 Temperature: 23.4 Humidity: 31.1 Battery: 65
+2019-03-24 17:42:48 Temperature: 23.4 Humidity: 31.1 Battery: 65
+An exception occurred
+2019-03-24 17:43:07 Temperature: 23.4 Humidity: 31.8 Battery: 65
+2019-03-24 17:43:26 Temperature: 23.4 Humidity: 31.3 Battery: 65
+An exception occurred
+2019-03-24 17:43:48 Temperature: 23.4 Humidity: 31.3 Battery: 65
+2019-03-24 17:44:05 Temperature: 23.3 Humidity: 31.4 Battery: 65
+2019-03-24 17:44:21 Temperature: 23.4 Humidity: 31.3 Battery: 65
+2019-03-24 17:44:37 Temperature: 23.4 Humidity: 31.4 Battery: 65
+2019-03-24 17:45:09 Temperature: 23.4 Humidity: 31.3 Battery: 65
+2019-03-24 17:45:32 Temperature: 23.4 Humidity: 31.4 Battery: 65
+2019-03-24 17:45:45 Temperature: 23.3 Humidity: 31.6 Battery: 65
+2019-03-24 17:46:00 Temperature: 23.3 Humidity: 31.9 Battery: 65
+2019-03-24 17:46:13 Temperature: 23.3 Humidity: 32.1 Battery: 65
+2019-03-24 17:46:27 Temperature: 23.3 Humidity: 32.0 Battery: 65
+2019-03-24 17:46:43 Temperature: 23.3 Humidity: 32.1 Battery: 65
+2019-03-24 17:46:58 Temperature: 23.4 Humidity: 31.9 Battery: 65
+2019-03-24 17:47:11 Temperature: 23.3 Humidity: 31.8 Battery: 65
+2019-03-24 17:47:27 Temperature: 23.3 Humidity: 31.8 Battery: 65
+2019-03-24 17:47:51 Temperature: 23.4 Humidity: 31.9 Battery: 65
+2019-03-24 17:48:04 Temperature: 23.3 Humidity: 32.0 Battery: 65
+2019-03-24 17:48:21 Temperature: 23.4 Humidity: 31.9 Battery: 65
+2019-03-24 17:48:35 Temperature: 23.3 Humidity: 31.9 Battery: 65
+2019-03-24 17:48:51 Temperature: 23.3 Humidity: 32.2 Battery: 65
+2019-03-24 17:49:05 Temperature: 23.3 Humidity: 32.1 Battery: 65
+2019-03-24 17:49:18 Temperature: 23.3 Humidity: 32.5 Battery: 65
+2019-03-24 17:49:33 Temperature: 23.4 Humidity: 31.8 Battery: 65
+2019-03-24 17:49:49 Temperature: 23.4 Humidity: 31.9 Battery: 65
+An exception occurred
+2019-03-24 17:50:16 Temperature: 23.3 Humidity: 32.1 Battery: 65
+2019-03-24 17:50:34 Temperature: 23.3 Humidity: 32.4 Battery: 65
+2019-03-24 17:50:52 Temperature: 23.3 Humidity: 32.2 Battery: 65
+2019-03-24 17:51:07 Temperature: 23.3 Humidity: 32.2 Battery: 65
+2019-03-24 17:51:22 Temperature: 23.3 Humidity: 32.3 Battery: 65
+2019-03-24 17:51:40 Temperature: 23.3 Humidity: 32.4 Battery: 65
+2019-03-24 17:51:54 Temperature: 23.3 Humidity: 32.5 Battery: 65
+2019-03-24 17:52:13 Temperature: 23.2 Humidity: 32.5 Battery: 65
+An exception occurred
+2019-03-24 17:52:37 Temperature: 23.3 Humidity: 32.8 Battery: 65
+2019-03-24 17:52:57 Temperature: 23.3 Humidity: 32.3 Battery: 65
+2019-03-24 17:53:10 Temperature: 23.4 Humidity: 32.4 Battery: 65
+2019-03-24 17:53:31 Temperature: 23.3 Humidity: 32.6 Battery: 65
+2019-03-24 17:53:45 Temperature: 23.3 Humidity: 32.8 Battery: 65
+2019-03-24 17:53:58 Temperature: 23.4 Humidity: 32.5 Battery: 65
+2019-03-24 17:54:12 Temperature: 23.3 Humidity: 32.4 Battery: 65
+2019-03-24 17:54:28 Temperature: 23.3 Humidity: 32.4 Battery: 65
+2019-03-24 17:54:43 Temperature: 23.2 Humidity: 32.8 Battery: 65
+2019-03-24 17:54:57 Temperature: 23.2 Humidity: 32.4 Battery: 65
+2019-03-24 17:55:12 Temperature: 23.2 Humidity: 32.8 Battery: 65
+2019-03-24 17:55:37 Temperature: 23.3 Humidity: 33.0 Battery: 65
+2019-03-24 17:55:50 Temperature: 23.2 Humidity: 33.0 Battery: 65
+2019-03-24 17:56:09 Temperature: 23.2 Humidity: 32.8 Battery: 65
+2019-03-24 17:56:26 Temperature: 23.2 Humidity: 32.6 Battery: 65
+2019-03-24 17:56:41 Temperature: 23.3 Humidity: 32.6 Battery: 65
+2019-03-24 17:56:55 Temperature: 23.3 Humidity: 32.8 Battery: 65
+2019-03-24 17:57:08 Temperature: 23.3 Humidity: 33.1 Battery: 65
+2019-03-24 17:57:27 Temperature: 23.2 Humidity: 32.8 Battery: 65
+2019-03-24 17:57:42 Temperature: 23.3 Humidity: 33.0 Battery: 65
+2019-03-24 17:58:02 Temperature: 23.2 Humidity: 33.1 Battery: 65
+2019-03-24 17:58:17 Temperature: 23.3 Humidity: 33.1 Battery: 65
+2019-03-24 17:58:31 Temperature: 23.3 Humidity: 33.1 Battery: 65
+2019-03-24 17:58:45 Temperature: 23.3 Humidity: 33.0 Battery: 65
+2019-03-24 17:59:00 Temperature: 23.2 Humidity: 33.0 Battery: 65
+2019-03-24 17:59:22 Temperature: 23.2 Humidity: 33.0 Battery: 65
+2019-03-24 17:59:36 Temperature: 23.3 Humidity: 33.1 Battery: 65
+2019-03-24 17:59:50 Temperature: 23.2 Humidity: 33.3 Battery: 65
+2019-03-24 18:00:06 Temperature: 23.2 Humidity: 33.1 Battery: 65
+2019-03-24 18:00:23 Temperature: 23.2 Humidity: 33.0 Battery: 65
+2019-03-24 18:00:45 Temperature: 23.3 Humidity: 33.1 Battery: 65
+2019-03-24 18:01:03 Temperature: 23.3 Humidity: 33.6 Battery: 65
+2019-03-24 18:01:20 Temperature: 23.2 Humidity: 33.8 Battery: 65
+2019-03-24 18:01:40 Temperature: 23.2 Humidity: 33.4 Battery: 65
+2019-03-24 18:01:53 Temperature: 23.2 Humidity: 33.4 Battery: 65
+2019-03-24 18:02:07 Temperature: 23.2 Humidity: 33.5 Battery: 65
+2019-03-24 18:02:23 Temperature: 23.2 Humidity: 33.3 Battery: 65
+2019-03-24 18:02:42 Temperature: 23.2 Humidity: 33.5 Battery: 65
+2019-03-24 18:02:58 Temperature: 23.2 Humidity: 33.6 Battery: 65
+2019-03-24 18:03:21 Temperature: 23.3 Humidity: 33.4 Battery: 65
+2019-03-24 18:03:36 Temperature: 23.3 Humidity: 33.7 Battery: 65
+2019-03-24 18:03:51 Temperature: 23.2 Humidity: 33.6 Battery: 65
+2019-03-24 18:04:12 Temperature: 23.2 Humidity: 33.5 Battery: 65
+2019-03-24 18:04:28 Temperature: 23.2 Humidity: 33.5 Battery: 65
+2019-03-24 18:04:40 Temperature: 23.2 Humidity: 33.9 Battery: 65
+2019-03-24 18:05:08 Temperature: 23.2 Humidity: 33.8 Battery: 65
+2019-03-24 18:05:29 Temperature: 23.2 Humidity: 34.1 Battery: 65
+2019-03-24 18:05:48 Temperature: 23.1 Humidity: 34.1 Battery: 65
+2019-03-24 18:06:21 Temperature: 23.1 Humidity: 34.2 Battery: 65
+2019-03-24 18:06:34 Temperature: 23.2 Humidity: 33.9 Battery: 65
+2019-03-24 18:06:48 Temperature: 23.1 Humidity: 33.9 Battery: 65
+2019-03-24 18:07:02 Temperature: 23.1 Humidity: 34.1 Battery: 65
+2019-03-24 18:07:15 Temperature: 23.2 Humidity: 34.0 Battery: 65
+2019-03-24 18:07:35 Temperature: 23.1 Humidity: 34.0 Battery: 65
+2019-03-24 18:07:50 Temperature: 23.2 Humidity: 34.2 Battery: 65
+2019-03-24 18:08:08 Temperature: 23.2 Humidity: 34.3 Battery: 65
+2019-03-24 18:08:30 Temperature: 23.2 Humidity: 34.1 Battery: 65
+2019-03-24 18:08:43 Temperature: 23.2 Humidity: 34.1 Battery: 65
+2019-03-24 18:09:00 Temperature: 23.2 Humidity: 34.32019-03-25 07:59:11 Temperature: 23.4 Humidity: 39.8 Battery: 65
+2019-03-25 07:59:30 Temperature: 23.4 Humidity: 39.7 Battery: 65
+2019-03-25 07:59:43 Temperature: 23.4 Humidity: 39.9 Battery: 65
+2019-03-25 08:00:14 Temperature: 23.4 Humidity: 39.8 Battery: 65
+2019-03-25 08:00:31 Temperature: 23.4 Humidity: 39.6 Battery: 65
+2019-03-25 08:00:47 Temperature: 23.4 Humidity: 39.8 Battery: 65
+2019-03-25 08:01:02 Temperature: 23.5 Humidity: 39.8 Battery: 65
+2019-03-25 08:01:17 Temperature: 23.5 Humidity: 39.9 Battery: 65
+2019-03-25 08:01:37 Temperature: 23.5 Humidity: 39.8 Battery: 65
+2019-03-25 08:01:54 Temperature: 23.5 Humidity: 39.9 Battery: 65
+2019-03-25 08:02:26 Temperature: 23.6 Humidity: 39.7 Battery: 65
+2019-03-25 08:02:43 Temperature: 23.5 Humidity: 39.5 Battery: 65
+2019-03-25 08:02:56 Temperature: 23.5 Humidity: 39.8 Battery: 65
+2019-03-25 08:03:10 Temperature: 23.5 Humidity: 39.5 Battery: 65
+2019-03-25 08:03:26 Temperature: 23.6 Humidity: 39.6 Battery: 65
+2019-03-25 08:03:42 Temperature: 23.6 Humidity: 39.5 Battery: 65
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-25 08:04:21 Temperature: 23.7 Humidity: 39.3 Battery: 65
+2019-03-25 08:04:36 Temperature: 23.6 Humidity: 39.6 Battery: 65
+2019-03-25 08:05:03 Temperature: 23.7 Humidity: 39.3 Battery: 65
+2019-03-25 08:05:24 Temperature: 23.7 Humidity: 39.5 Battery: 65
+2019-03-25 08:05:40 Temperature: 23.7 Humidity: 39.4 Battery: 65
+2019-03-25 08:05:59 Temperature: 23.7 Humidity: 39.4 Battery: 65
+2019-03-25 08:06:17 Temperature: 23.7 Humidity: 39.5 Battery: 65
+2019-03-25 08:06:43 Temperature: 23.8 Humidity: 39.2 Battery: 65
+2019-03-25 08:07:01 Temperature: 23.7 Humidity: 39.2 Battery: 65
+2019-03-25 08:07:41 Temperature: 23.8 Humidity: 39.2 Battery: 65
+2019-03-25 08:07:57 Temperature: 23.7 Humidity: 39.3 Battery: 65
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-25 08:09:06 Temperature: 23.8 Humidity: 39.3 Battery: 65
+2019-03-25 08:09:26 Temperature: 23.8 Humidity: 39.3 Battery: 65
+2019-03-25 08:09:40 Temperature: 23.8 Humidity: 39.2 Battery: 65
+2019-03-25 08:09:54 Temperature: 23.8 Humidity: 39.5 Battery: 65
+2019-03-25 08:10:08 Temperature: 23.8 Humidity: 39.5 Battery: 65
+2019-03-25 08:10:28 Temperature: 23.8 Humidity: 39.1 Battery: 65
+2019-03-25 08:11:05 Temperature: 23.7 Humidity: 39.3 Battery: 65
+2019-03-25 08:11:31 Temperature: 23.7 Humidity: 39.3 Battery: 65
+2019-03-25 08:11:44 Temperature: 23.7 Humidity: 39.4 Battery: 65
+2019-03-25 08:11:58 Temperature: 23.8 Humidity: 39.2 Battery: 65
+2019-03-25 08:12:13 Temperature: 23.8 Humidity: 39.4 Battery: 65
+2019-03-25 08:12:37 Temperature: 23.8 Humidity: 39.5 Battery: 65
+2019-03-25 08:12:59 Temperature: 23.9 Humidity: 39.4 Battery: 65
+2019-03-25 08:13:13 Temperature: 23.9 Humidity: 39.5 Battery: 65
+2019-03-25 08:13:26 Temperature: 24.0 Humidity: 39.4 Battery: 65
+2019-03-25 08:13:50 Temperature: 24.0 Humidity: 39.4 Battery: 65
+2019-03-25 08:14:04 Temperature: 24.1 Humidity: 39.4 Battery: 65
+2019-03-25 08:14:26 Temperature: 24.0 Humidity: 39.4 Battery: 65
+2019-03-25 08:14:40 Temperature: 24.0 Humidity: 39.3 Battery: 65
+2019-03-25 08:14:58 Temperature: 24.0 Humidity: 39.8 Battery: 65
+2019-03-25 08:15:12 Temperature: 23.9 Humidity: 39.7 Battery: 65
+2019-03-25 08:15:36 Temperature: 23.8 Humidity: 39.6 Battery: 65
+2019-03-25 08:15:54 Temperature: 23.9 Humidity: 39.7 Battery: 65
+2019-03-25 08:16:10 Temperature: 23.9 Humidity: 39.5 Battery: 65
+2019-03-25 08:16:24 Temperature: 23.8 Humidity: 39.7 Battery: 65
+2019-03-25 08:16:46 Temperature: 23.9 Humidity: 39.6 Battery: 65
+2019-03-25 08:17:04 Temperature: 24.0 Humidity: 39.3 Battery: 65
+2019-03-25 08:17:19 Temperature: 24.2 Humidity: 39.2 Battery: 65
+2019-03-25 08:17:47 Temperature: 24.2 Humidity: 39.1 Battery: 65
+2019-03-25 08:18:02 Temperature: 24.1 Humidity: 39.2 Battery: 65
+2019-03-25 08:18:16 Temperature: 24.2 Humidity: 39.2 Battery: 65
+2019-03-25 08:18:29 Temperature: 24.1 Humidity: 39.3 Battery: 65
+2019-03-25 08:18:45 Temperature: 24.0 Humidity: 39.6 Battery: 65
+An exception occurred
+2019-03-25 08:19:20 Temperature: 24.0 Humidity: 39.5 Battery: 65
+2019-03-25 08:19:38 Temperature: 24.0 Humidity: 39.8 Battery: 65
+2019-03-25 08:19:52 Temperature: 23.9 Humidity: 39.5 Battery: 65
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-25 08:20:26 Temperature: 24.0 Humidity: 39.9 Battery: 65
+2019-03-25 08:20:52 Temperature: 24.1 Humidity: 39.8 Battery: 65
+2019-03-25 08:21:10 Temperature: 24.0 Humidity: 39.7 Battery: 65
+2019-03-25 08:21:28 Temperature: 23.9 Humidity: 39.6 Battery: 65
+2019-03-25 08:21:53 Temperature: 23.9 Humidity: 39.7 Battery: 65
+2019-03-25 08:22:17 Temperature: 24.0 Humidity: 39.7 Battery: 65
+2019-03-25 08:22:30 Temperature: 24.0 Humidity: 39.6 Battery: 65
+An exception occurred
+2019-03-25 08:23:04 Temperature: 24.1 Humidity: 39.7 Battery: 65
+2019-03-25 08:23:28 Temperature: 24.1 Humidity: 39.4 Battery: 65
+2019-03-25 08:23:44 Temperature: 24.2 Humidity: 39.3 Battery: 65
+2019-03-25 08:24:02 Temperature: 24.1 Humidity: 39.2 Battery: 65
+2019-03-25 08:24:16 Temperature: 24.2 Humidity: 39.4 Battery: 65
+2019-03-25 08:24:33 Temperature: 24.1 Humidity: 39.2 Battery: 65
+2019-03-25 08:24:49 Temperature: 24.1 Humidity: 39.9 Battery: 65
+2019-03-25 08:25:11 Temperature: 24.1 Humidity: 39.4 Battery: 65
+2019-03-25 08:25:25 Temperature: 24.1 Humidity: 39.1 Battery: 65
+2019-03-25 08:25:43 Temperature: 24.1 Humidity: 39.0 Battery: 65
+2019-03-25 08:25:57 Temperature: 24.1 Humidity: 39.3 Battery: 65
+2019-03-25 08:26:13 Temperature: 24.1 Humidity: 39.7 Battery: 65
+2019-03-25 08:26:29 Temperature: 24.0 Humidity: 39.5 Battery: 65
+2019-03-25 08:26:46 Temperature: 24.1 Humidity: 39.5 Battery: 65
+2019-03-25 08:27:05 Temperature: 24.1 Humidity: 39.3 Battery: 65
+2019-03-25 08:27:29 Temperature: 24.1 Humidity: 39.5 Battery: 65
+2019-03-25 08:27:43 Temperature: 24.1 Humidity: 39.4 Battery: 65
+2019-03-25 08:27:57 Temperature: 24.1 Humidity: 39.5 Battery: 65
+An exception occurred
+2019-03-25 08:28:41 Temperature: 23.9 Humidity: 39.8 Battery: 65
+2019-03-25 08:28:58 Temperature: 24.0 Humidity: 39.6 Battery: 65
+2019-03-25 08:29:20 Temperature: 23.9 Humidity: 39.5 Battery: 65
+2019-03-25 08:29:34 Temperature: 24.0 Humidity: 39.5 Battery: 65
+2019-03-25 08:29:55 Temperature: 23.9 Humidity: 39.8 Battery: 65
+2019-03-25 08:30:09 Temperature: 23.9 Humidity: 39.8 Battery: 65
+2019-03-25 08:30:27 Temperature: 23.8 Humidity: 39.9 Battery: 65
+2019-03-25 08:30:47 Temperature: 23.8 Humidity: 39.9 Battery: 65
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-25 08:31:25 Temperature: 23.9 Humidity: 39.9 Battery: 65
+2019-03-25 08:31:41 Temperature: 24.0 Humidity: 39.7 Battery: 65
+2019-03-25 08:31:56 Temperature: 23.9 Humidity: 39.6 Battery: 65
+2019-03-25 08:32:12 Temperature: 23.9 Humidity: 39.8 Battery: 65
+2019-03-25 08:32:41 Temperature: 23.9 Humidity: 39.9 Battery: 65
+2019-03-25 08:32:59 Temperature: 23.9 Humidity: 39.9 Battery: 65
+2019-03-25 08:33:21 Temperature: 23.9 Humidity: 40.0 Battery: 65
+2019-03-25 08:33:36 Temperature: 23.9 Humidity: 39.9 Battery: 65
+2019-03-25 08:33:53 Temperature: 23.8 Humidity: 40.3 Battery: 65
+An exception occurred
+2019-03-25 08:34:16 Temperature: 23.7 Humidity: 40.2 Battery: 65
+2019-03-25 08:34:38 Temperature: 23.7 Humidity: 40.5 Battery: 65
+2019-03-25 08:34:54 Temperature: 23.7 Humidity: 40.2 Battery: 65
+2019-03-25 08:35:16 Temperature: 23.6 Humidity: 40.0 Battery: 65
+2019-03-25 08:35:32 Temperature: 23.7 Humidity: 40.1 Battery: 65
+2019-03-25 08:35:53 Temperature: 23.6 Humidity: 40.5 Battery: 65
+An exception occurred
+2019-03-25 08:36:47 Temperature: 23.6 Humidity: 40.2 Battery: 65
+2019-03-25 08:37:15 Temperature: 23.6 Humidity: 40.2 Battery: 65
+2019-03-25 08:37:29 Temperature: 23.6 Humidity: 40.0 Battery: 65
+2019-03-25 08:37:45 Temperature: 23.5 Humidity: 40.3 Battery: 65
+2019-03-25 08:38:01 Temperature: 23.5 Humidity: 40.0 Battery: 65
+2019-03-25 08:38:14 Temperature: 23.5 Humidity: 40.2 Battery: 65
+2019-03-25 08:38:40 Temperature: 23.5 Humidity: 40.0 Battery: 65
+2019-03-25 08:38:58 Temperature: 23.5 Humidity: 40.1 Battery: 65
+2019-03-25 08:39:12 Temperature: 23.5 Humidity: 40.3 Battery: 65
+2019-03-25 08:39:26 Temperature: 23.5 Humidity: 40.0 Battery: 65
+2019-03-25 08:39:41 Temperature: 23.5 Humidity: 40.3 Battery: 65
+2019-03-25 08:40:04 Temperature: 23.5 Humidity: 40.2 Battery: 65
+2019-03-25 08:40:19 Temperature: 23.5 Humidity: 40.2 Battery: 65
+2019-03-25 08:40:47 Temperature: 23.5 Humidity: 40.3 Battery: 65
+2019-03-25 08:41:01 Temperature: 23.5 Humidity: 40.1 Battery: 65
+2019-03-25 08:41:25 Temperature: 23.5 Humidity: 40.0 Battery: 65
+2019-03-25 08:41:39 Temperature: 23.5 Humidity: 40.0 Battery: 65
+2019-03-25 08:42:06 Temperature: 23.4 Humidity: 40.1 Battery: 65
+2019-03-25 08:42:34 Temperature: 23.4 Humidity: 40.1 Battery: 65
+2019-03-25 08:42:57 Temperature: 23.5 Humidity: 40.0 Battery: 65
+2019-03-25 08:43:25 Temperature: 23.4 Humidity: 39.8 Battery: 65
+2019-03-25 08:43:45 Temperature: 23.4 Humidity: 40.0 Battery: 65
+2019-03-25 08:44:13 Temperature: 23.4 Humidity: 39.9 Battery: 65
+An exception occurred
+2019-03-25 08:45:33 Temperature: 23.3 Humidity: 39.9 Battery: 65
+2019-03-25 08:46:00 Temperature: 23.4 Humidity: 40.0 Battery: 65
+2019-03-25 08:46:14 Temperature: 23.3 Humidity: 39.9 Battery: 65
+2019-03-25 08:46:46 Temperature: 23.4 Humidity: 40.0 Battery: 65
+2019-03-25 08:47:00 Temperature: 23.3 Humidity: 40.0 Battery: 65
+2019-03-25 08:47:31 Temperature: 23.4 Humidity: 39.9 Battery: 65
+2019-03-25 08:47:49 Temperature: 23.3 Humidity: 40.0 Battery: 65
+An exception occurred
+2019-03-25 08:48:41 Temperature: 23.3 Humidity: 40.0 Battery: 65
+2019-03-25 08:49:31 Temperature: 23.3 Humidity: 40.0 Battery: 65
+2019-03-25 08:49:47 Temperature: 23.3 Humidity: 40.0 Battery: 65
+2019-03-25 08:50:03 Temperature: 23.3 Humidity: 39.8 Battery: 65
+2019-03-25 08:50:37 Temperature: 23.2 Humidity: 40.1 Battery: 65
+2019-03-25 08:51:13 Temperature: 23.3 Humidity: 40.0 Battery: 65
+2019-03-25 08:51:43 Temperature: 23.3 Humidity: 40.0 Battery: 65
+An exception occurred
+2019-03-25 08:52:25 Temperature: 23.3 Humidity: 39.7 Battery: 65
+2019-03-25 08:52:51 Temperature: 23.3 Humidity: 39.8 Battery: 65
+2019-03-25 08:53:23 Temperature: 23.3 Humidity: 39.9 Battery: 65
+2019-03-25 08:53:43 Temperature: 23.3 Humidity: 39.9 Battery: 65
+2019-03-25 08:54:01 Temperature: 23.2 Humidity: 40.0 Battery: 65
+2019-03-25 08:54:20 Temperature: 23.2 Humidity: 39.9 Battery: 65
+2019-03-25 08:54:54 Temperature: 23.2 Humidity: 40.1 Battery: 65
+2019-03-25 08:55:08 Temperature: 23.2 Humidity: 39.8 Battery: 65
+2019-03-25 08:55:52 Temperature: 23.2 Humidity: 39.9 Battery: 65
+2019-03-25 08:56:42 Temperature: 23.2 Humidity: 39.9 Battery: 65
+2019-03-25 08:56:59 Temperature: 23.2 Humidity: 40.1 Battery: 65
+2019-03-25 08:57:36 Temperature: 23.1 Humidity: 39.9 Battery: 65
+2019-03-25 08:58:04 Temperature: 23.1 Humidity: 39.9 Battery: 65
+2019-03-25 08:58:38 Temperature: 23.2 Humidity: 40.3 Battery: 65
+2019-03-25 08:58:54 Temperature: 23.1 Humidity: 39.8 Battery: 65
+2019-03-25 08:59:18 Temperature: 23.1 Humidity: 40.1 Battery: 65
+2019-03-25 08:59:36 Temperature: 23.2 Humidity: 40.0 Battery: 65
+2019-03-25 08:59:52 Temperature: 23.2 Humidity: 39.8 Battery: 65
+2019-03-25 09:00:18 Temperature: 23.2 Humidity: 39.8 Battery: 65
+An exception occurred
+2019-03-25 09:00:50 Temperature: 23.1 Humidity: 39.8 Battery: 65
+2019-03-25 09:01:04 Temperature: 23.2 Humidity: 40.0 Battery: 65
+2019-03-25 09:01:40 Temperature: 23.1 Humidity: 40.0 Battery: 65
+2019-03-25 09:01:59 Temperature: 23.1 Humidity: 39.9 Battery: 65
+2019-03-25 09:02:31 Temperature: 23.1 Humidity: 40.1 Battery: 65
+2019-03-25 09:02:58 Temperature: 23.1 Humidity: 39.8 Battery: 65
+2019-03-25 09:03:11 Temperature: 23.1 Humidity: 39.9 Battery: 65
+2019-03-25 09:03:35 Temperature: 23.0 Humidity: 40.2 Battery: 65
+An exception occurred
+2019-03-25 09:04:27 Temperature: 23.1 Humidity: 39.8 Battery: 65
+2019-03-25 09:04:48 Temperature: 23.1 Humidity: 39.9 Battery: 65
+2019-03-25 09:05:07 Temperature: 23.0 Humidity: 40.1 Battery: 65
+2019-03-25 09:05:37 Temperature: 23.0 Humidity: 39.8 Battery: 65
+2019-03-25 09:06:00 Temperature: 23.0 Humidity: 39.9 Battery: 65
+2019-03-25 09:06:26 Temperature: 23.0 Humidity: 39.9 Battery: 65
+2019-03-25 09:06:43 Temperature: 23.0 Humidity: 39.9 Battery: 65
+2019-03-25 09:07:37 Temperature: 23.1 Humidity: 39.7 Battery: 65
+2019-03-25 09:07:57 Temperature: 23.0 Humidity: 40.0 Battery: 65
+2019-03-25 09:08:14 Temperature: 23.0 Humidity: 40.0 Battery: 65
+2019-03-25 09:08:40 Temperature: 23.0 Humidity: 39.9 Battery: 65
+An exception occurred
+2019-03-25 09:09:28 Temperature: 23.0 Humidity: 39.9 Battery: 65
+An exception occurred
+2019-03-25 09:10:21 Temperature: 23.1 Humidity: 39.7 Battery: 65
+2019-03-25 09:10:53 Temperature: 23.0 Humidity: 40.1 Battery: 65
+2019-03-25 09:11:25 Temperature: 23.0 Humidity: 39.9 Battery: 65
+2019-03-25 09:11:55 Temperature: 22.9 Humidity: 40.3 Battery: 65
+2019-03-25 09:12:25 Temperature: 22.9 Humidity: 39.8 Battery: 65
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-25 09:13:58 Temperature: 23.0 Humidity: 40.1 Battery: 65
+2019-03-25 09:14:29 Temperature: 22.9 Humidity: 40.2 Battery: 65
+2019-03-25 09:14:47 Temperature: 23.0 Humidity: 40.1 Battery: 65
+2019-03-25 09:15:05 Temperature: 22.9 Humidity: 40.0 Battery: 65
+2019-03-25 09:15:27 Temperature: 22.9 Humidity: 40.0 Battery: 65
+2019-03-25 09:16:02 Temperature: 22.9 Humidity: 40.1 Battery: 65
+2019-03-25 09:16:34 Temperature: 22.9 Humidity: 39.9 Battery: 65
+2019-03-25 09:16:48 Temperature: 22.9 Humidity: 40.0 Battery: 65
+An exception occurred
+2019-03-25 09:17:23 Temperature: 23.0 Humidity: 39.9 Battery: 65
+An exception occurred
+2019-03-25 09:18:18 Temperature: 22.9 Humidity: 39.7 Battery: 65
+2019-03-25 09:19:06 Temperature: 22.9 Humidity: 39.9 Battery: 65
+2019-03-25 09:19:20 Temperature: 22.9 Humidity: 40.0 Battery: 65
+2019-03-25 09:20:00 Temperature: 22.9 Humidity: 40.0 Battery: 65
+An exception occurred
+2019-03-25 09:20:39 Temperature: 22.9 Humidity: 40.0 Battery: 65
+An exception occurred
+2019-03-25 09:21:18 Temperature: 22.9 Humidity: 39.9 Battery: 65
+2019-03-25 09:21:34 Temperature: 22.9 Humidity: 39.8 Battery: 65
+2019-03-25 09:21:48 Temperature: 22.9 Humidity: 39.9 Battery: 65
+2019-03-25 09:22:02 Temperature: 22.9 Humidity: 39.9 Battery: 65
+2019-03-25 09:22:22 Temperature: 22.9 Humidity: 39.9 Battery: 65
+2019-03-25 09:22:46 Temperature: 22.9 Humidity: 39.9 Battery: 65
+2019-03-25 09:23:44 Temperature: 22.8 Humidity: 39.7 Battery: 65
+2019-03-25 09:24:08 Temperature: 22.9 Humidity: 40.0 Battery: 65
+2019-03-25 09:24:23 Temperature: 22.9 Humidity: 39.7 Battery: 65
+2019-03-25 09:24:41 Temperature: 22.9 Humidity: 39.8 Battery: 65
+2019-03-25 09:25:08 Temperature: 22.8 Humidity: 39.8 Battery: 65
+2019-03-25 09:25:22 Temperature: 22.9 Humidity: 39.7 Battery: 65
+2019-03-25 09:26:08 Temperature: 22.8 Humidity: 39.8 Battery: 65
+2019-03-25 09:26:41 Temperature: 22.9 Humidity: 39.8 Battery: 65
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-25 09:27:15 Temperature: 22.8 Humidity: 39.9 Battery: 65
+2019-03-25 09:27:43 Temperature: 22.8 Humidity: 39.8 Battery: 65
+An exception occurred
+2019-03-25 09:29:17 Temperature: 22.8 Humidity: 39.8 Battery: 65
+2019-03-25 09:29:35 Temperature: 22.8 Humidity: 39.9 Battery: 65
+An exception occurred
+2019-03-25 09:30:20 Temperature: 22.8 Humidity: 39.9 Battery: 65
+2019-03-25 09:30:57 Temperature: 22.9 Humidity: 39.8 Battery: 65
+An exception occurred
+2019-03-25 09:31:47 Temperature: 22.8 Humidity: 40.0 Battery: 65
+2019-03-25 09:32:03 Temperature: 22.8 Humidity: 39.9 Battery: 65
+2019-03-25 09:32:37 Temperature: 22.8 Humidity: 39.6 Battery: 65
+2019-03-25 09:32:59 Temperature: 22.8 Humidity: 39.9 Battery: 65
+2019-03-25 09:33:21 Temperature: 22.8 Humidity: 39.9 Battery: 65
+2019-03-25 09:33:53 Temperature: 22.8 Humidity: 39.5 Battery: 65
+2019-03-25 09:34:11 Temperature: 22.8 Humidity: 39.6 Battery: 65
+2019-03-25 09:34:44 Temperature: 22.8 Humidity: 39.8 Battery: 65
+2019-03-25 09:35:04 Temperature: 22.7 Humidity: 39.6 Battery: 65
+2019-03-25 09:35:24 Temperature: 22.8 Humidity: 39.8 Battery: 65
+2019-03-25 09:35:45 Temperature: 22.8 Humidity: 39.7 Battery: 65
+2019-03-25 09:36:03 Temperature: 22.8 Humidity: 39.7 Battery: 65
+2019-03-25 09:36:20 Temperature: 22.7 Humidity: 39.6 Battery: 65
+2019-03-25 09:36:34 Temperature: 22.7 Humidity: 39.8 Battery: 65
+2019-03-25 09:36:48 Temperature: 22.7 Humidity: 39.8 Battery: 65
+2019-03-25 09:37:02 Temperature: 22.7 Humidity: 40.0 Battery: 65
+2019-03-25 09:37:16 Temperature: 22.8 Humidity: 39.8 Battery: 65
+2019-03-25 09:37:30 Temperature: 22.7 Humidity: 39.8 Battery: 65
+2019-03-25 09:37:43 Temperature: 22.7 Humidity: 39.8 Battery: 65
+2019-03-25 09:38:04 Temperature: 22.7 Humidity: 39.8 Battery: 65
+2019-03-25 09:38:26 Temperature: 22.7 Humidity: 39.6 Battery: 65
+2019-03-25 09:38:41 Temperature: 22.7 Humidity: 39.7 Battery: 65
+2019-03-25 09:39:07 Temperature: 22.7 Humidity: 40.0 Battery: 65
+2019-03-25 09:39:21 Temperature: 22.7 Humidity: 39.6 Battery: 65
+2019-03-25 09:39:45 Temperature: 22.8 Humidity: 39.9 Battery: 65
+2019-03-25 09:39:58 Temperature: 22.8 Humidity: 39.6 Battery: 65
+2019-03-25 09:40:11 Temperature: 22.8 Humidity: 39.6 Battery: 65
+2019-03-25 09:40:25 Temperature: 22.7 Humidity: 39.8 Battery: 65
+2019-03-25 09:40:42 Temperature: 22.7 Humidity: 39.7 Battery: 65
+2019-03-25 09:40:58 Temperature: 22.7 Humidity: 39.8 Battery: 65
+2019-03-25 09:41:14 Temperature: 22.7 Humidity: 39.8 Battery: 65
+2019-03-25 09:41:32 Temperature: 22.7 Humidity: 39.7 Battery: 65
+2019-03-25 09:41:47 Temperature: 22.7 Humidity: 39.5 Battery: 65
+2019-03-25 09:42:13 Temperature: 22.7 Humidity: 39.9 Battery: 65
+2019-03-25 09:42:27 Temperature: 22.7 Humidity: 39.9 Battery: 65
+2019-03-25 09:42:41 Temperature: 22.7 Humidity: 39.9 Battery: 65
+2019-03-25 09:42:57 Temperature: 22.7 Humidity: 39.5 Battery: 65
+2019-03-25 09:43:10 Temperature: 22.6 Humidity: 39.7 Battery: 65
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-25 09:43:41 Temperature: 22.7 Humidity: 39.6 Battery: 65
+An exception occurred
+2019-03-25 09:44:35 Temperature: 22.8 Humidity: 39.6 Battery: 65
+2019-03-25 09:44:59 Temperature: 22.7 Humidity: 39.7 Battery: 65
+2019-03-25 09:45:12 Temperature: 22.7 Humidity: 39.9 Battery: 65
+2019-03-25 09:45:25 Temperature: 22.7 Humidity: 39.8 Battery: 65
+2019-03-25 09:45:39 Temperature: 22.8 Humidity: 39.9 Battery: 65
+An exception occurred
+2019-03-25 09:45:59 Temperature: 22.8 Humidity: 39.6 Battery: 65
+2019-03-25 09:46:14 Temperature: 22.8 Humidity: 39.7 Battery: 65
+2019-03-25 09:46:28 Temperature: 22.8 Humidity: 39.8 Battery: 65
+2019-03-25 09:46:42 Temperature: 22.8 Humidity: 39.6 Battery: 65
+2019-03-25 09:47:02 Temperature: 22.7 Humidity: 39.8 Battery: 65
+2019-03-25 09:47:18 Temperature: 22.7 Humidity: 39.6 Battery: 65
+2019-03-25 09:47:32 Temperature: 22.7 Humidity: 39.8 Battery: 65
+2019-03-25 09:47:52 Temperature: 22.7 Humidity: 39.9 Battery: 65
+2019-03-25 09:48:06 Temperature: 22.8 Humidity: 40.1 Battery: 65
+2019-03-25 09:48:37 Temperature: 22.7 Humidity: 40.6 Battery: 65
+2019-03-25 09:49:02 Temperature: 22.7 Humidity: 41.1 Battery: 65
+2019-03-25 09:49:16 Temperature: 22.8 Humidity: 40.8 Battery: 65
+2019-03-25 09:49:37 Temperature: 22.8 Humidity: 40.9 Battery: 65
+An exception occurred
+2019-03-25 09:50:05 Temperature: 22.8 Humidity: 41.1 Battery: 65
+2019-03-25 09:50:22 Temperature: 22.8 Humidity: 41.3 Battery: 65
+2019-03-25 09:50:36 Temperature: 22.9 Humidity: 41.1 Battery: 65
+2019-03-25 09:50:49 Temperature: 22.8 Humidity: 40.9 Battery: 65
+2019-03-25 09:51:03 Temperature: 22.8 Humidity: 41.2 Battery: 65
+2019-03-25 09:51:18 Temperature: 22.8 Humidity: 41.2 Battery: 65
+2019-03-25 09:51:34 Temperature: 22.7 Humidity: 40.9 Battery: 65
+2019-03-25 09:51:50 Temperature: 22.8 Humidity: 40.8 Battery: 65
+2019-03-25 09:52:03 Temperature: 22.7 Humidity: 40.8 Battery: 65
+2019-03-25 09:52:23 Temperature: 22.7 Humidity: 41.0 Battery: 65
+2019-03-25 09:52:43 Temperature: 22.8 Humidity: 40.8 Battery: 65
+2019-03-25 09:53:05 Temperature: 22.8 Humidity: 40.8 Battery: 65
+2019-03-25 09:53:21 Temperature: 22.8 Humidity: 40.8 Battery: 65
+2019-03-25 09:53:35 Temperature: 22.8 Humidity: 40.9 Battery: 65
+2019-03-25 09:53:52 Temperature: 22.8 Humidity: 40.9 Battery: 65
+2019-03-25 09:54:07 Temperature: 22.8 Humidity: 41.0 Battery: 65
+2019-03-25 09:54:22 Temperature: 22.8 Humidity: 41.0 Battery: 65
+2019-03-25 09:54:44 Temperature: 22.8 Humidity: 40.6 Battery: 65
+2019-03-25 09:55:13 Temperature: 22.8 Humidity: 41.2 Battery: 65
+2019-03-25 09:55:26 Temperature: 22.8 Humidity: 41.0 Battery: 65
+2019-03-25 09:55:40 Temperature: 22.7 Humidity: 41.0 Battery: 65
+2019-03-25 09:55:56 Temperature: 22.8 Humidity: 41.0 Battery: 65
+2019-03-25 09:56:14 Temperature: 22.8 Humidity: 40.4 Battery: 65
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-25 09:56:39 Temperature: 22.8 Humidity: 40.6 Battery: 65
+2019-03-25 09:56:59 Temperature: 22.8 Humidity: 40.8 Battery: 65
+2019-03-25 09:57:16 Temperature: 22.8 Humidity: 41.0 Battery: 65
+2019-03-25 09:57:35 Temperature: 22.8 Humidity: 40.7 Battery: 65
+2019-03-25 09:57:50 Temperature: 22.7 Humidity: 40.7 Battery: 65
+2019-03-25 09:58:12 Temperature: 22.7 Humidity: 40.6 Battery: 65
+2019-03-25 09:58:34 Temperature: 22.8 Humidity: 40.7 Battery: 65
+2019-03-25 09:59:06 Temperature: 22.8 Humidity: 40.6 Battery: 65
+2019-03-25 09:59:24 Temperature: 22.7 Humidity: 40.3 Battery: 65
+2019-03-25 09:59:39 Temperature: 22.7 Humidity: 40.4 Battery: 65
+2019-03-25 09:59:53 Temperature: 22.8 Humidity: 40.8 Battery: 65
+2019-03-25 10:00:09 Temperature: 22.7 Humidity: 40.7 Battery: 65
+2019-03-25 10:00:25 Temperature: 22.7 Humidity: 40.7 Battery: 65
+2019-03-25 10:00:39 Temperature: 22.7 Humidity: 40.5 Battery: 65
+An exception occurred
+2019-03-25 10:01:06 Temperature: 22.7 Humidity: 40.3 Battery: 65
+An exception occurred
+2019-03-25 10:01:41 Temperature: 22.8 Humidity: 40.1 Battery: 65
+2019-03-25 10:01:59 Temperature: 22.7 Humidity: 40.2 Battery: 65
+2019-03-25 10:02:33 Temperature: 22.7 Humidity: 40.2 Battery: 65
+2019-03-25 10:02:52 Temperature: 22.7 Humidity: 40.3 Battery: 65
+2019-03-25 10:03:06 Temperature: 22.8 Humidity: 40.1 Battery: 65
+2019-03-25 10:03:20 Temperature: 22.7 Humidity: 40.2 Battery: 65
+2019-03-25 10:03:34 Temperature: 22.7 Humidity: 40.4 Battery: 65
+2019-03-25 10:03:49 Temperature: 22.7 Humidity: 40.3 Battery: 64
+2019-03-25 10:04:09 Temperature: 22.7 Humidity: 40.1 Battery: 65
+An exception occurred
+2019-03-25 10:04:42 Temperature: 22.8 Humidity: 39.9 Battery: 65
+An exception occurred
+An exception occurred
+2019-03-25 10:05:16 Temperature: 22.7 Humidity: 39.9 Battery: 65
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-25 10:05:58 Temperature: 22.7 Humidity: 39.7 Battery: 65
+2019-03-25 10:06:14 Temperature: 22.7 Humidity: 39.9 Battery: 65
+2019-03-25 10:06:35 Temperature: 22.7 Humidity: 39.8 Battery: 65
+2019-03-25 10:06:53 Temperature: 22.7 Humidity: 39.7 Battery: 65
+2019-03-25 10:07:19 Temperature: 22.7 Humidity: 39.7 Battery: 65
+2019-03-25 10:07:33 Temperature: 22.7 Humidity: 39.4 Battery: 65
+2019-03-25 10:08:03 Temperature: 22.7 Humidity: 39.5 Battery: 65
+2019-03-25 10:08:17 Temperature: 22.7 Humidity: 39.4 Battery: 65
+2019-03-25 10:08:43 Temperature: 22.7 Humidity: 39.4 Battery: 65
+2019-03-25 10:08:57 Temperature: 22.7 Humidity: 39.2 Battery: 64
+2019-03-25 10:09:12 Temperature: 22.6 Humidity: 39.3 Battery: 65
+2019-03-25 10:09:38 Temperature: 22.7 Humidity: 39.4 Battery: 65
+2019-03-25 10:09:54 Temperature: 22.8 Humidity: 39.1 Battery: 65
+2019-03-25 10:10:11 Temperature: 22.7 Humidity: 39.2 Battery: 65
+2019-03-25 10:10:28 Temperature: 22.7 Humidity: 39.0 Battery: 65
+2019-03-25 10:10:49 Temperature: 22.7 Humidity: 39.0 Battery: 65
+2019-03-25 10:11:03 Temperature: 22.8 Humidity: 39.1 Battery: 65
+2019-03-25 10:11:19 Temperature: 22.7 Humidity: 38.9 Battery: 65
+2019-03-25 10:11:33 Temperature: 22.8 Humidity: 39.1 Battery: 65
+2019-03-25 10:11:47 Temperature: 22.7 Humidity: 39.1 Battery: 65
+2019-03-25 10:12:01 Temperature: 22.7 Humidity: 39.1 Battery: 65
+2019-03-25 10:12:15 Temperature: 22.7 Humidity: 38.8 Battery: 65
+2019-03-25 10:12:28 Temperature: 22.7 Humidity: 39.0 Battery: 65
+2019-03-25 10:12:42 Temperature: 22.7 Humidity: 39.2 Battery: 65
+2019-03-25 10:12:55 Temperature: 22.7 Humidity: 39.0 Battery: 65
+2019-03-25 10:13:10 Temperature: 22.7 Humidity: 38.9 Battery: 65
+2019-03-25 10:13:23 Temperature: 22.6 Humidity: 38.9 Battery: 65
+2019-03-25 10:13:38 Temperature: 22.7 Humidity: 38.9 Battery: 65
+2019-03-25 10:13:59 Temperature: 22.7 Humidity: 38.8 Battery: 65
+An exception occurred
+2019-03-25 10:14:29 Temperature: 22.7 Humidity: 38.9 Battery: 65
+2019-03-25 10:14:44 Temperature: 22.7 Humidity: 38.9 Battery: 65
+An exception occurred
+2019-03-25 10:15:27 Temperature: 22.7 Humidity: 38.7 Battery: 65
+2019-03-25 10:15:45 Temperature: 22.7 Humidity: 38.8 Battery: 65
+2019-03-25 10:16:11 Temperature: 22.7 Humidity: 38.4 Battery: 65
+2019-03-25 10:16:25 Temperature: 22.7 Humidity: 38.4 Battery: 65
+2019-03-25 10:16:45 Temperature: 22.7 Humidity: 38.5 Battery: 65
+2019-03-25 10:17:09 Temperature: 22.6 Humidity: 38.5 Battery: 65
+2019-03-25 10:17:25 Temperature: 22.7 Humidity: 38.7 Battery: 65
+2019-03-25 10:17:40 Temperature: 22.6 Humidity: 38.5 Battery: 65
+2019-03-25 10:18:06 Temperature: 22.7 Humidity: 38.3 Battery: 65
+2019-03-25 10:18:24 Temperature: 22.7 Humidity: 38.1 Battery: 65
+2019-03-25 10:18:42 Temperature: 22.7 Humidity: 37.9 Battery: 65
+2019-03-25 10:19:00 Temperature: 22.6 Humidity: 38.3 Battery: 65
+2019-03-25 10:19:16 Temperature: 22.6 Humidity: 38.5 Battery: 65
+2019-03-25 10:19:38 Temperature: 22.7 Humidity: 38.5 Battery: 65
+2019-03-25 10:19:55 Temperature: 22.6 Humidity: 38.3 Battery: 65
+2019-03-25 10:20:11 Temperature: 22.6 Humidity: 38.3 Battery: 65
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-25 10:20:37 Temperature: 22.7 Humidity: 38.4 Battery: 65
+2019-03-25 10:20:52 Temperature: 22.8 Humidity: 38.1 Battery: 65
+2019-03-25 10:21:05 Temperature: 22.8 Humidity: 38.1 Battery: 65
+An exception occurred
+2019-03-25 10:21:37 Temperature: 22.7 Humidity: 38.1 Battery: 65
+An exception occurred
+2019-03-25 10:22:20 Temperature: 22.7 Humidity: 38.1 Battery: 65
+2019-03-25 10:22:37 Temperature: 22.6 Humidity: 38.1 Battery: 64
+2019-03-25 10:22:59 Temperature: 22.7 Humidity: 37.9 Battery: 65
+2019-03-25 10:23:25 Temperature: 22.7 Humidity: 38.1 Battery: 65
+2019-03-25 10:23:47 Temperature: 22.7 Humidity: 38.0 Battery: 65
+2019-03-25 10:24:01 Temperature: 22.7 Humidity: 38.2 Battery: 65
+2019-03-25 10:24:15 Temperature: 22.7 Humidity: 38.2 Battery: 65
+2019-03-25 10:24:36 Temperature: 22.7 Humidity: 38.1 Battery: 65
+2019-03-25 10:24:51 Temperature: 22.7 Humidity: 37.9 Battery: 65
+2019-03-25 10:25:13 Temperature: 22.7 Humidity: 38.4 Battery: 65
+2019-03-25 10:25:37 Temperature: 22.7 Humidity: 38.1 Battery: 65
+2019-03-25 10:25:55 Temperature: 22.7 Humidity: 38.2 Battery: 65
+2019-03-25 10:26:15 Temperature: 22.7 Humidity: 38.1 Battery: 65
+2019-03-25 10:26:31 Temperature: 22.7 Humidity: 38.1 Battery: 65
+2019-03-25 10:26:45 Temperature: 22.7 Humidity: 38.2 Battery: 65
+2019-03-25 10:26:59 Temperature: 22.7 Humidity: 38.2 Battery: 64
+2019-03-25 10:27:12 Temperature: 22.7 Humidity: 38.4 Battery: 65
+2019-03-25 10:27:27 Temperature: 22.7 Humidity: 38.3 Battery: 65
+2019-03-25 10:27:44 Temperature: 22.7 Humidity: 38.4 Battery: 65
+2019-03-25 10:28:02 Temperature: 22.7 Humidity: 38.2 Battery: 65
+2019-03-25 10:28:28 Temperature: 22.7 Humidity: 38.4 Battery: 64
+2019-03-25 10:28:43 Temperature: 22.7 Humidity: 38.2 Battery: 65
+2019-03-25 10:29:02 Temperature: 22.6 Humidity: 38.3 Battery: 65
+2019-03-25 10:29:20 Temperature: 22.6 Humidity: 38.3 Battery: 65
+2019-03-25 10:29:39 Temperature: 22.7 Humidity: 38.4 Battery: 64
+2019-03-25 10:29:53 Temperature: 22.6 Humidity: 38.4 Battery: 65
+2019-03-25 10:30:24 Temperature: 22.7 Humidity: 38.5 Battery: 65
+2019-03-25 10:30:40 Temperature: 22.6 Humidity: 38.6 Battery: 65
+2019-03-25 10:30:58 Temperature: 22.6 Humidity: 38.5 Battery: 64
+2019-03-25 10:31:12 Temperature: 22.7 Humidity: 38.5 Battery: 65
+2019-03-25 10:31:30 Temperature: 22.7 Humidity: 38.3 Battery: 65
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-25 10:32:11 Temperature: 22.7 Humidity: 38.6 Battery: 65
+2019-03-25 10:32:28 Temperature: 22.7 Humidity: 38.7 Battery: 65
+2019-03-25 10:32:56 Temperature: 22.7 Humidity: 38.4 Battery: 65
+An exception occurred
+2019-03-25 10:33:34 Temperature: 22.7 Humidity: 38.7 Battery: 65
+2019-03-25 10:33:52 Temperature: 22.7 Humidity: 38.6 Battery: 65
+2019-03-25 10:34:05 Temperature: 22.7 Humidity: 38.8 Battery: 65
+2019-03-25 10:34:18 Temperature: 22.7 Humidity: 38.8 Battery: 64
+2019-03-25 10:34:34 Temperature: 22.7 Humidity: 38.7 Battery: 65
+2019-03-25 10:35:02 Temperature: 22.7 Humidity: 38.8 Battery: 65
+2019-03-25 10:35:20 Temperature: 22.7 Humidity: 38.8 Battery: 65
+2019-03-25 10:35:36 Temperature: 22.7 Humidity: 38.8 Battery: 65
+2019-03-25 10:35:52 Temperature: 22.7 Humidity: 38.5 Battery: 65
+2019-03-25 10:36:06 Temperature: 22.7 Humidity: 39.0 Battery: 65
+2019-03-25 10:36:19 Temperature: 22.7 Humidity: 38.8 Battery: 65
+2019-03-25 10:36:38 Temperature: 22.7 Humidity: 38.8 Battery: 64
+2019-03-25 10:36:59 Temperature: 22.7 Humidity: 38.8 Battery: 64
+2019-03-25 10:37:12 Temperature: 22.7 Humidity: 38.8 Battery: 65
+2019-03-25 10:37:44 Temperature: 22.7 Humidity: 38.7 Battery: 65
+2019-03-25 10:38:08 Temperature: 22.7 Humidity: 38.6 Battery: 64
+2019-03-25 10:38:28 Temperature: 22.7 Humidity: 38.7 Battery: 64
+An exception occurred
+2019-03-25 10:39:00 Temperature: 22.7 Humidity: 38.8 Battery: 65
+2019-03-25 10:39:16 Temperature: 22.7 Humidity: 38.9 Battery: 65
+2019-03-25 10:39:31 Temperature: 22.7 Humidity: 38.8 Battery: 65
+2019-03-25 10:39:46 Temperature: 22.7 Humidity: 38.8 Battery: 65
+2019-03-25 10:40:10 Temperature: 22.7 Humidity: 39.0 Battery: 65
+2019-03-25 10:40:29 Temperature: 22.7 Humidity: 38.8 Battery: 64
+2019-03-25 10:40:51 Temperature: 22.7 Humidity: 38.7 Battery: 65
+2019-03-25 10:41:13 Temperature: 22.8 Humidity: 38.7 Battery: 65
+2019-03-25 10:41:27 Temperature: 22.7 Humidity: 38.7 Battery: 65
+2019-03-25 10:41:45 Temperature: 22.7 Humidity: 38.8 Battery: 65
+2019-03-25 10:41:59 Temperature: 22.7 Humidity: 38.7 Battery: 64
+2019-03-25 10:42:14 Temperature: 22.6 Humidity: 38.7 Battery: 65
+2019-03-25 10:42:30 Temperature: 22.7 Humidity: 39.0 Battery: 64
+2019-03-25 10:42:48 Temperature: 22.7 Humidity: 38.9 Battery: 64
+2019-03-25 10:43:02 Temperature: 22.7 Humidity: 38.9 Battery: 65
+2019-03-25 10:43:20 Temperature: 22.7 Humidity: 39.0 Battery: 64
+2019-03-25 10:43:36 Temperature: 22.7 Humidity: 38.8 Battery: 65
+2019-03-25 10:43:50 Temperature: 22.7 Humidity: 39.0 Battery: 64
+2019-03-25 10:44:03 Temperature: 22.7 Humidity: 38.8 Battery: 65
+2019-03-25 10:44:17 Temperature: 22.7 Humidity: 38.7 Battery: 65
+2019-03-25 10:44:36 Temperature: 22.7 Humidity: 39.0 Battery: 65
+2019-03-25 10:44:50 Temperature: 22.7 Humidity: 38.9 Battery: 64
+2019-03-25 10:45:04 Temperature: 22.7 Humidity: 38.9 Battery: 65
+2019-03-25 10:45:18 Temperature: 22.8 Humidity: 39.0 Battery: 64
+2019-03-25 10:45:37 Temperature: 22.7 Humidity: 39.0 Battery: 64
+2019-03-25 10:45:59 Temperature: 22.7 Humidity: 38.9 Battery: 65
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-25 10:46:43 Temperature: 22.7 Humidity: 39.0 Battery: 64
+2019-03-25 10:47:05 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 10:47:24 Temperature: 22.7 Humidity: 38.6 Battery: 65
+2019-03-25 10:47:38 Temperature: 22.7 Humidity: 38.9 Battery: 64
+2019-03-25 10:47:52 Temperature: 22.7 Humidity: 38.8 Battery: 65
+2019-03-25 10:48:06 Temperature: 22.7 Humidity: 39.0 Battery: 65
+2019-03-25 10:48:23 Temperature: 22.7 Humidity: 39.0 Battery: 65
+2019-03-25 10:48:37 Temperature: 22.7 Humidity: 38.9 Battery: 64
+2019-03-25 10:48:59 Temperature: 22.8 Humidity: 38.9 Battery: 64
+2019-03-25 10:49:13 Temperature: 22.8 Humidity: 39.0 Battery: 65
+2019-03-25 10:49:27 Temperature: 22.8 Humidity: 39.1 Battery: 64
+2019-03-25 10:49:45 Temperature: 22.7 Humidity: 38.8 Battery: 65
+2019-03-25 10:50:05 Temperature: 22.7 Humidity: 38.9 Battery: 65
+2019-03-25 10:50:18 Temperature: 22.7 Humidity: 38.8 Battery: 64
+2019-03-25 10:50:38 Temperature: 22.7 Humidity: 38.8 Battery: 64
+2019-03-25 10:50:52 Temperature: 22.7 Humidity: 38.8 Battery: 65
+2019-03-25 10:51:10 Temperature: 22.7 Humidity: 39.0 Battery: 64
+2019-03-25 10:51:28 Temperature: 22.8 Humidity: 39.0 Battery: 64
+2019-03-25 10:51:50 Temperature: 22.7 Humidity: 38.9 Battery: 64
+2019-03-25 10:52:03 Temperature: 22.8 Humidity: 39.2 Battery: 65
+2019-03-25 10:52:28 Temperature: 22.8 Humidity: 39.0 Battery: 64
+2019-03-25 10:52:48 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 10:53:14 Temperature: 22.8 Humidity: 39.1 Battery: 65
+2019-03-25 10:53:27 Temperature: 22.7 Humidity: 39.0 Battery: 64
+2019-03-25 10:53:47 Temperature: 22.7 Humidity: 39.1 Battery: 64
+2019-03-25 10:54:08 Temperature: 22.7 Humidity: 38.9 Battery: 65
+2019-03-25 10:54:22 Temperature: 22.7 Humidity: 38.9 Battery: 65
+2019-03-25 10:54:37 Temperature: 22.7 Humidity: 38.9 Battery: 64
+2019-03-25 10:54:51 Temperature: 22.7 Humidity: 38.9 Battery: 65
+2019-03-25 10:55:07 Temperature: 22.8 Humidity: 39.1 Battery: 64
+2019-03-25 10:55:28 Temperature: 22.8 Humidity: 38.7 Battery: 64
+2019-03-25 10:55:44 Temperature: 22.8 Humidity: 39.0 Battery: 65
+2019-03-25 10:56:02 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 10:56:15 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 10:56:34 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 10:56:48 Temperature: 22.8 Humidity: 38.9 Battery: 64
+2019-03-25 10:57:02 Temperature: 22.8 Humidity: 39.0 Battery: 65
+2019-03-25 10:57:17 Temperature: 22.8 Humidity: 38.9 Battery: 64
+2019-03-25 10:57:35 Temperature: 22.7 Humidity: 39.2 Battery: 65
+2019-03-25 10:57:48 Temperature: 22.8 Humidity: 39.0 Battery: 64
+2019-03-25 10:58:04 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 10:58:30 Temperature: 22.8 Humidity: 38.8 Battery: 64
+2019-03-25 10:58:46 Temperature: 22.7 Humidity: 39.1 Battery: 65
+2019-03-25 10:59:00 Temperature: 22.8 Humidity: 39.0 Battery: 64
+2019-03-25 10:59:15 Temperature: 22.8 Humidity: 38.8 Battery: 65
+2019-03-25 10:59:29 Temperature: 22.8 Humidity: 39.2 Battery: 64
+2019-03-25 10:59:43 Temperature: 22.7 Humidity: 39.1 Battery: 65
+2019-03-25 11:00:04 Temperature: 22.7 Humidity: 39.1 Battery: 65
+2019-03-25 11:00:18 Temperature: 22.7 Humidity: 38.9 Battery: 64
+2019-03-25 11:00:32 Temperature: 22.7 Humidity: 38.9 Battery: 65
+2019-03-25 11:00:50 Temperature: 22.8 Humidity: 39.1 Battery: 64
+2019-03-25 11:01:09 Temperature: 22.8 Humidity: 38.9 Battery: 64
+2019-03-25 11:01:23 Temperature: 22.8 Humidity: 39.0 Battery: 65
+2019-03-25 11:01:49 Temperature: 22.8 Humidity: 38.8 Battery: 64
+2019-03-25 11:02:02 Temperature: 22.8 Humidity: 38.7 Battery: 65
+An exception occurred
+2019-03-25 11:02:27 Temperature: 22.8 Humidity: 39.1 Battery: 65
+2019-03-25 11:02:45 Temperature: 22.7 Humidity: 39.1 Battery: 65
+2019-03-25 11:03:00 Temperature: 22.8 Humidity: 39.0 Battery: 64
+2019-03-25 11:03:14 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 11:03:28 Temperature: 22.8 Humidity: 38.9 Battery: 64
+2019-03-25 11:03:42 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 11:04:00 Temperature: 22.8 Humidity: 38.9 Battery: 64
+2019-03-25 11:04:14 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 11:04:28 Temperature: 22.8 Humidity: 38.8 Battery: 64
+2019-03-25 11:04:43 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 11:04:59 Temperature: 22.8 Humidity: 39.0 Battery: 64
+2019-03-25 11:05:15 Temperature: 22.8 Humidity: 39.0 Battery: 65
+2019-03-25 11:05:41 Temperature: 22.7 Humidity: 38.7 Battery: 65
+2019-03-25 11:06:01 Temperature: 22.8 Humidity: 39.0 Battery: 65
+2019-03-25 11:06:17 Temperature: 22.8 Humidity: 39.1 Battery: 64
+2019-03-25 11:06:35 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 11:06:53 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 11:07:11 Temperature: 22.7 Humidity: 39.1 Battery: 65
+2019-03-25 11:07:35 Temperature: 22.8 Humidity: 39.2 Battery: 65
+2019-03-25 11:07:51 Temperature: 22.8 Humidity: 39.1 Battery: 65
+2019-03-25 11:08:11 Temperature: 22.8 Humidity: 38.8 Battery: 65
+2019-03-25 11:08:25 Temperature: 22.8 Humidity: 39.0 Battery: 65
+2019-03-25 11:08:39 Temperature: 22.8 Humidity: 38.8 Battery: 64
+2019-03-25 11:08:55 Temperature: 22.8 Humidity: 38.7 Battery: 65
+2019-03-25 11:09:11 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 11:09:31 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 11:09:45 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 11:10:01 Temperature: 22.8 Humidity: 39.1 Battery: 65
+2019-03-25 11:10:30 Temperature: 22.8 Humidity: 38.8 Battery: 65
+2019-03-25 11:10:49 Temperature: 22.8 Humidity: 39.2 Battery: 65
+2019-03-25 11:11:13 Temperature: 22.8 Humidity: 38.9 Battery: 65
+An exception occurred
+2019-03-25 11:11:39 Temperature: 22.8 Humidity: 39.0 Battery: 65
+2019-03-25 11:11:56 Temperature: 22.9 Humidity: 38.9 Battery: 65
+2019-03-25 11:12:12 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 11:12:25 Temperature: 22.8 Humidity: 39.1 Battery: 65
+2019-03-25 11:12:45 Temperature: 22.8 Humidity: 39.2 Battery: 65
+2019-03-25 11:12:59 Temperature: 22.8 Humidity: 39.1 Battery: 64
+2019-03-25 11:13:17 Temperature: 22.7 Humidity: 39.2 Battery: 64
+2019-03-25 11:13:31 Temperature: 22.7 Humidity: 39.0 Battery: 65
+2019-03-25 11:13:48 Temperature: 22.9 Humidity: 38.9 Battery: 64
+2019-03-25 11:14:06 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 11:14:19 Temperature: 22.9 Humidity: 39.1 Battery: 64
+2019-03-25 11:14:35 Temperature: 22.8 Humidity: 39.1 Battery: 65
+2019-03-25 11:14:56 Temperature: 22.8 Humidity: 39.1 Battery: 65
+2019-03-25 11:15:26 Temperature: 22.9 Humidity: 39.2 Battery: 65
+2019-03-25 11:15:47 Temperature: 22.8 Humidity: 39.1 Battery: 64
+2019-03-25 11:16:01 Temperature: 22.8 Humidity: 39.1 Battery: 65
+2019-03-25 11:16:19 Temperature: 22.8 Humidity: 39.1 Battery: 64
+2019-03-25 11:16:32 Temperature: 22.9 Humidity: 39.0 Battery: 65
+2019-03-25 11:16:46 Temperature: 22.9 Humidity: 39.0 Battery: 65
+2019-03-25 11:17:00 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 11:17:26 Temperature: 22.9 Humidity: 39.1 Battery: 65
+2019-03-25 11:17:42 Temperature: 22.8 Humidity: 38.8 Battery: 65
+2019-03-25 11:17:55 Temperature: 22.9 Humidity: 39.1 Battery: 65
+2019-03-25 11:18:11 Temperature: 22.9 Humidity: 38.9 Battery: 65
+2019-03-25 11:18:26 Temperature: 22.9 Humidity: 39.0 Battery: 65
+2019-03-25 11:18:41 Temperature: 22.9 Humidity: 38.9 Battery: 65
+2019-03-25 11:18:55 Temperature: 22.9 Humidity: 39.1 Battery: 65
+2019-03-25 11:19:15 Temperature: 22.8 Humidity: 39.0 Battery: 65
+2019-03-25 11:19:30 Temperature: 22.8 Humidity: 39.1 Battery: 65
+2019-03-25 11:19:48 Temperature: 22.8 Humidity: 39.1 Battery: 64
+2019-03-25 11:20:01 Temperature: 22.8 Humidity: 39.0 Battery: 65
+2019-03-25 11:20:15 Temperature: 22.9 Humidity: 39.1 Battery: 65
+2019-03-25 11:20:28 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 11:20:57 Temperature: 22.8 Humidity: 39.2 Battery: 64
+2019-03-25 11:21:12 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 11:21:26 Temperature: 22.9 Humidity: 38.9 Battery: 65
+2019-03-25 11:21:48 Temperature: 22.9 Humidity: 39.0 Battery: 64
+2019-03-25 11:22:01 Temperature: 22.8 Humidity: 38.8 Battery: 65
+2019-03-25 11:22:16 Temperature: 22.8 Humidity: 38.9 Battery: 64
+2019-03-25 11:22:34 Temperature: 22.9 Humidity: 39.0 Battery: 65
+2019-03-25 11:22:48 Temperature: 22.8 Humidity: 38.9 Battery: 64
+2019-03-25 11:23:08 Temperature: 22.9 Humidity: 38.9 Battery: 64
+2019-03-25 11:23:22 Temperature: 22.8 Humidity: 38.8 Battery: 65
+2019-03-25 11:23:38 Temperature: 22.8 Humidity: 39.0 Battery: 65
+2019-03-25 11:24:04 Temperature: 22.9 Humidity: 39.1 Battery: 65
+2019-03-25 11:24:18 Temperature: 22.9 Humidity: 38.9 Battery: 65
+2019-03-25 11:24:44 Temperature: 22.8 Humidity: 38.8 Battery: 65
+2019-03-25 11:24:57 Temperature: 22.8 Humidity: 39.0 Battery: 64
+2019-03-25 11:25:10 Temperature: 22.8 Humidity: 39.0 Battery: 65
+2019-03-25 11:25:32 Temperature: 22.9 Humidity: 38.8 Battery: 65
+2019-03-25 11:25:45 Temperature: 22.8 Humidity: 38.8 Battery: 65
+2019-03-25 11:25:58 Temperature: 22.9 Humidity: 38.8 Battery: 64
+2019-03-25 11:26:20 Temperature: 22.9 Humidity: 38.8 Battery: 65
+2019-03-25 11:26:42 Temperature: 22.8 Humidity: 39.1 Battery: 65
+2019-03-25 11:27:00 Temperature: 22.9 Humidity: 39.1 Battery: 64
+2019-03-25 11:27:16 Temperature: 22.9 Humidity: 39.1 Battery: 65
+2019-03-25 11:27:31 Temperature: 22.9 Humidity: 38.9 Battery: 64
+2019-03-25 11:27:50 Temperature: 22.9 Humidity: 38.9 Battery: 64
+2019-03-25 11:28:06 Temperature: 22.9 Humidity: 38.7 Battery: 64
+2019-03-25 11:28:22 Temperature: 22.8 Humidity: 38.9 Battery: 65
+2019-03-25 11:28:44 Temperature: 22.9 Humidity: 39.0 Battery: 65
+2019-03-25 11:29:06 Temperature: 22.9 Humidity: 38.9 Battery: 65
+2019-03-25 11:29:20 Temperature: 22.9 Humidity: 38.9 Battery: 64
+2019-03-25 11:29:36 Temperature: 23.0 Humidity: 38.7 Battery: 65
+2019-03-25 11:29:50 Temperature: 22.9 Humidity: 38.7 Battery: 64
+2019-03-25 11:30:04 Temperature: 22.9 Humidity: 38.8 Battery: 65
+2019-03-25 11:30:24 Temperature: 22.9 Humidity: 38.8 Battery: 65
+2019-03-25 11:30:38 Temperature: 22.9 Humidity: 39.1 Battery: 64
+2019-03-25 11:30:52 Temperature: 22.9 Humidity: 38.8 Battery: 65
+2019-03-25 11:31:08 Temperature: 22.9 Humidity: 39.0 Battery: 64
+2019-03-25 11:31:22 Temperature: 22.9 Humidity: 38.8 Battery: 65
+2019-03-25 11:31:40 Temperature: 22.9 Humidity: 38.8 Battery: 64
+2019-03-25 11:31:59 Temperature: 22.9 Humidity: 39.1 Battery: 64
+2019-03-25 11:32:17 Temperature: 22.9 Humidity: 39.2 Battery: 64
+2019-03-25 11:32:37 Temperature: 22.9 Humidity: 39.2 Battery: 64
+2019-03-25 11:32:59 Temperature: 22.8 Humidity: 39.1 Battery: 65
+2019-03-25 11:33:35 Temperature: 22.9 Humidity: 39.0 Battery: 65
+2019-03-25 11:33:52 Temperature: 22.9 Humidity: 38.8 Battery: 65
+2019-03-25 11:34:06 Temperature: 22.8 Humidity: 39.1 Battery: 65
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-25 11:34:50 Temperature: 22.9 Humidity: 39.1 Battery: 65
+2019-03-25 11:35:05 Temperature: 22.9 Humidity: 39.0 Battery: 65
+2019-03-25 11:35:21 Temperature: 23.0 Humidity: 38.8 Battery: 65
+2019-03-25 11:35:37 Temperature: 22.9 Humidity: 38.8 Battery: 65
+An exception occurred
+2019-03-25 11:36:10 Temperature: 22.9 Humidity: 39.2 Battery: 64
+2019-03-25 11:36:36 Temperature: 22.9 Humidity: 39.0 Battery: 64
+2019-03-25 11:36:52 Temperature: 23.0 Humidity: 38.9 Battery: 65
+2019-03-25 11:37:09 Temperature: 22.9 Humidity: 38.8 Battery: 65
+2019-03-25 11:37:33 Temperature: 23.0 Humidity: 39.1 Battery: 65
+2019-03-25 11:37:57 Temperature: 22.9 Humidity: 39.1 Battery: 64
+2019-03-25 11:38:10 Temperature: 22.9 Humidity: 38.9 Battery: 65
+2019-03-25 11:38:23 Temperature: 22.9 Humidity: 39.0 Battery: 65
+2019-03-25 11:38:38 Temperature: 22.9 Humidity: 38.9 Battery: 64
+2019-03-25 11:38:56 Temperature: 23.0 Humidity: 39.1 Battery: 64
+2019-03-25 11:39:15 Temperature: 22.9 Humidity: 38.9 Battery: 65
+2019-03-25 11:39:32 Temperature: 22.9 Humidity: 38.8 Battery: 65
+2019-03-25 11:39:54 Temperature: 23.0 Humidity: 39.1 Battery: 65
+2019-03-25 11:40:08 Temperature: 23.0 Humidity: 38.9 Battery: 64
+2019-03-25 11:40:24 Temperature: 23.0 Humidity: 39.1 Battery: 65
+2019-03-25 11:40:42 Temperature: 23.0 Humidity: 39.0 Battery: 65
+2019-03-25 11:40:56 Temperature: 22.9 Humidity: 38.9 Battery: 64
+2019-03-25 11:41:14 Temperature: 22.9 Humidity: 38.9 Battery: 65
+2019-03-25 11:41:31 Temperature: 22.9 Humidity: 39.0 Battery: 64
+2019-03-25 11:41:48 Temperature: 23.0 Humidity: 39.0 Battery: 64
+2019-03-25 11:42:06 Temperature: 23.0 Humidity: 38.9 Battery: 65
+2019-03-25 11:42:32 Temperature: 23.0 Humidity: 39.0 Battery: 65
+2019-03-25 11:42:50 Temperature: 23.0 Humidity: 38.9 Battery: 64
+2019-03-25 11:43:03 Temperature: 23.0 Humidity: 39.0 Battery: 65
+2019-03-25 11:43:17 Temperature: 23.0 Humidity: 38.9 Battery: 64
+2019-03-25 11:43:37 Temperature: 23.0 Humidity: 39.2 Battery: 64
+2019-03-25 11:43:52 Temperature: 23.0 Humidity: 38.8 Battery: 65
+2019-03-25 11:44:10 Temperature: 23.0 Humidity: 38.9 Battery: 64
+2019-03-25 11:44:26 Temperature: 23.0 Humidity: 38.7 Battery: 64
+2019-03-25 11:44:41 Temperature: 23.0 Humidity: 39.0 Battery: 65
+2019-03-25 11:44:55 Temperature: 23.0 Humidity: 39.2 Battery: 65
+2019-03-25 11:45:10 Temperature: 22.9 Humidity: 39.1 Battery: 65
+2019-03-25 11:45:24 Temperature: 22.9 Humidity: 39.0 Battery: 65
+2019-03-25 11:45:42 Temperature: 23.0 Humidity: 39.0 Battery: 65
+2019-03-25 11:46:02 Temperature: 23.0 Humidity: 39.0 Battery: 65
+An exception occurred
+2019-03-25 11:46:33 Temperature: 23.0 Humidity: 38.9 Battery: 65
+2019-03-25 11:46:58 Temperature: 23.0 Humidity: 39.0 Battery: 65
+2019-03-25 11:47:30 Temperature: 23.0 Humidity: 39.1 Battery: 64
+2019-03-25 11:47:50 Temperature: 23.0 Humidity: 39.1 Battery: 64
+2019-03-25 11:48:04 Temperature: 23.0 Humidity: 39.2 Battery: 65
+2019-03-25 11:48:24 Temperature: 23.0 Humidity: 39.0 Battery: 65
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred2019-03-26 08:02:42 Temperature: 23.6 Humidity: 42.4 Battery: 64
+2019-03-26 08:03:01 Temperature: 23.6 Humidity: 42.6 Battery: 64
+2019-03-26 08:03:17 Temperature: 23.6 Humidity: 42.4 Battery: 64
+2019-03-26 08:03:30 Temperature: 23.6 Humidity: 42.3 Battery: 64
+2019-03-26 08:03:46 Temperature: 23.7 Humidity: 42.1 Battery: 64
+2019-03-26 08:04:02 Temperature: 23.6 Humidity: 42.0 Battery: 64
+2019-03-26 08:04:16 Temperature: 23.6 Humidity: 42.1 Battery: 64
+2019-03-26 08:04:32 Temperature: 23.7 Humidity: 41.8 Battery: 64
+2019-03-26 08:05:05 Temperature: 23.6 Humidity: 41.9 Battery: 64
+2019-03-26 08:05:18 Temperature: 23.6 Humidity: 42.0 Battery: 64
+2019-03-26 08:05:32 Temperature: 23.5 Humidity: 42.4 Battery: 64
+2019-03-26 08:05:50 Temperature: 23.5 Humidity: 42.4 Battery: 64
+An exception occurred
+2019-03-26 08:06:32 Temperature: 23.6 Humidity: 42.5 Battery: 64
+2019-03-26 08:06:50 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:07:04 Temperature: 23.6 Humidity: 42.3 Battery: 64
+2019-03-26 08:07:22 Temperature: 23.6 Humidity: 42.4 Battery: 64
+2019-03-26 08:07:36 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:07:52 Temperature: 23.6 Humidity: 42.4 Battery: 64
+2019-03-26 08:08:08 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:08:30 Temperature: 23.5 Humidity: 42.9 Battery: 64
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-26 08:09:02 Temperature: 23.5 Humidity: 42.7 Battery: 64
+2019-03-26 08:09:17 Temperature: 23.5 Humidity: 42.8 Battery: 64
+2019-03-26 08:09:30 Temperature: 23.6 Humidity: 42.5 Battery: 64
+2019-03-26 08:09:45 Temperature: 23.6 Humidity: 42.6 Battery: 64
+2019-03-26 08:09:59 Temperature: 23.5 Humidity: 42.4 Battery: 64
+2019-03-26 08:10:25 Temperature: 23.5 Humidity: 42.6 Battery: 64
+2019-03-26 08:10:47 Temperature: 23.6 Humidity: 42.5 Battery: 64
+2019-03-26 08:11:00 Temperature: 23.6 Humidity: 42.6 Battery: 64
+2019-03-26 08:11:16 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:11:30 Temperature: 23.5 Humidity: 42.7 Battery: 64
+2019-03-26 08:11:46 Temperature: 23.6 Humidity: 42.3 Battery: 64
+2019-03-26 08:12:01 Temperature: 23.6 Humidity: 42.6 Battery: 64
+2019-03-26 08:12:22 Temperature: 23.6 Humidity: 42.5 Battery: 64
+2019-03-26 08:12:37 Temperature: 23.6 Humidity: 42.3 Battery: 64
+2019-03-26 08:13:01 Temperature: 23.5 Humidity: 42.3 Battery: 64
+2019-03-26 08:13:21 Temperature: 23.5 Humidity: 42.4 Battery: 64
+2019-03-26 08:13:39 Temperature: 23.5 Humidity: 42.5 Battery: 64
+2019-03-26 08:13:56 Temperature: 23.6 Humidity: 42.4 Battery: 64
+2019-03-26 08:14:12 Temperature: 23.6 Humidity: 42.4 Battery: 64
+2019-03-26 08:14:25 Temperature: 23.5 Humidity: 42.3 Battery: 64
+2019-03-26 08:14:41 Temperature: 23.6 Humidity: 42.4 Battery: 64
+2019-03-26 08:15:04 Temperature: 23.6 Humidity: 42.4 Battery: 64
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-26 08:15:50 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:16:07 Temperature: 23.6 Humidity: 42.4 Battery: 64
+2019-03-26 08:16:27 Temperature: 23.6 Humidity: 42.4 Battery: 64
+2019-03-26 08:16:49 Temperature: 23.6 Humidity: 42.4 Battery: 64
+2019-03-26 08:17:11 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:17:33 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:17:53 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:18:12 Temperature: 23.6 Humidity: 42.4 Battery: 64
+2019-03-26 08:18:30 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:18:46 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:19:00 Temperature: 23.7 Humidity: 42.1 Battery: 64
+2019-03-26 08:19:25 Temperature: 23.6 Humidity: 42.4 Battery: 64
+2019-03-26 08:19:47 Temperature: 23.6 Humidity: 42.3 Battery: 64
+2019-03-26 08:20:03 Temperature: 23.6 Humidity: 42.1 Battery: 64
+2019-03-26 08:20:17 Temperature: 23.6 Humidity: 42.4 Battery: 64
+2019-03-26 08:20:31 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:20:45 Temperature: 23.6 Humidity: 42.4 Battery: 64
+2019-03-26 08:21:11 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:21:24 Temperature: 23.6 Humidity: 42.1 Battery: 64
+An exception occurred
+2019-03-26 08:21:49 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:22:04 Temperature: 23.5 Humidity: 42.4 Battery: 64
+2019-03-26 08:22:24 Temperature: 23.5 Humidity: 42.4 Battery: 64
+2019-03-26 08:22:38 Temperature: 23.5 Humidity: 42.4 Battery: 64
+2019-03-26 08:22:52 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:23:12 Temperature: 23.5 Humidity: 42.3 Battery: 64
+2019-03-26 08:23:48 Temperature: 23.6 Humidity: 42.1 Battery: 64
+2019-03-26 08:24:38 Temperature: 23.6 Humidity: 42.5 Battery: 64
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-26 08:25:14 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:25:34 Temperature: 23.6 Humidity: 42.5 Battery: 64
+2019-03-26 08:25:47 Temperature: 23.6 Humidity: 42.0 Battery: 64
+2019-03-26 08:26:07 Temperature: 23.6 Humidity: 41.9 Battery: 64
+2019-03-26 08:26:21 Temperature: 23.7 Humidity: 42.3 Battery: 64
+2019-03-26 08:26:45 Temperature: 23.6 Humidity: 41.8 Battery: 64
+2019-03-26 08:27:00 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:27:13 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:27:29 Temperature: 23.6 Humidity: 42.0 Battery: 64
+2019-03-26 08:27:44 Temperature: 23.6 Humidity: 42.1 Battery: 64
+2019-03-26 08:28:11 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:28:26 Temperature: 23.6 Humidity: 42.4 Battery: 64
+2019-03-26 08:28:43 Temperature: 23.6 Humidity: 42.1 Battery: 64
+2019-03-26 08:28:57 Temperature: 23.6 Humidity: 42.1 Battery: 64
+2019-03-26 08:29:17 Temperature: 23.6 Humidity: 42.1 Battery: 64
+2019-03-26 08:29:38 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:29:57 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:30:13 Temperature: 23.5 Humidity: 42.3 Battery: 64
+2019-03-26 08:30:31 Temperature: 23.5 Humidity: 42.4 Battery: 64
+2019-03-26 08:30:47 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:31:02 Temperature: 23.6 Humidity: 42.3 Battery: 64
+2019-03-26 08:31:16 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:31:31 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:31:47 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:32:02 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:32:17 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:32:33 Temperature: 23.5 Humidity: 42.1 Battery: 64
+2019-03-26 08:32:47 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:33:04 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:33:22 Temperature: 23.5 Humidity: 42.1 Battery: 64
+2019-03-26 08:33:39 Temperature: 23.6 Humidity: 42.1 Battery: 64
+2019-03-26 08:33:57 Temperature: 23.5 Humidity: 41.8 Battery: 64
+2019-03-26 08:34:19 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:34:35 Temperature: 23.6 Humidity: 42.1 Battery: 64
+2019-03-26 08:34:52 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:35:06 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:35:29 Temperature: 23.6 Humidity: 42.0 Battery: 64
+2019-03-26 08:35:49 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:36:14 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:36:30 Temperature: 23.5 Humidity: 42.3 Battery: 64
+2019-03-26 08:36:45 Temperature: 23.5 Humidity: 42.4 Battery: 64
+An exception occurred
+2019-03-26 08:37:15 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:37:33 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:37:51 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:38:05 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:38:20 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:38:33 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:38:51 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:39:19 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:39:39 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:40:07 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:40:39 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:40:55 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:41:21 Temperature: 23.6 Humidity: 42.0 Battery: 64
+2019-03-26 08:41:47 Temperature: 23.6 Humidity: 42.1 Battery: 64
+An exception occurred
+2019-03-26 08:42:27 Temperature: 23.6 Humidity: 42.1 Battery: 64
+2019-03-26 08:42:42 Temperature: 23.6 Humidity: 42.3 Battery: 64
+2019-03-26 08:43:09 Temperature: 23.6 Humidity: 42.2 Battery: 64
+2019-03-26 08:43:28 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:43:54 Temperature: 23.5 Humidity: 42.1 Battery: 64
+2019-03-26 08:44:07 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:44:20 Temperature: 23.5 Humidity: 42.3 Battery: 64
+2019-03-26 08:44:43 Temperature: 23.6 Humidity: 42.1 Battery: 64
+2019-03-26 08:44:56 Temperature: 23.5 Humidity: 42.3 Battery: 64
+2019-03-26 08:45:12 Temperature: 23.6 Humidity: 42.4 Battery: 64
+2019-03-26 08:45:26 Temperature: 23.5 Humidity: 42.4 Battery: 64
+2019-03-26 08:45:40 Temperature: 23.5 Humidity: 42.3 Battery: 64
+2019-03-26 08:45:56 Temperature: 23.5 Humidity: 42.4 Battery: 64
+2019-03-26 08:46:10 Temperature: 23.5 Humidity: 42.6 Battery: 64
+2019-03-26 08:46:26 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:46:40 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:46:58 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:47:14 Temperature: 23.5 Humidity: 42.5 Battery: 64
+2019-03-26 08:47:27 Temperature: 23.5 Humidity: 42.4 Battery: 64
+2019-03-26 08:47:42 Temperature: 23.5 Humidity: 42.4 Battery: 64
+An exception occurred
+2019-03-26 08:48:06 Temperature: 23.5 Humidity: 41.9 Battery: 64
+2019-03-26 08:48:22 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:48:39 Temperature: 23.5 Humidity: 42.1 Battery: 64
+2019-03-26 08:48:55 Temperature: 23.4 Humidity: 42.1 Battery: 64
+2019-03-26 08:49:09 Temperature: 23.4 Humidity: 42.1 Battery: 64
+2019-03-26 08:49:23 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:49:45 Temperature: 23.6 Humidity: 41.9 Battery: 64
+2019-03-26 08:49:59 Temperature: 23.5 Humidity: 42.1 Battery: 64
+2019-03-26 08:50:16 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:50:34 Temperature: 23.5 Humidity: 42.7 Battery: 64
+2019-03-26 08:51:02 Temperature: 23.5 Humidity: 43.2 Battery: 64
+2019-03-26 08:51:23 Temperature: 23.4 Humidity: 43.4 Battery: 64
+2019-03-26 08:51:37 Temperature: 23.5 Humidity: 43.0 Battery: 64
+2019-03-26 08:51:59 Temperature: 23.5 Humidity: 42.9 Battery: 64
+2019-03-26 08:52:25 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:52:53 Temperature: 23.5 Humidity: 42.3 Battery: 64
+2019-03-26 08:53:07 Temperature: 23.4 Humidity: 42.2 Battery: 64
+2019-03-26 08:53:21 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:53:48 Temperature: 23.4 Humidity: 42.3 Battery: 64
+2019-03-26 08:54:06 Temperature: 23.4 Humidity: 42.5 Battery: 64
+2019-03-26 08:54:32 Temperature: 23.4 Humidity: 42.7 Battery: 64
+2019-03-26 08:54:49 Temperature: 23.4 Humidity: 42.2 Battery: 64
+2019-03-26 08:55:05 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 08:55:30 Temperature: 23.5 Humidity: 42.3 Battery: 64
+2019-03-26 08:55:44 Temperature: 23.4 Humidity: 42.3 Battery: 64
+2019-03-26 08:56:01 Temperature: 23.4 Humidity: 42.3 Battery: 64
+2019-03-26 08:56:18 Temperature: 23.4 Humidity: 42.3 Battery: 64
+2019-03-26 08:56:38 Temperature: 23.4 Humidity: 42.1 Battery: 64
+2019-03-26 08:56:54 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:57:08 Temperature: 23.5 Humidity: 42.1 Battery: 64
+2019-03-26 08:57:30 Temperature: 23.5 Humidity: 42.3 Battery: 64
+2019-03-26 08:57:56 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:58:10 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 08:58:24 Temperature: 23.4 Humidity: 42.2 Battery: 64
+2019-03-26 08:58:44 Temperature: 23.4 Humidity: 41.9 Battery: 64
+2019-03-26 08:58:58 Temperature: 23.4 Humidity: 41.9 Battery: 64
+2019-03-26 08:59:20 Temperature: 23.4 Humidity: 42.2 Battery: 64
+2019-03-26 08:59:33 Temperature: 23.5 Humidity: 42.5 Battery: 64
+2019-03-26 08:59:53 Temperature: 23.4 Humidity: 42.6 Battery: 64
+2019-03-26 09:00:09 Temperature: 23.3 Humidity: 42.4 Battery: 64
+2019-03-26 09:00:31 Temperature: 23.4 Humidity: 42.1 Battery: 64
+2019-03-26 09:00:51 Temperature: 23.4 Humidity: 42.1 Battery: 64
+2019-03-26 09:01:23 Temperature: 23.4 Humidity: 42.1 Battery: 64
+2019-03-26 09:01:41 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 09:01:58 Temperature: 23.4 Humidity: 41.9 Battery: 64
+2019-03-26 09:02:13 Temperature: 23.4 Humidity: 41.9 Battery: 64
+2019-03-26 09:02:29 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 09:02:45 Temperature: 23.5 Humidity: 42.3 Battery: 64
+2019-03-26 09:03:06 Temperature: 23.5 Humidity: 42.3 Battery: 64
+2019-03-26 09:03:25 Temperature: 23.5 Humidity: 42.1 Battery: 64
+2019-03-26 09:03:39 Temperature: 23.4 Humidity: 42.2 Battery: 64
+2019-03-26 09:03:55 Temperature: 23.4 Humidity: 42.0 Battery: 64
+2019-03-26 09:04:11 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 09:04:35 Temperature: 23.5 Humidity: 41.8 Battery: 64
+2019-03-26 09:04:51 Temperature: 23.6 Humidity: 41.7 Battery: 64
+2019-03-26 09:05:13 Temperature: 23.6 Humidity: 41.7 Battery: 64
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+An exception occurred
+2019-03-26 09:05:40 Temperature: 23.5 Humidity: 41.6 Battery: 64
+2019-03-26 09:05:59 Temperature: 23.5 Humidity: 41.6 Battery: 64
+2019-03-26 09:06:13 Temperature: 23.4 Humidity: 42.1 Battery: 64
+2019-03-26 09:06:26 Temperature: 23.4 Humidity: 42.2 Battery: 64
+2019-03-26 09:06:40 Temperature: 23.4 Humidity: 42.6 Battery: 64
+2019-03-26 09:06:54 Temperature: 23.5 Humidity: 42.2 Battery: 64
+2019-03-26 09:07:12 Temperature: 23.5 Humidity: 41.8 Battery: 64
+2019-03-26 09:07:34 Temperature: 23.5 Humidity: 41.9 Battery: 64
+2019-03-26 09:07:51 Temperature: 23.5 Humidity: 41.8 Battery: 64
+2019-03-26 09:08:07 Temperature: 23.5 Humidity: 41.8 Battery: 64
+2019-03-26 09:08:20 Temperature: 23.5 Humidity: 41.7 Battery: 64
+2019-03-26 09:08:36 Temperature: 23.5 Humidity: 41.7 Battery: 64
+2019-03-26 09:08:56 Temperature: 23.5 Humidity: 41.8 Battery: 64
+2019-03-26 09:09:13 Temperature: 23.6 Humidity: 41.7 Battery: 64
+2019-03-26 09:09:29 Temperature: 23.6 Humidity: 41.4 Battery: 64
+2019-03-26 09:09:49 Temperature: 23.6 Humidity: 41.7 Battery: 64
+2019-03-26 09:10:03 Temperature: 23.6 Humidity: 41.6 Battery: 64
+2019-03-26 09:10:23 Temperature: 23.5 Humidity: 41.5 Battery: 64
+2019-03-26 09:10:40 Temperature: 23.5 Humidity: 41.7 Battery: 64
+2019-03-26 09:10:58 Temperature: 23.5 Humidity: 41.8 Battery: 64
+2019-03-26 09:11:26 Temperature: 23.4 Humidity: 41.9 Battery: 64
+2019-03-26 09:11:42 Temperature: 23.5 Humidity: 41.7 Battery: 64
+2019-03-26 09:11:59 Temperature: 23.4 Humidity: 41.6 Battery: 64
+2019-03-26 09:12:21 Temperature: 23.5 Humidity: 41.7 Battery: 64
+2019-03-26 09:12:35 Temperature: 23.5 Humidity: 42.0 Battery: 64
+2019-03-26 09:12:49 Temperature: 23.5 Humidity: 41.7 Battery: 64
+2019-03-26 09:13:06 Temperature: 23.5 Humidity: 41.7 Battery: 64
+2019-03-26 09:13:28 Temperature: 23.6 Humidity: 41.6 Battery: 64
+2019-03-26 09:13:42 Temperature: 23.7 Humidity: 41.5 Battery: 64
+2019-03-26 09:13:56
